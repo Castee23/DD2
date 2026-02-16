@@ -1,0 +1,19 @@
+# --- ModelSim & Simulation ---
+# Ignorar la carpeta donde se compila el hardware
+work/
+# Ignorar archivos de base de datos de ModelSim
+*.mpf
+*.mti
+*.wlf
+# Ignorar el log de la consola
+transcript
+
+# --- Vivado & Synthesis (por si los usáis luego) ---
+.Xil/
+*.jou
+*.log
+*.pb
+
+# --- Sistema Operativo ---
+.DS_Store
+Thumbs.db
