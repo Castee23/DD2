@@ -1,0 +1,549 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+use work.pack_test_reloj.all;
+
+entity test_monitor_reloj is
+port(clk:         in std_logic;
+     nRst:        in std_logic;
+     tic_025s:    in std_logic;
+     tic_1s:      in std_logic;
+     ena_cmd:     in std_logic;
+     cmd_tecla:   in std_logic_vector(3 downto 0);
+     pulso_largo: in std_logic;
+     modo:        in std_logic;
+     info:        in std_logic_vector(1 downto 0);
+     segundos:    in std_logic_vector(7 downto 0);
+     minutos:     in std_logic_vector(7 downto 0);
+     horas:       in std_logic_vector(7 downto 0);
+     AM_PM:       in std_logic
+    );
+end entity;
+
+architecture test of test_monitor_reloj is
+
+begin
+
+
+  -- MONITOR 1
+	-- Comprueba:
+		-- 0) Que estamos despues de un nRST 
+		-- 1) Las unidades de segundos y minitos esten entre 0 y 9
+		-- 2) Las decenas de segundos y minutos esten entre 0 y 5 (no superan 59)
+		-- 3) Que las horas respeten los modos:
+			-- 3.1) Modo 12h: Unidades hasta 9 y decenas hasta 1
+			-- 3.2) Modo 24h: Unidades hasta 9 y decenas hasta 2
+			-- Basicamente compribar q no se muestre, por ejemplo: "25:80:99"
+
+  process(clk, nRst)
+    variable ena_assert: boolean := false;
+ 
+  begin
+    if nRst'event and nRst = '0' then
+      ena_assert := false;
+
+    elsif nRst'event and nRst = '1' and nRst'last_value = '0' then
+      ena_assert := true;
+
+    elsif clk'event and clk = '1' and tic_1s = '1' and ena_assert then
+      assert segundos(3 downto 0) < 10
+      report "Error: valor inválido en unidades de segundo"
+      severity error;
+
+      assert segundos(7 downto 4) < 6
+      report "Error: valor inválido en decenas de segundo"
+      severity error;
+
+      assert minutos(3 downto 0) < 10
+      report "Error: valor inválido en unidades de minuto"
+      severity error;
+
+      assert minutos(7 downto 4) < 6
+      report "Error: valor inválido en decenas de minuto"
+      severity error;
+
+      if modo = '0' and horas(7 downto 4) = 1 then
+        assert horas(3 downto 0) < 2
+        report "Error: valor inválido en unidades de hora"
+        severity error;
+
+      elsif modo = '0' then
+        assert horas(3 downto 0) < 10
+        report "Error: valor inválido en unidades de horas"
+        severity error;
+
+      elsif modo = '1' and horas(7 downto 4) = 2 then
+        assert horas(3 downto 0) < 4
+        report "Error: valor inválido en unidades de hora"
+        severity error;
+
+      elsif modo = '1' then
+        assert horas(3 downto 0) < 10
+        report "Error: valor inválido en unidades de horas"
+        severity error;
+      
+      end if;
+
+      if modo = '0' then
+        assert horas(7 downto 4) < 2
+        report "Error: valor inválido en decenas de horas"
+        severity error;
+
+      elsif modo = '1' then
+        assert horas(7 downto 4) < 3
+        report "Error: valor inválido en decenas de horas"
+        severity error;
+
+      end if;
+    end if;
+  end process;
+
+  
+  -- MONITOR 2
+	-- Comprueba:
+		-- 1) Que estamos fuera del nRST
+		-- 2) Transforma la hora actual y la antigua a numeros naturales. Comprueba matematicamente que la hora actual(horas&minutos&segundos)
+		--	  sea exactamente igual a la hora antigua + 1 (hora_T1). Se comprueba lo anterior siempre que :
+				-- 2.1) Cuando llega un nuevo segundo: tic_1s = '1'
+				-- 2.2) Cuando estamos en modo normal y lo estabamos antes: info=0 y into_T1=0
+				-- 2.3) No se q hace programado xd
+				-- 2.4) Y la hora actual no es 00:00:00
+		-- 3) Comprueba q, si el rejor marca las 00:00:00, la hora del segundo anterior (hora_t1) debe ser 11:59:59 (para el modo 12h) y 23:59:59 (para el modo 24h)
+		--	  Se comprueba siempre que:
+			-- 3.1) Cuando falle el if de antes: supongo q cuando la hora sea 00:00:00
+			-- 3.2) Si viene un nuevo tic, si estabamos y estamos en el modo normal.
+		-- 4) Comprueba que los segundos esten a 0 despues de editar la hora
+
+  process(clk, nRst)
+    variable hora_T1:    std_logic_vector(23 downto 0);
+    variable ena_assert: boolean := false;
+    variable info_T1: std_logic_vector(1 downto 0);
+    variable programado: std_logic := '1';
+	
+  begin
+	-- Comprobacion 1)
+    if nRst'event and nRst = '0' then
+      ena_assert := false;
+
+    elsif nRst'event and nRst = '1' and nRst'last_value = '0' then
+      ena_assert := true;
+
+	-- Comprobacion 2)
+    elsif clk'event and clk = '1' and ena_assert then
+      if tic_1s = '1' and info = 0 and info_T1 = 0 and (horas&minutos&segundos) /= 0 and programado = '0' then
+        assert (hora_to_natural(hora_T1) + 1) = hora_to_natural(horas&minutos&segundos)
+        report "Error de tipo 1 detectado por el monitor 2: NO SE HA INCREMENTADO 1 SEGUNDO RESPECTO A LA HORA ANTERIOR" 
+	-- Comprobacion 3)
+      elsif tic_1s = '1' and info = 0 and info_T1 = 0 and programado = '0' then
+        assert (hora_T1 = X"115959" and modo = '0') or (hora_T1 = X"235959" and modo = '1')
+        report "Error de tipo 1 detectado por el monitor 2: NO SE HA DETECTADO 11:59:59 O 23:59:59 ANTES DEL REINICIO 00:00:00"  
+        severity error;
+
+
+    -- Comprobacion 4)
+      elsif info_T1 /= 0 then
+        assert segundos = 0
+        report "Error de tipo 2 detectado por el monitor 2: LOS SEGUNDOS NO SE HAN PUESTO A 0 DESPUES DE SALIR DEL MODO PROGRAMACION"
+        severity error;
+
+      end if;
+
+      if info /= 0 or (ena_cmd = '1' and cmd_tecla = X"D") then
+		programado := '1';
+		
+	  elsif tic_1s = '1' then
+		programado := '0';
+		
+	  end if;
+	  
+	  if tic_1s = '1' then
+		hora_T1 := horas&minutos&segundos;
+	  end if;
+
+      info_T1 := info;
+
+    end if;
+  end process;
+
+
+-- MONITOR 3
+	-- Comprueba:
+		-- 1) Que estamos fuera del nRST (tic_1s = 1).
+		-- 2) Comprueba el funcionamiento normal en MODO 12h (info = 0 y modo = 0):
+			-- 2.1) Si el reloj acaba de dar la vuelta (la hora actual es 00:00:00), comprueba que la señal AM_PM hay acambiado respecto al segundo anterior (AM_PM /= AM_PM_T1).
+			-- 2.2) Si la hora NO es 00:00:00, comprueba que la señal AM_PM se mantenga igual que en el segundo anterior (AM_PM = AM_PM_T1).
+		-- 3) Comprueba el funcionamiento normal interno en MODO 24h (info = 0 y modo = 1):
+			-- 3.1) Si la hora completa es menor a las 12:00:00, comprueba que AM_PM sea 0 (AM).
+			-- 3.2) Si la hora es igual o mayor a las 12:00:00, comprueba que AM_PM sea 1 (PM).
+		-- 4) Comprueba el cambio de formato de 24h a 12h (modo /= modo_T1 y modo = 0):
+			-- 4.1) Si en el formato de 24h (hace un ciclo de reloj) la hora antigua era menor a las 12 (horas_T1 < X12), comprueba que el nuevo AM_PM se asigne a 0.
+			-- 4.2) Si en el formato de 24h antiguo la hora era 12 o mayor, comprueba que el nuevo AM_PM se asigne a 1.
+  process(clk, nRst)
+    variable ena_cmd_T1: std_logic;
+    variable tecla_T1:   std_logic_vector(3 downto 0);
+    variable AM_PM_T1:   std_logic := '1';
+    variable horas_T1:    std_logic_vector(7 downto 0);
+    variable modo_T1:    std_logic;
+    variable ena_assert: boolean := false;
+
+  begin
+	-- Comprobacion 1)
+    if nRst'event and nRst = '0' then
+      ena_assert := false;
+
+    elsif nRst'event and nRst = '1' and nRst'last_value = '0' then
+      ena_assert := true;
+
+	-- Comprobacion 2)
+    elsif clk'event and clk = '1'  and tic_1s = '1' and ena_assert then
+      if info = 0 and modo = '0' then
+        if (horas&minutos&segundos) = 0  then
+		
+		  -- 2.1)
+		  assert AM_PM /= AM_PM_T1
+          report "Error en cambio de AM-PM: no cambia"
+          severity error;
+
+        else
+			
+		  -- 2.2)
+		  assert AM_PM /= AM_PM_T1
+          report "Error en AM-PM: cambia cuando no debe"
+          severity error;   
+
+       end if;
+
+	
+	  -- Comprobacion 3)
+      elsif info = 0 and modo = '1' then
+        if (horas&minutos& segundos) < X"120000" then
+
+		  -- 3.1)
+		  assert AM_PM = '0'
+          report "Error en el valor de AM-PM en modo 24 horas"
+          severity error;
+
+        else
+
+		  -- 3.2)
+		  assert AM_PM = '0'
+          report "Error en el valor de AM-PM en modo 24 horas"
+          severity error;   
+
+        end if;
+
+	  -- Comprobacion 4) 
+      elsif modo /= modo_T1 and modo = '0' then
+        if horas_T1 < X"12" then
+          assert AM_PM = '0'
+          report "Error en el valor de AM-PM tras cambio de formato de 24 a 12"
+          severity error;
+
+        else
+          assert AM_PM = '1'
+          report "Error en el valor de AM-PM tras cambio de formato de 24 a 12"
+          severity error;
+
+        end if;
+
+      end if;
+      ena_cmd_T1 := ena_cmd;
+      tecla_T1 := cmd_tecla;
+      AM_PM_T1 := AM_PM;
+      modo_T1 := modo;
+	  horas_T1 := horas;
+
+    end if;
+  end process; 
+
+-- MONITOR 4
+	-- Comprueba:
+		-- 1) Que estamos fuera del nRST y el sistema esta activo.
+		-- 2) Comprueba la matematica al cambiar el formato entre el modo 12h y 24h. 
+		--    Se activa justo un ciclo de reloj despues de que el usuario pulse la tecla D: cambio de modo 12-24 (estando en el modo programacion)(ena_cmd_T1 = 1 y tecla_T1 = XD).
+		-- 3) Si el sistema acaba de pasar al modo 24h (modo = 1), verifica la conversion de 12h a 24h:
+			-- 3.1) Si antes era por la manyana (AM_PM_T1 = 0), comprueba que la hora actual y la antigua sean exactamente iguales (ej. 08:00 AM pasa a 08:00).
+			-- 3.2) Si antes era por la tarde (AM_PM_T1 = 1), comprueba matematicamente que la nueva hora natural sea igual a la hora antigua mas 12 horas (ej. 08:00 PM pasa a 20:00).
+		-- 4) Si el sistema acaba de pasar al modo 12h (verificado por el elsif), verifica la conversion de 24h a 12h:
+			-- 4.1) Si la hora antigua era menor a las 12:00:00 (hora_T1 < X120000), comprueba que la nueva hora se mantenga identica a la antigua.
+			-- 4.2) Si la hora antigua era las 12:00:00 o superior, comprueba matematicamente que la nueva hora natural sea igual a la hora antigua menos 12 horas.
+  process(clk, nRst)
+    variable ena_cmd_T1: std_logic;
+    variable tecla_T1:   std_logic_vector(3 downto 0);
+    variable hora_T1:    std_logic_vector(23 downto 0);
+    variable AM_PM_T1: std_logic;
+    variable ena_assert: boolean := false;
+    variable info_T1:      std_logic_vector(1 downto 0);
+
+  begin
+	-- 1) 
+    if nRst'event and nRst = '0' then
+      ena_assert := false;
+
+    elsif nRst'event and nRst = '1' and nRst'last_value = '0' then
+      ena_assert := true;
+
+	-- 2)
+    elsif clk'event and clk = '1' and ena_assert then
+      if ena_cmd_T1 = '1'  and tecla_T1 = X"D" then
+        if modo = '1' then
+          if AM_PM_T1 = '0' then 
+            assert hora_T1 = (horas&minutos&X"00")
+            report "Error en cambio de formato de hora de 12 a 24"
+            severity error;
+
+          else
+            assert (hora_to_natural(hora_T1) + 12*3600) = hora_to_natural(horas&minutos&X"00")
+            report "Error en cambio de formato de hora de 12 a 24"
+            severity error;
+
+          end if;
+
+        elsif hora_T1 < X"120000" then
+            assert hora_T1 = (horas&minutos&X"00")
+            report "Error en cambio de formato de hora de 24 a 12"
+            severity error;
+
+        else
+          assert (hora_to_natural(hora_T1) - 12*3600) = hora_to_natural(horas&minutos&X"00")
+          report "Error en cambio de formato de hora de 24 a 12"
+          severity error;
+
+        end if;
+      end if;
+      ena_cmd_T1 := ena_cmd;
+      tecla_T1 := cmd_tecla;
+      hora_T1 := horas&minutos&X"00";
+      AM_PM_T1 := AM_PM;
+
+    end if;
+  end process;
+
+  
+  -- MONITOR 5
+  process(clk, nRst)
+    variable cmd_tecla_T1:   std_logic_vector(3 downto 0);
+    variable ena_assert:     boolean := false;
+    variable pulso_largo_T1: std_logic;
+    variable info_T1:        std_logic_vector(1 downto 0);
+
+  begin
+    if nRst'event and nRst = '0' then
+      ena_assert := false;
+
+    elsif nRst'event and nRst = '1' and nRst'last_value = '0' then
+      ena_assert := true;
+
+    elsif clk'event and clk = '1' and ena_assert then
+      if pulso_largo_T1 = '1' and cmd_tecla_T1 = X"A" and info_T1 = 0 then
+        assert  info = 2
+        report "Error detectado por el monitor 5"  -- TEXTO PARA SER MOFIFICADO CON UN MENSAJE MAS EXPLICATIVO
+        severity error;
+      end if;
+
+      cmd_tecla_T1 := cmd_tecla;
+      pulso_largo_T1 := pulso_largo;
+      info_T1 := info;
+
+    end if;
+  end process;   
+
+ 
+  -- MONITOR 6
+  -- Verificación del comando de fin de programación de reloj
+  process(clk, nRst)
+    variable cmd_tecla_T1: std_logic_vector(3 downto 0);
+    variable ena_assert:   boolean := false;
+    variable ena_cmd_T1:   std_logic;
+    variable info_T1:      std_logic_vector(1 downto 0);
+
+  begin
+    if nRst'event and nRst = '0' then
+      ena_assert := false;
+
+    elsif nRst'event and nRst = '1' and nRst'last_value = '0' then
+      ena_assert := true;
+
+    elsif clk'event and clk = '1' and ena_assert then
+	
+	-- CODIGO PARA SER COMPLETADO POR EL ESTUDIANTE
+	
+    end if;
+  end process;
+
+  
+  -- MONITOR 7
+  -- Verificación de time-out
+  process(clk, nRst)
+    variable info_T1:    std_logic_vector(1 downto 0);
+    variable cnt: natural := 0;
+    variable ena_assert: boolean := false;
+
+  begin
+    if nRst'event and nRst = '0' then
+      ena_assert := false;
+      cnt := 0;
+
+    elsif nRst'event and nRst = '1' and nRst'last_value = '0' then
+      ena_assert := true;
+
+    elsif clk'event and clk = '1' and ena_assert then
+      info_T1 := info;
+
+	  -- Se ha pulsado una tecla
+      if info_T1 = 0 or ena_cmd = '1' or pulso_largo = '1' then
+        cnt := 0;
+
+      elsif cnt = 7 then
+        cnt := 0;
+        assert info = 0
+        report "Error: ignorado time-out de fin de programación"
+        severity error;
+
+	  -- Ha transcurrido un segundo y no se ha pulsado ninguna tecla
+      elsif tic_1s = '1' and ena_cmd = '0' then
+        cnt := cnt + 1;       
+
+      end if;
+    end if;
+  end process;
+  
+
+  -- MONITOR 8
+  process(clk, nRst)
+    variable info_T1:    std_logic_vector(1 downto 0);
+    variable ena_assert: boolean := false;
+    variable ena_cmd_T1: std_logic;
+    variable cmd_tecla_T1: std_logic_vector(3 downto 0);
+
+  begin
+    if nRst'event and nRst = '0' then
+      ena_assert := false;
+
+    elsif nRst'event and nRst = '1' and nRst'last_value = '0'then
+      ena_assert := true;
+
+    elsif clk'event and clk = '1' and ena_assert then
+      if ena_cmd_T1 = '1' and cmd_tecla_T1 = X"B" and info_T1 /= 0 then
+        if info_T1 = 1 then
+          assert info = 2
+          report "Error de tipo 1 detectado por el monitor 8"  -- TEXTO PARA SER MOFIFICADO CON UN MENSAJE MAS EXPLICATIVO
+          severity error;
+
+        else
+          assert info = 1
+          report "Error de tipo 2 detectado por el monitor 8"  -- TEXTO PARA SER MOFIFICADO CON UN MENSAJE MAS EXPLICATIVO
+          severity error;
+
+        end if;
+
+      end if;
+      cmd_tecla_T1 := cmd_tecla;
+      ena_cmd_T1 := ena_cmd;
+      info_T1 := info;
+
+    end if;
+  end process;
+
+  
+  -- MONITOR 9
+  -- Verificación de incremento de campo
+  process(clk, nRst)
+    variable hora_T1: std_logic_vector(15 downto 0);
+    variable ena_assert:     boolean := false;
+    variable pulso_largo_T1: std_logic;
+    variable tic_025s_T1:     std_logic;
+    variable cmd_tecla_T1:   std_logic_vector(3 downto 0);
+    variable info_T1: std_logic_vector(1 downto 0);
+    variable ena_cmd_T1: std_logic;
+
+  begin
+    if nRst'event and nRst = '0' then
+      ena_assert := false;
+
+    elsif nRst'event and nRst = '1' and nRst'last_value = '0' then
+      ena_assert := true;
+
+    elsif clk'event and clk = '1' and ena_assert then
+      if ((pulso_largo_T1 = '1' and cmd_tecla_T1 = X"C" and tic_025s_T1 = '1') or 
+		  (ena_cmd_T1 = '1' and cmd_tecla_T1 = X"C")) and info_T1 /= 0 then
+		  
+		-- Se incrementan los minutos  
+        if info_T1 = 1 then
+		  if minutos /= 0 then -- si minutos no es "00"
+
+			if minutos(3 downto 0) /= 0 then  -- Si minutos no es "X0"
+				-- El campo minutos se ha incrementado
+				assert ((hora_T1(7 downto 0) + 1) = minutos) and horas = hora_T1(15 downto 8) 
+				report "Error en incremento de minutos "
+				severity error;
+				
+			else  -- Minutos es "X0"
+				-- La unidades de minuto antes eran 9 y las decenas se han incrementado
+				assert ((hora_T1(7 downto 4) + 1) = minutos(7 downto 4)) and
+                     hora_T1(3 downto 0) = 9  and horas = hora_T1(15 downto 8)
+				report "Error en incremento de minutos "
+				severity error;
+				
+			end if;
+
+  		  elsif info_T1 = 1 then  -- Minutos es "00"
+		    -- Anteriormente los minutos eran 59 y las horas no han cambiado
+			assert hora_T1(7 downto 0) = X"59" and horas = hora_T1(15 downto 8)
+			report "Error en incremento de minutos "
+			severity error;
+
+  		  end if;
+		  
+		-- Se incrementan las horas  
+		else  
+		  if horas /= 0 then		-- horas no son "00"
+		  
+			if horas(3 downto 0) /= 0 then -- Si horas no es "X0"
+				assert ((hora_T1(15 downto 8) + 1) = horas) and minutos = hora_T1(7 downto 0)
+				report "Error en incremento de horas"
+				severity error;
+
+			else  -- horas es "X0"
+				-- Se incrementan las decenas de hora y las unidades de hora eran 9
+				assert ((hora_T1(15 downto 12) + 1) = horas(7 downto 4)) and 
+                     hora_T1(11 downto 8) = 9  and minutos = hora_T1(7 downto 0)
+				report "Error en incremento de horas"
+				severity error;
+
+			end if;
+
+          elsif modo = '0' then  -- horas es "00" en el modo 12 h
+		    -- Anteriomente debian ser las 11 y los minutos no han cambiado
+			assert hora_T1(15 downto 8) = X"11" and minutos = hora_T1(7 downto 0)
+			report "Error en incremento de horas"
+			severity error;
+
+          else		-- horas es "00" en el modo 24 h
+		    -- Anteriomente debian ser las 23 y los minutos no han cambiado
+			assert hora_T1(15 downto 8) = X"23" and minutos = hora_T1(7 downto 0)
+			report "Error en incremento de horas"
+			severity error;
+		  
+        end if;
+      end if;
+	 end if;
+	  if pulso_largo_T1 = '1' then
+        if tic_025s_T1 = '1' then
+          hora_T1 := horas&minutos;
+        end if;
+      else
+        hora_T1 := horas&minutos;
+	  end if;
+      pulso_largo_T1 := pulso_largo;
+      tic_025s_T1 := tic_025s;
+      cmd_tecla_T1 := cmd_tecla;
+      info_T1 := info;
+      ena_cmd_T1 := ena_cmd;
+
+    end if;
+  end process;
+
+  
+end test;
