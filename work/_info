@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2
 Ecnt_horas
-Z1 w1771754393
+Z1 w1772037656
 Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
@@ -23,9 +23,9 @@ VgZ09N_BXgFB5beZClimVT0
 !s100 aI8e><ABL=BzoeDnk=bS92
 Z8 OV;C;10.4d;61
 32
-Z9 !s110 1771754663
+Z9 !s110 1772039193
 !i10b 1
-Z10 !s108 1771754663.000000
+Z10 !s108 1772039193.000000
 Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_horas.vhd|
 Z12 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_horas.vhd|
 !i113 1
@@ -36,11 +36,11 @@ R2
 R3
 R4
 R5
-DEx4 work 9 cnt_horas 0 22 gZ09N_BXgFB5beZClimVT0
+Z15 DEx4 work 9 cnt_horas 0 22 gZ09N_BXgFB5beZClimVT0
 l32
 L19
-V_eEEM@LHm6O_T=FJa_XFZ3
-!s100 aPkB@:;dh3d8lekb9^NYA1
+VnZ3PGATjI0>j3Ko7@IUI_3
+!s100 O^`V@UFh=bLPAZh;?R[gc1
 R8
 32
 R9
@@ -52,14 +52,14 @@ R12
 R13
 R14
 Ecnt_min
-R1
+Z16 w1771754393
 R2
 R3
 R4
 R5
 R0
-Z15 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_min.vhd
-Z16 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_min.vhd
+Z17 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_min.vhd
+Z18 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_min.vhd
 l0
 L5
 V]zXWi[8NkAgh4G5^7PYQ@3
@@ -69,8 +69,8 @@ R8
 R9
 !i10b 1
 R10
-Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_min.vhd|
-Z18 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_min.vhd|
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_min.vhd|
+Z20 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_min.vhd|
 !i113 1
 R13
 R14
@@ -79,7 +79,7 @@ R2
 R3
 R4
 R5
-DEx4 work 7 cnt_min 0 22 ]zXWi[8NkAgh4G5^7PYQ@3
+Z21 DEx4 work 7 cnt_min 0 22 ]zXWi[8NkAgh4G5^7PYQ@3
 l20
 L17
 Veh08dW_o@gST^O7G230W>3
@@ -89,54 +89,77 @@ R8
 R9
 !i10b 1
 R10
-R17
-R18
+R19
+R20
 !i113 1
 R13
 R14
 Ecnt_reloj
-R1
+Z22 w1772032893
 R2
 R3
 R4
 R5
 R0
-8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_reloj.vhd
-FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_reloj.vhd
+Z23 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_reloj.vhd
+Z24 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_reloj.vhd
 l0
 L5
 VVb1Vje8ILh9SoE0a[V;iK2
 !s100 76RXSk:YS<>>Yfd3`Pz1J3
 R8
 32
-Z19 !s110 1771754664
+Z25 !s110 1772039194
 !i10b 1
-Z20 !s108 1771754664.000000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_reloj.vhd|
-!s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_reloj.vhd|
+Z26 !s108 1772039194.000000
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_reloj.vhd|
+Z28 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_reloj.vhd|
+!i113 1
+R13
+R14
+Aestructural
+R15
+R21
+Z29 DEx4 work 7 cnt_seg 0 22 @BOMCPTUeZ`:4gHRK@Bn33
+R2
+R3
+R4
+R5
+Z30 DEx4 work 9 cnt_reloj 0 22 Vb1Vje8ILh9SoE0a[V;iK2
+l26
+L22
+Va7FfRc`fbg>n1L5`_6>2C3
+!s100 m2JX]PDP7ePdY=@O]UUGP3
+R8
+32
+R25
+!i10b 1
+R26
+R27
+R28
 !i113 1
 R13
 R14
 Ecnt_seg
-R1
+R16
 R2
 R3
 R4
 R5
 R0
-Z21 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_seg.vhd
-Z22 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_seg.vhd
+Z31 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_seg.vhd
+Z32 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_seg.vhd
 l0
 L5
 V@BOMCPTUeZ`:4gHRK@Bn33
 !s100 <H<dG<kLmzAY7J3?Di<9S0
 R8
 32
-R19
+R25
 !i10b 1
-R20
-Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_seg.vhd|
-Z24 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_seg.vhd|
+R26
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_seg.vhd|
+Z34 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/cnt_seg.vhd|
 !i113 1
 R13
 R14
@@ -145,41 +168,41 @@ R2
 R3
 R4
 R5
-DEx4 work 7 cnt_seg 0 22 @BOMCPTUeZ`:4gHRK@Bn33
+R29
 l18
 L15
 VD1?CbiNnSZ`]D0J]0CdD^0
 !s100 Zk>A@O@^mYb_KDeY1d@FC2
 R8
 32
-R19
+R25
 !i10b 1
-R20
-R23
-R24
+R26
+R33
+R34
 !i113 1
 R13
 R14
 Ectrl_reloj
-R1
+R16
 R2
 R3
 R4
 R5
 R0
-Z25 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/ctrl_reloj.vhd
-Z26 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/ctrl_reloj.vhd
+Z35 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/ctrl_reloj.vhd
+Z36 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/ctrl_reloj.vhd
 l0
 L5
 V9SQ=z_S?LCJ==A25hh:oF2
 !s100 94:m`kOJoCWd18`UD@h;S1
 R8
 32
-R19
+R25
 !i10b 1
-R20
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/ctrl_reloj.vhd|
-Z28 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/ctrl_reloj.vhd|
+R26
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/ctrl_reloj.vhd|
+Z38 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/ctrl_reloj.vhd|
 !i113 1
 R13
 R14
@@ -188,63 +211,245 @@ R2
 R3
 R4
 R5
-Z29 DEx4 work 10 ctrl_reloj 0 22 9SQ=z_S?LCJ==A25hh:oF2
+Z39 DEx4 work 10 ctrl_reloj 0 22 9SQ=z_S?LCJ==A25hh:oF2
 l43
 L23
 V;2<K;>`dAA_8LWRJh[R@z1
 !s100 5DVUjigBo1mKjcYbk``zh3
 R8
 32
-R19
+R25
 !i10b 1
-R20
-R27
-R28
+R26
+R37
+R38
+!i113 1
+R13
+R14
+Ppack_test_reloj
+R2
+R3
+R4
+R5
+Z40 w1772035321
+R0
+Z41 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/pack_test_reloj.vhd
+Z42 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/pack_test_reloj.vhd
+l0
+L5
+V<=dn]O0z8aKzSYk]glN?U1
+!s100 VPEWzGVTWlBQTZVVD43<11
+R8
+32
+b1
+R25
+!i10b 1
+R26
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/pack_test_reloj.vhd|
+Z44 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/pack_test_reloj.vhd|
+!i113 1
+R13
+R14
+Bbody
+Z45 DPx4 work 15 pack_test_reloj 0 22 <=dn]O0z8aKzSYk]glN?U1
+R2
+R3
+R4
+R5
+l0
+L68
+V4?Bd@QQnNdOA=zfX0D^Qe3
+!s100 dneX_E5=?26^QRRoISjGC3
+R8
+32
+R25
+!i10b 1
+R26
+R43
+R44
 !i113 1
 R13
 R14
 Ereloj
-R1
+R16
 R2
 R3
 R4
 R5
 R0
-Z30 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/reloj.vhd
-Z31 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/reloj.vhd
+Z46 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/reloj.vhd
+Z47 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/reloj.vhd
 l0
 L5
 V;FUGaHmTd7B2PmQIP`S[m0
 !s100 ;3c`LK7ZkEUQ;S[S62FB>2
 R8
 32
-R19
+R25
 !i10b 1
-R20
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/reloj.vhd|
-Z33 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/reloj.vhd|
+R26
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/reloj.vhd|
+Z49 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/reloj.vhd|
 !i113 1
 R13
 R14
 Aestructural
-DEx4 work 9 cnt_reloj 0 22 Vb1Vje8ILh9SoE0a[V;iK2
-R29
+R30
+R39
 R2
 R3
 R4
 R5
-DEx4 work 5 reloj 0 22 ;FUGaHmTd7B2PmQIP`S[m0
+Z50 DEx4 work 5 reloj 0 22 ;FUGaHmTd7B2PmQIP`S[m0
 l29
 L22
 V^Ph6TL>BKB]^:jeMaTR`Q0
 !s100 =2^z:`D`1<kFjL?OzX_RZ2
 R8
 32
-R19
+R25
 !i10b 1
-R20
-R32
-R33
+R26
+R48
+R49
+!i113 1
+R13
+R14
+Etest_estimulos_reloj
+Z51 w1772039176
+R45
+R2
+R3
+R4
+R5
+R0
+Z52 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/test_estimulos_reloj.vhd
+Z53 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/test_estimulos_reloj.vhd
+l0
+L7
+V?nMN2bb2DXRNi0Bl]3o7h0
+!s100 _^@5<Pj14_AK1YO;eHzdS3
+R8
+32
+R25
+!i10b 1
+R26
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/test_estimulos_reloj.vhd|
+Z55 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/test_estimulos_reloj.vhd|
+!i113 1
+R13
+R14
+Atest
+R45
+R2
+R3
+R4
+R5
+Z56 DEx4 work 20 test_estimulos_reloj 0 22 ?nMN2bb2DXRNi0Bl]3o7h0
+l26
+L24
+Vz>jdGQW;_dI`mkkMQ=kbG3
+!s100 kH?<clH:O0O0TWk=EM1@:1
+R8
+32
+R25
+!i10b 1
+R26
+R54
+R55
+!i113 1
+R13
+R14
+Etest_monitor_reloj
+Z57 w1771866317
+R45
+R2
+R3
+R4
+R5
+R0
+Z58 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/test_monitor_reloj.vhd
+Z59 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/test_monitor_reloj.vhd
+l0
+L7
+VT77AY2;KKe[nMmj3^hD@43
+!s100 O^]AL_gmU>gRKKK:>5FiN2
+R8
+32
+R25
+!i10b 1
+R26
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/test_monitor_reloj.vhd|
+Z61 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/test_monitor_reloj.vhd|
+!i113 1
+R13
+R14
+Atest
+R45
+R2
+R3
+R4
+R5
+Z62 DEx4 work 18 test_monitor_reloj 0 22 T77AY2;KKe[nMmj3^hD@43
+l26
+L24
+VY`Jj9=;<DC[8d>2kL9_IB0
+!s100 F3jXVM=504Pceg50WlGU11
+R8
+32
+R25
+!i10b 1
+R26
+R60
+R61
+!i113 1
+R13
+R14
+Etest_reloj
+Z63 w1771865259
+R45
+R2
+R3
+R4
+R5
+R0
+Z64 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/test_reloj.vhd
+Z65 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/test_reloj.vhd
+l0
+L7
+VG^nWI0iVzIm;]Td8]GXcf1
+!s100 Mnj]8jAL<FF]:Ci9`7iWD1
+R8
+32
+R25
+!i10b 1
+R26
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/test_reloj.vhd|
+Z67 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/test_reloj.vhd|
+!i113 1
+R13
+R14
+Atest
+R62
+R56
+R50
+R45
+R2
+R3
+R4
+R5
+Z68 DEx4 work 10 test_reloj 0 22 G^nWI0iVzIm;]Td8]GXcf1
+l28
+L10
+Z69 Vk^z7e:=zzH>jM[lF@W9Q21
+Z70 !s100 e5I8^YBJ:F5?LNCl5_kTd1
+R8
+32
+R25
+!i10b 1
+R26
+R66
+R67
 !i113 1
 R13
 R14

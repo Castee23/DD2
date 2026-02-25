@@ -133,7 +133,7 @@ begin
     elsif clk'event and clk = '1' and ena_assert then
       if tic_1s = '1' and info = 0 and info_T1 = 0 and (horas&minutos&segundos) /= 0 and programado = '0' then
         assert (hora_to_natural(hora_T1) + 1) = hora_to_natural(horas&minutos&segundos)
-        report "Error de tipo 1 detectado por el monitor 2: NO SE HA INCREMENTADO 1 SEGUNDO RESPECTO A LA HORA ANTERIOR" 
+        report "Error de tipo 1 detectado por el monitor 2: NO SE HA INCREMENTADO 1 SEGUNDO RESPECTO A LA HORA ANTERIOR"; 
 	-- Comprobacion 3)
       elsif tic_1s = '1' and info = 0 and info_T1 = 0 and programado = '0' then
         assert (hora_T1 = X"115959" and modo = '0') or (hora_T1 = X"235959" and modo = '1')

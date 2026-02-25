@@ -83,56 +83,56 @@ begin
 
 	--Desbordamos la hora, en este caso mediante las pulsaciones cortas y modo 24 horas.
 
-	programar_hora_inc_corto(ena_cmd,cmd_tecla,horas,minutos,AM_PM,clk,'0',X"23"&X"59");
+	--programar_hora_inc_corto(ena_cmd,cmd_tecla,horas,minutos,AM_PM,clk,'0',X"23"&X"59");
 
-	fin_prog(ena_cmd,cmd_tecla,clk);
+	--fin_prog(ena_cmd,cmd_tecla,clk);
 
 
 	--Desbordamos la hora, en este caso mediante las pulsaciones largas y modo 24 horas.
 
-	entrar_modo_prog(pulso_largo, cmd_tecla, clk, 15);
+	--entrar_modo_prog(pulso_largo, cmd_tecla, clk, 15);
 
-	programar_hora_inc_largo(pulso_largo,ena_cmd,cmd_tecla,horas,minutos,AM_PM,clk,'0',X"23"&X"58");
-	fin_prog(ena_cmd,cmd_tecla,clk);
+	--programar_hora_inc_largo(pulso_largo,ena_cmd,cmd_tecla,horas,minutos,AM_PM,clk,'0',X"23"&X"58");
+	--fin_prog(ena_cmd,cmd_tecla,clk);
 
-	for i in 1 to 121 loop
+	--for i in 1 to 121 loop
 
-        wait until clk'event and clk = '1';
+        --wait until clk'event and clk = '1';
 
-    	end loop;
+    	--end loop;
 
 
 	--Cambiamos el modo 12 horas y volvemos a entrar en el modo programación
 
-	cambiar_modo_12_24(ena_cmd, cmd_tecla, clk);
-	entrar_modo_prog(pulso_largo, cmd_tecla, clk, 15);
+	--cambiar_modo_12_24(ena_cmd, cmd_tecla, clk);
+	--entrar_modo_prog(pulso_largo, cmd_tecla, clk, 15);
 
 	--Desbordamos la hora, en este caso mediante las pulsaciones cortas y modo 12 horas.
 
-	programar_hora_inc_corto(ena_cmd,cmd_tecla,horas,minutos,AM_PM,clk,'0',X"11"&X"59");
+	--programar_hora_inc_corto(ena_cmd,cmd_tecla,horas,minutos,AM_PM,clk,'0',X"11"&X"59");
 
-	fin_prog(ena_cmd,cmd_tecla,clk);
+	--fin_prog(ena_cmd,cmd_tecla,clk);
 
 
 	--Desbordamos la hora, en este caso mediante las pulsaciones largas y modo 12 horas.
 
-	entrar_modo_prog(pulso_largo, cmd_tecla, clk, 15);
+	--entrar_modo_prog(pulso_largo, cmd_tecla, clk, 15);
 
 	--programar_hora_inc_largo(pulso_largo,ena_cmd,cmd_tecla,horas,minutos,AM_PM,clk,'1',X"11"&X"58");
-	fin_prog(ena_cmd,cmd_tecla,clk);
+	--fin_prog(ena_cmd,cmd_tecla,clk);
 
-	for i in 1 to 121 loop
+	--for i in 1 to 121 loop
 
-        wait until clk'event and clk = '1';
+        --wait until clk'event and clk = '1';
 
-    	end loop;
+    	--end loop;
 
 	--Finalmente introducimos un valor sin sentido por teclado
 
 	entrar_modo_prog(pulso_largo, cmd_tecla, clk, 15);
 	
-	tecleo(ena_cmd, cmd_tecla, clk, X"8");
-	tecleo(ena_cmd, cmd_tecla, clk, X"5");
+	tecleo(ena_cmd, cmd_tecla, clk, X"1");
+	tecleo(ena_cmd, cmd_tecla, clk, X"0");
 
 	fin_prog(ena_cmd,cmd_tecla,clk);
 

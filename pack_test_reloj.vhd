@@ -93,8 +93,8 @@ package body pack_test_reloj is
                              constant valor:       in  std_logic_vector(15 downto 0)) is
   begin
   
-	while AM_PM \= periodo and horas /= valor(15 downto 8) and minutos /= valor(7 downto 0) loop
-		while until clk'event and clk = '1';
+	while AM_PM /= periodo and horas /= valor(15 downto 8) and minutos /= valor(7 downto 0) loop
+		wait until clk'event and clk = '1';
 	end loop; 
 	
   end procedure;
@@ -157,7 +157,7 @@ package body pack_test_reloj is
   procedure time_out(signal   clk:       in  std_logic) is
   begin
     for i in 1 to 8*16 loop -- el tic esta escalado: 1 tic son 16 clks; esperamos 8 tics
-      wait until clk'event and clk = '1';
+         wait until clk'event and clk = '1';
 
     end loop;
   end procedure;
@@ -167,9 +167,9 @@ package body pack_test_reloj is
                                       signal   cmd_tecla: out std_logic_vector(3 downto 0);
                                       signal   horas:     in  std_logic_vector(7 downto 0);
                                       signal   minutos:   in  std_logic_vector(7 downto 0);   
-									  signal   AM_PM:     in  std_logic;   
+				      signal   AM_PM:     in  std_logic;   
                                       signal   clk:       in  std_logic;
-									  constant periodo:   in  std_logic;
+				      constant periodo:   in  std_logic;
                                       constant valor:     in  std_logic_vector(15 downto 0)) is
 
   begin
@@ -186,21 +186,32 @@ package body pack_test_reloj is
 
    end procedure; 
 
-  -- Programar un a hora con el comando de incremento continuo
+  -- Programar una hora con el comando de incremento continuo
   procedure programar_hora_inc_largo (signal   pulso_largo: out std_logic; 
                                       signal   ena_cmd:     out std_logic;
                                       signal   cmd_tecla:   out std_logic_vector(3 downto 0);
                                       signal   horas:       in  std_logic_vector(7 downto 0);
                                       signal   minutos:     in  std_logic_vector(7 downto 0);   
-									  signal   AM_PM:     in  std_logic;   
+				      signal   AM_PM:     in  std_logic;   
                                       signal   clk:         in  std_logic;
-									  constant periodo:   in  std_logic;
+				      constant periodo:   in  std_logic;
                                       constant valor:       in  std_logic_vector(15 downto 0)) is
 
   begin
+   pulso_largo <= '1';
+   cmd_tecla<=X"C";
+   while horas /= valor(15 downto 8) or AM_PM /= periodo loop
+     wait until clk'event and clk = '1';
+   end loop;
 
-	-- CODIGO A COMPLETAR POR EL ESTUDIANTE
+   tecleo(ena_cmd, cmd_tecla, clk, X"B");
 
+   while minutos /= valor(7 downto 0) loop
+     wait until clk'event and clk = '1';
+   end loop;
+
+   pulso_largo <= '0';
+ 
   end procedure; 
 
 

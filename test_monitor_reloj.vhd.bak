@@ -133,7 +133,7 @@ begin
     elsif clk'event and clk = '1' and ena_assert then
       if tic_1s = '1' and info = 0 and info_T1 = 0 and (horas&minutos&segundos) /= 0 and programado = '0' then
         assert (hora_to_natural(hora_T1) + 1) = hora_to_natural(horas&minutos&segundos)
-        report "Error de tipo 1 detectado por el monitor 2: NO SE HA INCREMENTADO 1 SEGUNDO RESPECTO A LA HORA ANTERIOR" 
+        report; "Error de tipo 1 detectado por el monitor 2: NO SE HA INCREMENTADO 1 SEGUNDO RESPECTO A LA HORA ANTERIOR" 
 	-- Comprobacion 3)
       elsif tic_1s = '1' and info = 0 and info_T1 = 0 and programado = '0' then
         assert (hora_T1 = X"115959" and modo = '0') or (hora_T1 = X"235959" and modo = '1')
@@ -263,11 +263,11 @@ begin
 		-- 2) Comprueba la matematica al cambiar el formato entre el modo 12h y 24h. 
 		--    Se activa justo un ciclo de reloj despues de que el usuario pulse la tecla D: cambio de modo 12-24 (estando en el modo programacion)(ena_cmd_T1 = 1 y tecla_T1 = XD).
 		-- 3) Si el sistema acaba de pasar al modo 24h (modo = 1), verifica la conversion de 12h a 24h:
-			-- 3.1) Si antes era por la manyana (AM_PM_T1 = 0), comprueba que la hora actual y la antigua sean exactamente iguales (ej. 08:00 AM pasa a 08:00).
-			-- 3.2) Si antes era por la tarde (AM_PM_T1 = 1), comprueba matematicamente que la nueva hora natural sea igual a la hora antigua mas 12 horas (ej. 08:00 PM pasa a 20:00).
+			-- 3.1) Si antes era AM (AM_PM_T1 = 0), comprueba que la hora actual y la antigua sean exactamente iguales (ej. 08:00 AM pasa a 08:00).
+			-- 3.2) Si antes era PM (AM_PM_T1 = 1), comprueba que la nueva hora natural sea igual a la hora antigua mas 12 horas (ej. 08:00 PM pasa a 20:00).
 		-- 4) Si el sistema acaba de pasar al modo 12h (verificado por el elsif), verifica la conversion de 24h a 12h:
 			-- 4.1) Si la hora antigua era menor a las 12:00:00 (hora_T1 < X120000), comprueba que la nueva hora se mantenga identica a la antigua.
-			-- 4.2) Si la hora antigua era las 12:00:00 o superior, comprueba matematicamente que la nueva hora natural sea igual a la hora antigua menos 12 horas.
+			-- 4.2) Si la hora antigua era las 12:00:00 o superior, comprueba que la nueva hora natural sea igual a la hora antigua menos 12 horas.
   process(clk, nRst)
     variable ena_cmd_T1: std_logic;
     variable tecla_T1:   std_logic_vector(3 downto 0);
@@ -287,25 +287,30 @@ begin
 	-- 2)
     elsif clk'event and clk = '1' and ena_assert then
       if ena_cmd_T1 = '1'  and tecla_T1 = X"D" then
+		-- 3) 
         if modo = '1' then
+		  -- 3.1)
           if AM_PM_T1 = '0' then 
             assert hora_T1 = (horas&minutos&X"00")
             report "Error en cambio de formato de hora de 12 a 24"
             severity error;
 
           else
+	 	    -- 3.2)
             assert (hora_to_natural(hora_T1) + 12*3600) = hora_to_natural(horas&minutos&X"00")
             report "Error en cambio de formato de hora de 12 a 24"
             severity error;
 
           end if;
-
+		--4)
         elsif hora_T1 < X"120000" then
+			--4.1)
             assert hora_T1 = (horas&minutos&X"00")
             report "Error en cambio de formato de hora de 24 a 12"
             severity error;
 
         else
+		  -- 4.2)
           assert (hora_to_natural(hora_T1) - 12*3600) = hora_to_natural(horas&minutos&X"00")
           report "Error en cambio de formato de hora de 24 a 12"
           severity error;

@@ -122,8 +122,8 @@ begin
   end process;
   
   ena_decenas_horas <= ena or inc_campo when horas(3 downto 0) = 9        else
-                       ena or inc_campo when horas = X"23"                else
-                       ena or inc_campo when horas = X"11" and modo = '0' else
+                       ena or inc_campo when horas > X"23"                else
+                       ena or inc_campo when horas > X"11" and modo = '0' else
                        '0';
 
   process(clk, nRst)    -- Decenas de horas
