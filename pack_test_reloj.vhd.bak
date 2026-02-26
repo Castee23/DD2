@@ -199,23 +199,9 @@ package body pack_test_reloj is
 
   begin
 
-   pulso_largo <= '1';
-   cmd_tecla<=X"C";
-   while horas /= valor(15 downto 8) or AM_PM /= periodo loop
-     wait until clk'event and clk = '1';
-   end loop;
+	-- CODIGO A COMPLETAR POR EL ESTUDIANTE
 
-   tecleo(ena_cmd, cmd_tecla, clk, X"B");
-
-   while minutos /= valor(7 downto 0) loop
-     wait until clk'event and clk = '1';
-   end loop;
-
-   pulso_largo <= '0';
- 
   end procedure; 
-
-
 
 
 end package body pack_test_reloj;

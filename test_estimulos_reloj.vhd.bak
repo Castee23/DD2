@@ -91,7 +91,7 @@ begin
     severity error;
 
     
-    report "Prueba incremento rapido";
+    report "Prueba incremento rapido"
     cmd_tecla <= X"C";
     ena_cmd   <= '1';
 
