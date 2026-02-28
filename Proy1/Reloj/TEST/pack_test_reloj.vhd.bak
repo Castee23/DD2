@@ -63,6 +63,12 @@ package pack_test_reloj is
 									  constant periodo:   in  std_logic;
                                       constant valor:       in  std_logic_vector(15 downto 0));
 
+  -- Programar una hora indicando el valor de cada campo por introduccion numérica
+  procedure programar_hora_directa (signal ena_cmd: out std_logic;
+                                    signal cmd_tecla: out std_logic_vector(3 downto 0);
+                                    signal clk: in std_logic;
+                                    constant valor: in std_logic_vector(15 downto 0));
+
 end package;
 
 package body pack_test_reloj is
@@ -217,5 +223,23 @@ package body pack_test_reloj is
 
   end procedure; 
 
+  -- Programar una hora indicando el valor de cada campo por introduccion numérica
+  procedure programar_hora_directa (signal ena_cmd: out std_logic;
+                                    signal cmd_tecla: out std_logic_vector(3 downto 0);
+                                    signal clk: in std_logic;
+                                    constant valor: in std_logic_vector(15 downto 0)) is
+  begin
+
+    tecleo(ena_cmd, cmd_tecla, clk, valor(3 downto 0));
+    tecleo(ena_cmd, cmd_tecla, clk, X"B");
+
+    tecleo(ena_cmd, cmd_tecla, clk, valor(7 downto 4));
+    tecleo(ena_cmd, cmd_tecla, clk, X"B");
+
+    tecleo(ena_cmd, cmd_tecla, clk, valor(11 downto 8));
+    tecleo(ena_cmd, cmd_tecla, clk, X"B");
+
+    tecleo(ena_cmd, cmd_tecla, clk, valor(15 downto 12));
+  end procedure;
 
 end package body pack_test_reloj;
