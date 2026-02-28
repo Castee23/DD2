@@ -229,16 +229,13 @@ package body pack_test_reloj is
                                     signal clk: in std_logic;
                                     constant valor: in std_logic_vector(15 downto 0)) is
   begin
-    tecleo(ena_cmd, cmd_tecla, clk, valor(3 downto 0));
-    tecleo(ena_cmd, cmd_tecla, clk, X"B");
-
     tecleo(ena_cmd, cmd_tecla, clk, valor(7 downto 4));
-    tecleo(ena_cmd, cmd_tecla, clk, X"B");
+    tecleo(ena_cmd, cmd_tecla, clk, valor(3 downto 0));
 
-    tecleo(ena_cmd, cmd_tecla, clk, valor(11 downto 8));
     tecleo(ena_cmd, cmd_tecla, clk, X"B");
 
     tecleo(ena_cmd, cmd_tecla, clk, valor(15 downto 12));
+    tecleo(ena_cmd, cmd_tecla, clk, valor(11 downto 8));
   end procedure;
 
 end package body pack_test_reloj;

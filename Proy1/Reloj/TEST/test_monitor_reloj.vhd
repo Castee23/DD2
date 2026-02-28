@@ -358,7 +358,7 @@ begin
     elsif clk'event and clk = '1' and ena_assert then
       if pulso_largo_T1 = '1' and cmd_tecla_T1 = X"A" and info_T1 = 0 then
         assert  info = 2
-        report "Error detectado por el monitor 5"  -- TEXTO PARA SER MOFIFICADO CON UN MENSAJE MAS EXPLICATIVO
+        report "Error al entrar al modo edicion"  -- TEXTO PARA SER MOFIFICADO CON UN MENSAJE MAS EXPLICATIVO
         severity error;
       end if;
 
@@ -388,7 +388,16 @@ begin
     elsif clk'event and clk = '1' and ena_assert then
 	
 	-- CODIGO PARA SER COMPLETADO POR EL ESTUDIANTE
-	
+      if ena_cmd_T1 = '1' and cmd_tecla_T1 = X"A" and info_T1 /= 0 then
+        assert  info = 0
+        report "Error al salir del modo edicion"
+        severity error;
+      end if;
+
+      cmd_tecla_T1 := cmd_tecla;
+      ena_cmd_T1 := ena_cmd;
+      info_T1 := info;
+
     end if;
   end process;
 
@@ -448,12 +457,12 @@ begin
       if ena_cmd_T1 = '1' and cmd_tecla_T1 = X"B" and info_T1 /= 0 then
         if info_T1 = 1 then
           assert info = 2
-          report "Error de tipo 1 detectado por el monitor 8"  -- TEXTO PARA SER MOFIFICADO CON UN MENSAJE MAS EXPLICATIVO
+          report "Error al cambiar el campo en edicion de minutos a horas"  -- TEXTO PARA SER MOFIFICADO CON UN MENSAJE MAS EXPLICATIVO
           severity error;
 
         else
           assert info = 1
-          report "Error de tipo 2 detectado por el monitor 8"  -- TEXTO PARA SER MOFIFICADO CON UN MENSAJE MAS EXPLICATIVO
+          report "Error al cambiar el campo en edicion de horas a minutos"  -- TEXTO PARA SER MOFIFICADO CON UN MENSAJE MAS EXPLICATIVO
           severity error;
 
         end if;
@@ -466,7 +475,7 @@ begin
     end if;
   end process;
 
-  
+
   -- MONITOR 9
   -- Verificación de incremento de campo
   process(clk, nRst)
@@ -487,80 +496,120 @@ begin
 
     elsif clk'event and clk = '1' and ena_assert then
       if ((pulso_largo_T1 = '1' and cmd_tecla_T1 = X"C" and tic_025s_T1 = '1') or 
-		  (ena_cmd_T1 = '1' and cmd_tecla_T1 = X"C")) and info_T1 /= 0 then
+          (ena_cmd_T1 = '1' and cmd_tecla_T1 = X"C")) and info_T1 /= 0 then
 		  
-		-- Se incrementan los minutos  
+        -- Se incrementan los minutos  
         if info_T1 = 1 then
-		  if minutos /= 0 then -- si minutos no es "00"
-
-			if minutos(3 downto 0) /= 0 then  -- Si minutos no es "X0"
-				-- El campo minutos se ha incrementado
-				assert ((hora_T1(7 downto 0) + 1) = minutos) and horas = hora_T1(15 downto 8) 
-				report "Error en incremento de minutos "
-				severity error;
+          if minutos /= 0 then -- si minutos no es "00"
+            if minutos(3 downto 0) /= 0 then  -- Si minutos no es "X0"
+              -- El campo minutos se ha incrementado
+              assert ((hora_T1(7 downto 0) + 1) = minutos) and horas = hora_T1(15 downto 8) 
+              report "Error en incremento de minutos "
+              severity error;
 				
-			else  -- Minutos es "X0"
-				-- La unidades de minuto antes eran 9 y las decenas se han incrementado
-				assert ((hora_T1(7 downto 4) + 1) = minutos(7 downto 4)) and
-                     hora_T1(3 downto 0) = 9  and horas = hora_T1(15 downto 8)
-				report "Error en incremento de minutos "
-				severity error;
-				
-			end if;
+            else  -- Minutos es "X0"
+              -- La unidades de minuto antes eran 9 y las decenas se han incrementado
+              assert ((hora_T1(7 downto 4) + 1) = minutos(7 downto 4)) and
+                       hora_T1(3 downto 0) = 9  and 
+                       horas = hora_T1(15 downto 8)
+              report "Error en incremento de minutos "
+              severity error;
+            end if;
 
-  		  elsif info_T1 = 1 then  -- Minutos es "00"
-		    -- Anteriormente los minutos eran 59 y las horas no han cambiado
-			assert hora_T1(7 downto 0) = X"59" and horas = hora_T1(15 downto 8)
-			report "Error en incremento de minutos "
-			severity error;
+          else  -- Minutos es "00"
+            -- Anteriormente los minutos eran 59 y las horas no han cambiado
+            assert hora_T1(7 downto 0) = X"59" and horas = hora_T1(15 downto 8)
+            report "Error en incremento de minutos "
+            severity error;
 
-  		  end if;
+          end if;
 		  
-		-- Se incrementan las horas  
-		else  
-		  if horas /= 0 then		-- horas no son "00"
-		  
-			if horas(3 downto 0) /= 0 then -- Si horas no es "X0"
-				assert ((hora_T1(15 downto 8) + 1) = horas) and minutos = hora_T1(7 downto 0)
-				report "Error en incremento de horas"
-				severity error;
+        -- Se incrementan las horas  
+        else  
+          if horas /= 0 then  -- horas no son "00"
+            if horas(3 downto 0) /= 0 then  -- Si horas no es "X0"
+              assert ((hora_T1(15 downto 8) + 1) = horas) and minutos = hora_T1(7 downto 0)
+              report "Error en incremento de horas"
+              severity error;
 
-			else  -- horas es "X0"
-				-- Se incrementan las decenas de hora y las unidades de hora eran 9
-				assert ((hora_T1(15 downto 12) + 1) = horas(7 downto 4)) and 
-                     hora_T1(11 downto 8) = 9  and minutos = hora_T1(7 downto 0)
-				report "Error en incremento de horas"
-				severity error;
+            else  -- horas es "X0"
+              -- Se incrementan las decenas de hora y las unidades de hora eran 9
+              assert ((hora_T1(15 downto 12) + 1) = horas(7 downto 4)) and 
+                       hora_T1(11 downto 8) = 9  and
+                       minutos = hora_T1(7 downto 0)
+              report "Error en incremento de horas"
+              severity error;
 
-			end if;
+            end if;
 
           elsif modo = '0' then  -- horas es "00" en el modo 12 h
-		    -- Anteriomente debian ser las 11 y los minutos no han cambiado
-			assert hora_T1(15 downto 8) = X"11" and minutos = hora_T1(7 downto 0)
-			report "Error en incremento de horas"
-			severity error;
+            -- Anteriomente debian ser las 11 y los minutos no han cambiado
+            assert hora_T1(15 downto 8) = X"11" and minutos = hora_T1(7 downto 0)
+            report "Error en incremento de horas"
+            severity error;
 
-          else		-- horas es "00" en el modo 24 h
-		    -- Anteriomente debian ser las 23 y los minutos no han cambiado
-			assert hora_T1(15 downto 8) = X"23" and minutos = hora_T1(7 downto 0)
-			report "Error en incremento de horas"
-			severity error;
+          else  -- horas es "00" en el modo 24 h
+            -- Anteriomente debian ser las 23 y los minutos no han cambiado
+            assert hora_T1(15 downto 8) = X"23" and minutos = hora_T1(7 downto 0)
+            report "Error en incremento de horas"
+            severity error;
 		  
+          end if;
         end if;
       end if;
-	 end if;
-	  if pulso_largo_T1 = '1' then
+
+      if pulso_largo_T1 = '1' then
         if tic_025s_T1 = '1' then
-          hora_T1 := horas&minutos;
+           hora_T1 := horas&minutos;
         end if;
+
       else
         hora_T1 := horas&minutos;
-	  end if;
+      end if;
+
       pulso_largo_T1 := pulso_largo;
       tic_025s_T1 := tic_025s;
       cmd_tecla_T1 := cmd_tecla;
       info_T1 := info;
       ena_cmd_T1 := ena_cmd;
+
+    end if;
+  end process;
+
+
+  --MONITOR 10
+  process(clk, nRst)
+    variable ena_assert:     boolean := false;
+    variable cmd_tecla_T1:   std_logic_vector(3 downto 0);
+    variable info_T1: std_logic_vector(1 downto 0);
+
+  begin
+    if nRst'event and nRst = '0' then
+      ena_assert := false;
+
+    elsif nRst'event and nRst = '1' and nRst'last_value = '0' then
+      ena_assert := true;
+
+    elsif clk'event and clk = '1' and ena_assert then
+      if ena_cmd = '1' and cmd_tecla < x"A" and cmd_tecla_T1 < x"A" and
+         info /= 0 and info_T1 /= 0 then
+        -- Se modifican los minutos
+        if info = 1 then
+          assert minutos(7 downto 0) = cmd_tecla_T1&cmd_tecla
+          report "Error al programar los minutos mediante pulsacion directa"
+          severity error;
+
+        -- Se modifican las horas
+        else
+          assert horas(7 downto 0) = cmd_tecla_T1&cmd_tecla
+          report "Error al programar las horas mediante pulsacion directa"
+          severity error;
+
+        end if;
+      end if;
+
+    cmd_tecla_T1 := cmd_tecla;
+    info_T1 := info;
 
     end if;
   end process;
