@@ -63,6 +63,12 @@ package pack_test_reloj is
 									  constant periodo:   in  std_logic;
                                       constant valor:       in  std_logic_vector(15 downto 0));
 
+  -- Programar una hora indicando el valor de cada campo por introduccion numérica
+  procedure programar_hora_directa (signal ena_cmd: out std_logic;
+                                    signal cmd_tecla: out std_logic_vector(3 downto 0);
+                                    signal clk: in std_logic;
+                                    constant valor: in std_logic_vector(15 downto 0));
+
 end package;
 
 package body pack_test_reloj is
@@ -95,7 +101,7 @@ package body pack_test_reloj is
   
 	-- CODIGO A COMPLETAR POR EL ESTUDIANTE
     wait until horas = valor(15 downto 8) and minutos = valor(7 downto 0) and AM_PM = periodo;
-    --wait until clk'event and clk = '1';
+    wait until clk'event and clk = '1';
 	
   end procedure;
 
@@ -201,8 +207,38 @@ package body pack_test_reloj is
   begin
 
 	-- CODIGO A COMPLETAR POR EL ESTUDIANTE
+    pulso_largo <= '1';
+    cmd_tecla<=X"C";
+    while horas /= valor(15 downto 8) or AM_PM /= periodo loop
+      wait until clk'event and clk = '1';
+    end loop;
+
+    tecleo(ena_cmd, cmd_tecla, clk, X"B");
+
+    while minutos /= valor(7 downto 0) loop
+      wait until clk'event and clk = '1';
+    end loop;
+
+    pulso_largo <= '0';
 
   end procedure; 
 
+  -- Programar una hora indicando el valor de cada campo por introduccion numérica
+  procedure programar_hora_directa (signal ena_cmd: out std_logic;
+                                    signal cmd_tecla: out std_logic_vector(3 downto 0);
+                                    signal clk: in std_logic;
+                                    constant valor: in std_logic_vector(15 downto 0)) is
+  begin
+    tecleo(ena_cmd, cmd_tecla, clk, valor(3 downto 0));
+    tecleo(ena_cmd, cmd_tecla, clk, X"B");
+
+    tecleo(ena_cmd, cmd_tecla, clk, valor(7 downto 4));
+    tecleo(ena_cmd, cmd_tecla, clk, X"B");
+
+    tecleo(ena_cmd, cmd_tecla, clk, valor(11 downto 8));
+    tecleo(ena_cmd, cmd_tecla, clk, X"B");
+
+    tecleo(ena_cmd, cmd_tecla, clk, valor(15 downto 12));
+  end procedure;
 
 end package body pack_test_reloj;

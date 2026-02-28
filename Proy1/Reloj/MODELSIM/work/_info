@@ -9,25 +9,25 @@ z2
 cModel Technology
 dC:/altera_lite/16.0
 Ecnt_horas
-Z0 w1771866404
+Z0 w1772059838
 Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z5 dC:/Users/r.gmoro/Desktop/P1/DD2/MODELSIM
-Z6 8C:/Users/r.gmoro/Desktop/P1/DD2/HDL/cnt_horas.vhd
-Z7 FC:/Users/r.gmoro/Desktop/P1/DD2/HDL/cnt_horas.vhd
+Z5 dC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/MODELSIM
+Z6 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/cnt_horas.vhd
+Z7 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/cnt_horas.vhd
 l0
 L5
 VgZ09N_BXgFB5beZClimVT0
 !s100 aI8e><ABL=BzoeDnk=bS92
 Z8 OV;C;10.4d;61
 32
-Z9 !s110 1771867161
+Z9 !s110 1772282036
 !i10b 1
-Z10 !s108 1771867161.000000
-Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/r.gmoro/Desktop/P1/DD2/HDL/cnt_horas.vhd|
-Z12 !s107 C:/Users/r.gmoro/Desktop/P1/DD2/HDL/cnt_horas.vhd|
+Z10 !s108 1772282036.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/cnt_horas.vhd|
+Z12 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/cnt_horas.vhd|
 !i113 1
 Z13 o-work work -2002 -explicit
 Z14 tExplicit 1
@@ -58,8 +58,8 @@ R2
 R3
 R4
 R5
-Z16 8C:/Users/r.gmoro/Desktop/P1/DD2/HDL/cnt_min.vhd
-Z17 FC:/Users/r.gmoro/Desktop/P1/DD2/HDL/cnt_min.vhd
+Z16 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/cnt_min.vhd
+Z17 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/cnt_min.vhd
 l0
 L5
 V]zXWi[8NkAgh4G5^7PYQ@3
@@ -69,8 +69,8 @@ R8
 R9
 !i10b 1
 R10
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/r.gmoro/Desktop/P1/DD2/HDL/cnt_min.vhd|
-Z19 !s107 C:/Users/r.gmoro/Desktop/P1/DD2/HDL/cnt_min.vhd|
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/cnt_min.vhd|
+Z19 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/cnt_min.vhd|
 !i113 1
 R13
 R14
@@ -101,42 +101,42 @@ R2
 R3
 R4
 R5
-Z21 8C:/Users/r.gmoro/Desktop/P1/DD2/HDL/cnt_reloj.vhd
-Z22 FC:/Users/r.gmoro/Desktop/P1/DD2/HDL/cnt_reloj.vhd
+Z21 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/cnt_reloj.vhd
+Z22 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/cnt_reloj.vhd
 l0
 L5
 VVb1Vje8ILh9SoE0a[V;iK2
 !s100 76RXSk:YS<>>Yfd3`Pz1J3
 R8
 32
-Z23 !s110 1771867162
+R9
 !i10b 1
-Z24 !s108 1771867162.000000
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/r.gmoro/Desktop/P1/DD2/HDL/cnt_reloj.vhd|
-Z26 !s107 C:/Users/r.gmoro/Desktop/P1/DD2/HDL/cnt_reloj.vhd|
+R10
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/cnt_reloj.vhd|
+Z24 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/cnt_reloj.vhd|
 !i113 1
 R13
 R14
 Aestructural
 R15
 R20
-Z27 DEx4 work 7 cnt_seg 0 22 @BOMCPTUeZ`:4gHRK@Bn33
+Z25 DEx4 work 7 cnt_seg 0 22 @BOMCPTUeZ`:4gHRK@Bn33
 R1
 R2
 R3
 R4
-Z28 DEx4 work 9 cnt_reloj 0 22 Vb1Vje8ILh9SoE0a[V;iK2
+Z26 DEx4 work 9 cnt_reloj 0 22 Vb1Vje8ILh9SoE0a[V;iK2
 l26
 L22
 V5Q4]:SLb`k=8`kGPUYV?j1
 !s100 H^k<H=L8?bkmUhV0gbZNK3
 R8
 32
-R23
+R9
 !i10b 1
+R10
+R23
 R24
-R25
-R26
 !i113 1
 R13
 R14
@@ -147,8 +147,8 @@ R2
 R3
 R4
 R5
-Z29 8C:/Users/r.gmoro/Desktop/P1/DD2/HDL/cnt_seg.vhd
-Z30 FC:/Users/r.gmoro/Desktop/P1/DD2/HDL/cnt_seg.vhd
+Z27 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/cnt_seg.vhd
+Z28 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/cnt_seg.vhd
 l0
 L5
 V@BOMCPTUeZ`:4gHRK@Bn33
@@ -158,8 +158,8 @@ R8
 R9
 !i10b 1
 R10
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/r.gmoro/Desktop/P1/DD2/HDL/cnt_seg.vhd|
-Z32 !s107 C:/Users/r.gmoro/Desktop/P1/DD2/HDL/cnt_seg.vhd|
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/cnt_seg.vhd|
+Z30 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/cnt_seg.vhd|
 !i113 1
 R13
 R14
@@ -168,7 +168,7 @@ R1
 R2
 R3
 R4
-R27
+R25
 l18
 L15
 VD1?CbiNnSZ`]D0J]0CdD^0
@@ -178,8 +178,8 @@ R8
 R9
 !i10b 1
 R10
-R31
-R32
+R29
+R30
 !i113 1
 R13
 R14
@@ -190,19 +190,19 @@ R2
 R3
 R4
 R5
-Z33 8C:/Users/r.gmoro/Desktop/P1/DD2/HDL/ctrl_reloj.vhd
-Z34 FC:/Users/r.gmoro/Desktop/P1/DD2/HDL/ctrl_reloj.vhd
+Z31 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/ctrl_reloj.vhd
+Z32 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/ctrl_reloj.vhd
 l0
 L5
 V9SQ=z_S?LCJ==A25hh:oF2
 !s100 94:m`kOJoCWd18`UD@h;S1
 R8
 32
-R9
+Z33 !s110 1772282037
 !i10b 1
-R10
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/r.gmoro/Desktop/P1/DD2/HDL/ctrl_reloj.vhd|
-Z36 !s107 C:/Users/r.gmoro/Desktop/P1/DD2/HDL/ctrl_reloj.vhd|
+Z34 !s108 1772282037.000000
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/ctrl_reloj.vhd|
+Z36 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/ctrl_reloj.vhd|
 !i113 1
 R13
 R14
@@ -218,9 +218,9 @@ V;2<K;>`dAA_8LWRJh[R@z1
 !s100 5DVUjigBo1mKjcYbk``zh3
 R8
 32
-R9
+R33
 !i10b 1
-R10
+R34
 R35
 R36
 !i113 1
@@ -231,42 +231,42 @@ R1
 R2
 R3
 R4
-Z38 w1771864893
+Z38 w1772285160
 R5
-Z39 8C:/Users/r.gmoro/Desktop/P1/DD2/TEST/pack_test_reloj.vhd
-Z40 FC:/Users/r.gmoro/Desktop/P1/DD2/TEST/pack_test_reloj.vhd
+Z39 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/TEST/pack_test_reloj.vhd
+Z40 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/TEST/pack_test_reloj.vhd
 l0
 L5
-V<=dn]O0z8aKzSYk]glN?U1
-!s100 VPEWzGVTWlBQTZVVD43<11
+Voll92P[^chj62VmCPcYOn2
+!s100 KXX7Bc:W<C0RVAJEf?14M0
 R8
 32
 b1
-R9
+Z41 !s110 1772285164
 !i10b 1
-R10
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/r.gmoro/Desktop/P1/DD2/TEST/pack_test_reloj.vhd|
-Z42 !s107 C:/Users/r.gmoro/Desktop/P1/DD2/TEST/pack_test_reloj.vhd|
+Z42 !s108 1772285164.000000
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/TEST/pack_test_reloj.vhd|
+Z44 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/TEST/pack_test_reloj.vhd|
 !i113 1
 R13
 R14
 Bbody
-Z43 DPx4 work 15 pack_test_reloj 0 22 <=dn]O0z8aKzSYk]glN?U1
+DPx4 work 15 pack_test_reloj 0 22 oll92P[^chj62VmCPcYOn2
 R1
 R2
 R3
 R4
 l0
-L68
-VC:ebTBjP<JVUE_E0hk2IY2
-!s100 Pf6Se9B^A8:BDBMJa0>CQ1
+L74
+V]oBk9Si7`c_ke50U<;YV80
+!s100 GQ:?9Sno1]4A98J;Wm2O]0
 R8
 32
-R9
-!i10b 1
-R10
 R41
+!i10b 1
 R42
+R43
+R44
 !i113 1
 R13
 R14
@@ -277,8 +277,8 @@ R2
 R3
 R4
 R5
-Z44 8C:/Users/r.gmoro/Desktop/P1/DD2/HDL/reloj.vhd
-Z45 FC:/Users/r.gmoro/Desktop/P1/DD2/HDL/reloj.vhd
+Z45 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/reloj.vhd
+Z46 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/reloj.vhd
 l0
 L5
 V;FUGaHmTd7B2PmQIP`S[m0
@@ -288,19 +288,19 @@ R8
 R9
 !i10b 1
 R10
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/r.gmoro/Desktop/P1/DD2/HDL/reloj.vhd|
-Z47 !s107 C:/Users/r.gmoro/Desktop/P1/DD2/HDL/reloj.vhd|
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/reloj.vhd|
+Z48 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/HDL/reloj.vhd|
 !i113 1
 R13
 R14
 Aestructural
-R28
+R26
 R37
 R1
 R2
 R3
 R4
-Z48 DEx4 work 5 reloj 0 22 ;FUGaHmTd7B2PmQIP`S[m0
+Z49 DEx4 work 5 reloj 0 22 ;FUGaHmTd7B2PmQIP`S[m0
 l29
 L22
 V^Ph6TL>BKB]^:jeMaTR`Q0
@@ -310,130 +310,130 @@ R8
 R9
 !i10b 1
 R10
-R46
 R47
+R48
 !i113 1
 R13
 R14
 Etest_estimulos_reloj
-R38
-R43
+R0
+Z50 DPx4 work 15 pack_test_reloj 0 22 <=dn]O0z8aKzSYk]glN?U1
 R1
 R2
 R3
 R4
 R5
-Z49 8C:/Users/r.gmoro/Desktop/P1/DD2/TEST/test_estimulos_reloj.vhd
-Z50 FC:/Users/r.gmoro/Desktop/P1/DD2/TEST/test_estimulos_reloj.vhd
+Z51 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/TEST/test_estimulos_reloj.vhd
+Z52 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/TEST/test_estimulos_reloj.vhd
 l0
 L7
 V?nMN2bb2DXRNi0Bl]3o7h0
 !s100 _^@5<Pj14_AK1YO;eHzdS3
 R8
 32
-R9
+R33
 !i10b 1
-R10
-Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/r.gmoro/Desktop/P1/DD2/TEST/test_estimulos_reloj.vhd|
-Z52 !s107 C:/Users/r.gmoro/Desktop/P1/DD2/TEST/test_estimulos_reloj.vhd|
+R34
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/TEST/test_estimulos_reloj.vhd|
+Z54 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/TEST/test_estimulos_reloj.vhd|
 !i113 1
 R13
 R14
 Atest
-R43
+R50
 R1
 R2
 R3
 R4
-Z53 DEx4 work 20 test_estimulos_reloj 0 22 ?nMN2bb2DXRNi0Bl]3o7h0
+Z55 DEx4 work 20 test_estimulos_reloj 0 22 ?nMN2bb2DXRNi0Bl]3o7h0
 l26
 L24
 V^^FiFZYF?2JKbn>1cUa@E0
 !s100 5=:8>3OKemI5X<0f[XTAA2
 R8
 32
-R9
+R33
 !i10b 1
-R10
-R51
-R52
+R34
+R53
+R54
 !i113 1
 R13
 R14
 Etest_monitor_reloj
-R38
-R43
+Z56 w1772284120
+R50
 R1
 R2
 R3
 R4
 R5
-Z54 8C:/Users/r.gmoro/Desktop/P1/DD2/TEST/test_monitor_reloj.vhd
-Z55 FC:/Users/r.gmoro/Desktop/P1/DD2/TEST/test_monitor_reloj.vhd
+Z57 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/TEST/test_monitor_reloj.vhd
+Z58 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/TEST/test_monitor_reloj.vhd
 l0
 L7
 VT77AY2;KKe[nMmj3^hD@43
 !s100 O^]AL_gmU>gRKKK:>5FiN2
 R8
 32
-R9
+Z59 !s110 1772284124
 !i10b 1
-R10
-Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/r.gmoro/Desktop/P1/DD2/TEST/test_monitor_reloj.vhd|
-Z57 !s107 C:/Users/r.gmoro/Desktop/P1/DD2/TEST/test_monitor_reloj.vhd|
+Z60 !s108 1772284124.000000
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/TEST/test_monitor_reloj.vhd|
+Z62 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/TEST/test_monitor_reloj.vhd|
 !i113 1
 R13
 R14
 Atest
-R43
+R50
 R1
 R2
 R3
 R4
-Z58 DEx4 work 18 test_monitor_reloj 0 22 T77AY2;KKe[nMmj3^hD@43
+Z63 DEx4 work 18 test_monitor_reloj 0 22 T77AY2;KKe[nMmj3^hD@43
 l26
 L24
-V_Nok?fJBQ?<EZ6:lYR@oI1
-!s100 N7fJmobAmRW``Q6GP2Wnd0
+V<0KjZkLdg::7>4X^QeHTY2
+!s100 PnAIB:4WajZIhgzU9A:e>3
 R8
 32
-R9
+R59
 !i10b 1
-R10
-R56
-R57
+R60
+R61
+R62
 !i113 1
 R13
 R14
 Etest_reloj
-R38
-R43
+R0
+R50
 R1
 R2
 R3
 R4
 R5
-Z59 8C:/Users/r.gmoro/Desktop/P1/DD2/TEST/test_reloj.vhd
-Z60 FC:/Users/r.gmoro/Desktop/P1/DD2/TEST/test_reloj.vhd
+Z64 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/TEST/test_reloj.vhd
+Z65 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/TEST/test_reloj.vhd
 l0
 L7
 VG^nWI0iVzIm;]Td8]GXcf1
 !s100 Mnj]8jAL<FF]:Ci9`7iWD1
 R8
 32
-R9
+R33
 !i10b 1
-R10
-Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/r.gmoro/Desktop/P1/DD2/TEST/test_reloj.vhd|
-Z62 !s107 C:/Users/r.gmoro/Desktop/P1/DD2/TEST/test_reloj.vhd|
+R34
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/TEST/test_reloj.vhd|
+Z67 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy1/Reloj/TEST/test_reloj.vhd|
 !i113 1
 R13
 R14
 Atest
-R58
-R53
-R48
-R43
+R63
+R55
+R49
+R50
 R1
 R2
 R3
@@ -445,11 +445,11 @@ Vk^z7e:=zzH>jM[lF@W9Q21
 !s100 e5I8^YBJ:F5?LNCl5_kTd1
 R8
 32
-R9
+R33
 !i10b 1
-R10
-R61
-R62
+R34
+R66
+R67
 !i113 1
 R13
 R14

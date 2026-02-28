@@ -27,6 +27,15 @@ begin
 
 
   -- MONITOR 1
+    -- Comprueba:
+      -- 0) Que estamos despues de un nRST 
+      -- 1) Las unidades de segundos y minitos esten entre 0 y 9
+      -- 2) Las decenas de segundos y minutos esten entre 0 y 5 (no superan 59)
+      -- 3) Que las horas respeten los modos:
+        -- 3.1) Modo 12h: Unidades hasta 9 y decenas hasta 1
+        -- 3.2) Modo 24h: Unidades hasta 9 y decenas hasta 2
+      -- Basicamente comprobar q no se muestre, por ejemplo: "25:80:99"
+
   process(clk, nRst)
     variable ena_assert: boolean := false;
  
@@ -92,6 +101,26 @@ begin
 
   
   -- MONITOR 2
+    -- Comprueba:
+      -- 1) Que estamos fuera del nRST
+
+      -- 2) Transforma la hora actual y la antigua a numeros naturales.
+      --    Comprueba matematicamente que la hora actual(horas&minutos&segundos)
+      --    sea exactamente igual a la hora antigua + 1 (hora_T1).
+      --    Se comprueba lo anterior siempre que:
+        -- 2.1) Cuando llega un nuevo segundo: tic_1s = '1'
+        -- 2.2) Cuando estamos en modo normal y lo estabamos antes: info=0 y into_T1=0
+        -- 2.3) No se q hace programado xd
+        -- 2.4) Y la hora actual no es 00:00:00
+
+      -- 3) Comprueba q, si el rejor marca las 00:00:00, la hora del segundo anterior (hora_t1)
+      --    debe ser 11:59:59 (para el modo 12h) y 23:59:59 (para el modo 24h)
+      --    Se comprueba siempre que:
+        -- 3.1) Cuando falle el if de antes: supongo q cuando la hora sea 00:00:00
+        -- 3.2) Si viene un nuevo tic, si estabamos y estamos en el modo normal.
+
+      -- 4) Comprueba que los segundos esten a 0 despues de editar la hora
+
   process(clk, nRst)
     variable hora_T1:    std_logic_vector(23 downto 0);
     variable ena_assert: boolean := false;
@@ -108,18 +137,18 @@ begin
     elsif clk'event and clk = '1' and ena_assert then
       if tic_1s = '1' and info = 0 and info_T1 = 0 and (horas&minutos&segundos) /= 0 and programado = '0' then
         assert (hora_to_natural(hora_T1) + 1) = hora_to_natural(horas&minutos&segundos)
-        report "Error de funcionamiento del reloj"  -- TEXTO PARA SER MOFIFICADO CON UN MENSAJE MAS EXPLICATIVO
+        report "Error detectado por el monitor 2: NO SE HA INCREMENTADO 1 SEGUNDO RESPECTO A LA HORA ANTERIOR"
         severity error;
 
       elsif tic_1s = '1' and info = 0 and info_T1 = 0 and programado = '0' then
         assert (hora_T1 = X"115959" and modo = '0') or (hora_T1 = X"235959" and modo = '1')
-        report "Error"  -- TEXTO PARA SER MOFIFICADO CON UN MENSAJE MAS EXPLICATIVO
+        report "Error detectado por el monitor 2: NO SE HA DETECTADO 11:59:59 O 23:59:59 ANTES DEL REINICIO 00:00:00"
         severity error;
 
 
       elsif info_T1 /= 0 then
         assert segundos = 0
-        report "Error de tipo 2 detectado por el monitor 2"  -- TEXTO PARA SER MOFIFICADO CON UN MENSAJE MAS EXPLICATIVO
+        report "Error detectado por el monitor 2: SEGUNDOS DISTINTO DE 0 DESPUES DE PROGRAMACION"
         severity error;
 
       end if;
@@ -143,7 +172,25 @@ begin
 
 
   -- MONITOR 3
-  -- Funcionamiento correcto de AM-PM
+    -- Comprueba:
+      -- 1) Que estamos fuera del nRST (tic_1s = 1).
+
+      -- 2) Comprueba el funcionamiento normal en MODO 12h (info = 0 y modo = 0):
+        -- 2.1) Si el reloj acaba de dar la vuelta (la hora actual es 00:00:00),
+        --      comprueba que la señal AM_PM ha acambiado respecto al segundo anterior (AM_PM /= AM_PM_T1).
+        -- 2.2) Si la hora NO es 00:00:00, comprueba que la señal AM_PM se mantenga igual que
+        --      en el segundo anterior (AM_PM = AM_PM_T1).
+
+      -- 3) Comprueba el funcionamiento normal interno en MODO 24h (info = 0 y modo = 1):
+        -- 3.1) Si la hora completa es menor a las 12:00:00, comprueba que AM_PM sea 0 (AM).
+        -- 3.2) Si la hora es igual o mayor a las 12:00:00, comprueba que AM_PM sea 1 (PM).
+
+      -- 4) Comprueba el cambio de formato de 24h a 12h (modo /= modo_T1 y modo = 0):
+        -- 4.1) Si en el formato de 24h (hace un ciclo de reloj) la hora antigua era menor a
+        --      las 12 (horas_T1 < X12), comprueba que el nuevo AM_PM se asigne a 0.
+        -- 4.2) Si en el formato de 24h antiguo la hora era 12 o mayor,
+        --      comprueba que el nuevo AM_PM se asigne a 1.
+
   process(clk, nRst)
     variable ena_cmd_T1: std_logic;
     variable tecla_T1:   std_logic_vector(3 downto 0);
@@ -163,13 +210,13 @@ begin
       if info = 0 and modo = '0' then
         if (horas&minutos&segundos) = 0  then
 
-		  -- SENTENCIA ASSERT PARA SER COMPLETADA
+          assert AM_PM /= AM_PM_T1  -- SENTENCIA ASSERT PARA SER COMPLETADA
           report "Error en cambio de AM-PM: no cambia"
           severity error;
 
         else
 
-		  -- SENTENCIA ASSERT PARA SER COMPLETADA
+          assert AM_PM = AM_PM_T1 -- SENTENCIA ASSERT PARA SER COMPLETADA
           report "Error en AM-PM: cambia cuando no debe"
           severity error;   
 
@@ -178,13 +225,13 @@ begin
       elsif info = 0 and modo = '1' then
         if (horas&minutos& segundos) < X"120000" then
 
-		  -- SENTENCIA ASSERT PARA SER COMPLETADA
+          assert AM_PM = '0' -- SENTENCIA ASSERT PARA SER COMPLETADA
           report "Error en el valor de AM-PM en modo 24 horas"
           severity error;
 
         else
 
-		  -- SENTENCIA ASSERT PARA SER COMPLETADA
+          assert AM_PM = '1' -- SENTENCIA ASSERT PARA SER COMPLETADA
           report "Error en el valor de AM-PM en modo 24 horas"
           severity error;   
 
@@ -215,6 +262,26 @@ begin
 
   
   -- MONITOR 4
+    -- Comprueba:
+      -- 1) Que estamos fuera del nRST y el sistema esta activo.
+      -- 2) Comprueba la matematica al cambiar el formato entre el modo 12h y 24h. 
+      --    Se activa justo un ciclo de reloj despues de que el usuario pulse la tecla D:
+      --    cambio de modo 12-24 (estando en el modo programacion)(ena_cmd_T1 = 1 y tecla_T1 = XD).
+
+      -- 3) Si el sistema acaba de pasar al modo 24h (modo = 1),
+      --    verifica la conversion de 12h a 24h:
+        -- 3.1) Si antes era AM (AM_PM_T1 = 0), comprueba que la hora actual y la antigua sean
+        --      exactamente iguales (ej. 08:00 AM pasa a 08:00).
+        -- 3.2) Si antes era PM (AM_PM_T1 = 1), comprueba que la nueva hora natural sea igual a
+        --      la hora antigua mas 12 horas (ej. 08:00 PM pasa a 20:00).
+
+      -- 4) Si el sistema acaba de pasar al modo 12h (verificado por el elsif),
+      --    verifica la conversion de 24h a 12h:
+        -- 4.1) Si la hora antigua era menor a las 12:00:00 (hora_T1 < X120000),
+        --      comprueba que la nueva hora se mantenga identica a la antigua.
+        -- 4.2) Si la hora antigua era las 12:00:00 o superior,
+        --      comprueba que la nueva hora natural sea igual a la hora antigua menos 12 horas.
+
   process(clk, nRst)
     variable ena_cmd_T1: std_logic;
     variable tecla_T1:   std_logic_vector(3 downto 0);
@@ -224,20 +291,25 @@ begin
     variable info_T1:      std_logic_vector(1 downto 0);
 
   begin
+  -- 1)
     if nRst'event and nRst = '0' then
       ena_assert := false;
 
     elsif nRst'event and nRst = '1' and nRst'last_value = '0' then
       ena_assert := true;
 
+  -- 2)
     elsif clk'event and clk = '1' and ena_assert then
       if ena_cmd_T1 = '1'  and tecla_T1 = X"D" then
+  -- 3)
         if modo = '1' then
+    -- 3.1)
           if AM_PM_T1 = '0' then 
             assert hora_T1 = (horas&minutos&X"00")
             report "Error en cambio de formato de hora de 12 a 24"
             severity error;
 
+    -- 3.2)
           else
             assert (hora_to_natural(hora_T1) + 12*3600) = hora_to_natural(horas&minutos&X"00")
             report "Error en cambio de formato de hora de 12 a 24"
@@ -245,11 +317,14 @@ begin
 
           end if;
 
+  -- 4)
+    -- 4.1)
         elsif hora_T1 < X"120000" then
             assert hora_T1 = (horas&minutos&X"00")
             report "Error en cambio de formato de hora de 24 a 12"
             severity error;
 
+    -- 4.2)
         else
           assert (hora_to_natural(hora_T1) - 12*3600) = hora_to_natural(horas&minutos&X"00")
           report "Error en cambio de formato de hora de 24 a 12"
