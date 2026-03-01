@@ -63,6 +63,7 @@ package pack_test_reloj is
 									  constant periodo:   in  std_logic;
                                       constant valor:       in  std_logic_vector(15 downto 0));
 
+
 end package;
 
 package body pack_test_reloj is
@@ -93,7 +94,7 @@ package body pack_test_reloj is
                              constant valor:       in  std_logic_vector(15 downto 0)) is
   begin
   
-	while AM_PM /= periodo and horas /= valor(15 downto 8) and minutos /= valor(7 downto 0) loop
+	while AM_PM /= periodo or horas /= valor(15 downto 8) or minutos /= valor(7 downto 0) loop
 		wait until clk'event and clk = '1';
 	end loop; 
 	

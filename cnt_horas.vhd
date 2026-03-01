@@ -120,6 +120,8 @@ begin
       end if;
     end if;
   end process;
+
+--ERRORES: horas< X"23" y horas < X"11"
   
   ena_decenas_horas <= ena or inc_campo when horas(3 downto 0) = 9        else
                        ena or inc_campo when horas = X"23"                else

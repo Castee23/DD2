@@ -40,8 +40,9 @@ begin
     end if;
   end process;
 
- --ERROR??????  ena_decenas_horas <= ena or inc_campo when horas(3 downto 0) = 9  
-  ena_decenas_minutos <= (ena or inc_campo) when minutos(3 downto 0) = 9  else '0';
+ --ERROR??????
+  ena_decenas_minutos <= '1' when ena = '1' or inc_campo when minutos(3 downto 0) = 9 
+                         else '0';
 
   process(clk, nRst)    -- Decenas de minutos
   begin

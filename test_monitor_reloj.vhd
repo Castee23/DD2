@@ -208,7 +208,7 @@ begin
         else
 			
 		  -- 2.2)
-		  assert AM_PM /= AM_PM_T1
+		  assert AM_PM = AM_PM_T1
           report "Error en AM-PM: cambia cuando no debe"
           severity error;   
 
@@ -227,7 +227,7 @@ begin
         else
 
 		  -- 3.2)
-		  assert AM_PM = '0'
+		  assert AM_PM = '1'
           report "Error en el valor de AM-PM en modo 24 horas"
           severity error;   
 
@@ -343,7 +343,7 @@ begin
     elsif clk'event and clk = '1' and ena_assert then
       if pulso_largo_T1 = '1' and cmd_tecla_T1 = X"A" and info_T1 = 0 then
         assert  info = 2
-        report "Error detectado por el monitor 5"  -- TEXTO PARA SER MOFIFICADO CON UN MENSAJE MAS EXPLICATIVO
+        report "Error al entrar al modo edicion"  -- TEXTO PARA SER MOFIFICADO CON UN MENSAJE MAS EXPLICATIVO
         severity error;
       end if;
 
@@ -371,7 +371,16 @@ begin
       ena_assert := true;
 
     elsif clk'event and clk = '1' and ena_assert then
-	
+	if ena_cmd_T1 = '1' and cmd_tecla_T1 = X"A" and info_T1 /= 0 then
+        	assert  info = 0
+        	report "Error al salir del modo edicion"
+        	severity error;
+      	end if;
+
+      cmd_tecla_T1 := cmd_tecla;
+      ena_cmd_T1 := ena_cmd;
+      info_T1 := info;
+
 	-- CODIGO PARA SER COMPLETADO POR EL ESTUDIANTE
 	
     end if;
@@ -433,12 +442,12 @@ begin
       if ena_cmd_T1 = '1' and cmd_tecla_T1 = X"B" and info_T1 /= 0 then
         if info_T1 = 1 then
           assert info = 2
-          report "Error de tipo 1 detectado por el monitor 8"  -- TEXTO PARA SER MOFIFICADO CON UN MENSAJE MAS EXPLICATIVO
+          report "Error al cambiar el campo en edicion de minutos a horas"  -- Error al cambiar el campo en edicion de minutos a horas
           severity error;
 
         else
           assert info = 1
-          report "Error de tipo 2 detectado por el monitor 8"  -- TEXTO PARA SER MOFIFICADO CON UN MENSAJE MAS EXPLICATIVO
+          report "Error al cambiar el campo en edicion de horas a minutos"  -- Error al cambiar el campo en edicion de horas a minutos
           severity error;
 
         end if;
@@ -551,4 +560,42 @@ begin
   end process;
 
   
+--MONITOR 10
+  process(clk, nRst)
+    variable ena_assert:     boolean := false;
+    variable cmd_tecla_T1:   std_logic_vector(3 downto 0);
+    variable info_T1: std_logic_vector(1 downto 0);
+
+  begin
+    if nRst'event and nRst = '0' then
+      ena_assert := false;
+
+    elsif nRst'event and nRst = '1' and nRst'last_value = '0' then
+      ena_assert := true;
+
+    elsif clk'event and clk = '1' and ena_assert then
+      if ena_cmd = '1' and cmd_tecla < x"A" and cmd_tecla_T1 < x"A" and
+         info /= 0 and info_T1 /= 0 then
+        -- Se modifican los minutos
+        if info = 1 then
+          assert minutos(7 downto 0) = cmd_tecla_T1&cmd_tecla
+          report "Error al programar los minutos mediante pulsacion directa"
+          severity error;
+
+        -- Se modifican las horas
+        else
+          assert horas(7 downto 0) = cmd_tecla_T1&cmd_tecla
+          report "Error al programar las horas mediante pulsacion directa"
+          severity error;
+
+        end if;
+      end if;
+
+    cmd_tecla_T1 := cmd_tecla;
+    info_T1 := info;
+
+    end if;
+  end process;
+
+
 end test;
