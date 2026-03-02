@@ -85,17 +85,18 @@ begin
 
     report "Prueba incremento corto";
     tecleo(ena_cmd, cmd_tecla, clk, X"C");
+    wait until clk'event and clk = '1';
     wait for 50 ns;
     assert (horas = X"01") 
     report "Error: El incremento corto no sumó 1" 
     severity error;
 
     
-    report "Prueba incremento rapido"
+    report "Prueba incremento rapido";
     cmd_tecla <= X"C";
     ena_cmd   <= '1';
 
-    for i in 1 to 16 loop  -- Van a ocurrir 4 tics de 0.25
+    for i in 1 to 20 loop  -- Van a ocurrir 4 tics de 0.25
         wait until clk'event and clk = '1';
     end loop;
  

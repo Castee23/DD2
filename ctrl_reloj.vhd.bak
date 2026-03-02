@@ -94,12 +94,9 @@ begin
   cambiar_modo  <= '1' when comando = cambio_de_modo else
                    '0';
   -- Control de errores cuando se introduce el numero directamente para que el valor introducido sea una hora o minuto valido
-
-	--ERROR, SE COMPARA DATO_CAMPO CON VALORES DECIMALES. 
-
-  campo_valido <=  '1' when (estado /= horas)  and                dato_campo < X"60" and dato_campo(3 downto 0) < 10 else
-                   '1' when (estado  = horas)  and modo = '1' and dato_campo < X"24" and dato_campo(3 downto 0) < 10 else
-                   '1' when (estado  = horas)  and modo = '0' and dato_campo < X"12" and dato_campo(3 downto 0) < 10 else
+  campo_valido <=  '1' when (estado /= horas)  and                dato_campo < 60 and dato_campo(3 downto 0) < 10 else
+                   '1' when (estado  = horas)  and modo = '1' and dato_campo < 24 and dato_campo(3 downto 0) < 10 else
+                   '1' when (estado  = horas)  and modo = '0' and dato_campo < 12 and dato_campo(3 downto 0) < 10 else
                    '0';
 
   -- Control del estado del reloj
@@ -146,7 +143,7 @@ begin
   ena_reloj <= '1' when estado = reposo else 
 			   '0';
 
-  -- Generacion de señales de salida para la modificacion de la hora
+  -- Generacion de seÃ±ales de salida para la modificacion de la hora
   inc_campo(0) <= '1'	when comando = incrementar_campo and estado = minutos  else
 				  '0';
 				  

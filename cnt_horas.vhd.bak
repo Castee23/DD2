@@ -52,6 +52,7 @@ begin
       AM_PM <= '0';
 
     elsif clk'event and clk = '1' then
+     if cambiar_modo = '1' then
       if modo = '1' and ( (horas > X"11" and not(horas = X"23" and (ena = '1' or inc_campo = '1'))) or (horas = X"11" and (ena = '1' or inc_campo = '1')) ) then
         AM_PM <= '1';
 
@@ -61,6 +62,7 @@ begin
       elsif fdc_AM_PM = '1' then
         AM_PM <= not AM_PM;
 
+        end if;
       end if;
     end if;
   end process;

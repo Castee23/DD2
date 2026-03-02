@@ -28,7 +28,7 @@ begin
       port map(clk => clk,
                nRst => nRst,
                tic_1s => tic_1s,
-               nrst_ena => ena_reloj,
+               nrst_ena => nRst,
                fdc => fdc_seg,
                seg => segundos);
 
