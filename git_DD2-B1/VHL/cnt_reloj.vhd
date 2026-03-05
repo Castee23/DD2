@@ -29,7 +29,7 @@ begin
                nRst => nRst,
                tic_1s => tic_1s,
 				-- Error nrst_ena => nRst,
-               nrst_ena => nRst,
+               nrst_ena => ena_reloj,
                fdc => fdc_seg,
                seg => segundos);
 
@@ -44,7 +44,7 @@ begin
                minutos => minutos);
 
   U2: entity work.cnt_horas(rtl)
-      port map(clk => clk,
+      port map(clk =>clk,
                nRst => nRst,
                ena => fdc_minutos,
                inc_campo => inc_campo(1),

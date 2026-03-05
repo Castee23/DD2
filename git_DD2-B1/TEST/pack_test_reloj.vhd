@@ -201,39 +201,28 @@ package body pack_test_reloj is
 
   begin
 
-	-- 1. Modificar horas manteniendo la tecla de barrido
-    if horas /= valor(15 downto 8) or  minutos /= valor(7 downto 0) or AM_PM /= periodo then
-      wait until clk'event and clk = '1';
-      pulso_largo <= '1';
-      cmd_tecla <= X"C";
-      
-      -- Mantiene el pulso activo hasta alcanzar el objetivo
-      while horas /= valor(15 downto 8) or AM_PM /= periodo loop
-        wait until clk'event and clk = '1';
-      end loop;
-      
-      -- Suelta la tecla
-      pulso_largo <= '0';
-    end if;
+   	pulso_largo <= '1';
+	cmd_tecla<=X"C";
 
-    -- 2. Cambiar de campo (Horas a Minutos) usando tu funcion auxiliar
+  	while horas /= valor(15 downto 8) or AM_PM /= periodo loop
+    	wait until clk'event and clk = '1';
+  	end loop;
+
+	pulso_largo <= '0';
+	cmd_tecla<=X"0";
+
+	--wait until clk'event and clk = '1';
+
     tecleo(ena_cmd, cmd_tecla, clk, X"B");
 
-    -- 3. Modificar minutos manteniendo la tecla de barrido
-    if minutos /= valor(7 downto 0) then
-      wait until clk'event and clk = '1';
-	-- incremento largo
-      pulso_largo <= '1';
-      cmd_tecla <= X"C";
-      
-      -- Mantiene el pulso activo hasta alcanzar el objetivo
-      while minutos /= valor(7 downto 0) loop
-        wait until clk'event and clk = '1';
-      end loop;
-      
-      -- Suelta la tecla
-      pulso_largo <= '0';
-    end if;
+	pulso_largo <= '1';
+	cmd_tecla<=X"C";
+    while minutos /= valor(7 downto 0) loop
+    	wait until clk'event and clk = '1';
+    end loop;
+
+    pulso_largo <= '0';
+    cmd_tecla <= X"0";
 
   end procedure; 
 
