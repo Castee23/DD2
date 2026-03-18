@@ -8,29 +8,72 @@ z2
 !i10f 100
 cModel Technology
 dC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2
-Efiltro_sda
-Z0 w1773136764
+Ectrl_i2c
+Z0 w1773679106
 Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z5 dC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C
-Z6 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/filtro_SDA.vhd
-Z7 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/filtro_SDA.vhd
+Z6 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/control_i2c.vhd
+Z7 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/control_i2c.vhd
+l0
+L65
+V[4>EPGl_d]z44kk38C2``1
+!s100 k?jSj<7_`33DL;l9]KW`Y3
+Z8 OV;C;10.4d;61
+32
+Z9 !s110 1773766067
+!i10b 1
+Z10 !s108 1773766067.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/control_i2c.vhd|
+Z12 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/control_i2c.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1
+Artl
+R1
+R2
+R3
+R4
+DEx4 work 8 ctrl_i2c 0 22 [4>EPGl_d]z44kk38C2``1
+l119
+L104
+VThQ8WP^P^fNIe7d[OLWm?2
+!s100 n573l^<U5A3MHZND4:@k03
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Efiltro_sda
+Z15 w1773136764
+R1
+R2
+R3
+R4
+R5
+Z16 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/filtro_SDA.vhd
+Z17 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/filtro_SDA.vhd
 l0
 L34
 Vj:?PmGN:kh2O4hbYmR=P[3
 !s100 Az8cVgn;:^_]P_[V0j7h32
-Z8 OV;C;10.4d;61
+R8
 32
-Z9 !s110 1773145086
+R9
 !i10b 1
-Z10 !s108 1773145086.000000
-Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/filtro_SDA.vhd|
-Z12 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/filtro_SDA.vhd|
+Z18 !s108 1773766066.000000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/filtro_SDA.vhd|
+Z20 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/filtro_SDA.vhd|
 !i113 1
-Z13 o-work work -2002 -explicit
-Z14 tExplicit 1
+R13
+R14
 Artl
 R1
 R2
@@ -45,21 +88,64 @@ R8
 32
 R9
 !i10b 1
-R10
-R11
-R12
+R18
+R19
+R20
 !i113 1
 R13
 R14
-Ereg_in_sda
-Z15 w1773145083
+Egen_scl
+Z21 w1773327809
 R1
 R2
 R3
 R4
 R5
-Z16 8C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\I2C\hdl\reg_in_SDA.vhd
-Z17 FC:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\I2C\hdl\reg_in_SDA.vhd
+Z22 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/gen_SCL.vhd
+Z23 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/gen_SCL.vhd
+l0
+L72
+V9a;Fa:2fP7P8Gg`:86jL93
+!s100 9TIN2CJ?;ef8_CK>XK[4@1
+R8
+32
+R9
+!i10b 1
+R10
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/gen_SCL.vhd|
+Z25 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/gen_SCL.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R2
+R3
+R4
+Z26 DEx4 work 7 gen_scl 0 22 9a;Fa:2fP7P8Gg`:86jL93
+l112
+L85
+VfnU579MZmjzaNU7U5emPj1
+!s100 =j@DTIS1hHaZPh4oJZVa>1
+R8
+32
+R9
+!i10b 1
+R10
+R24
+R25
+!i113 1
+R13
+R14
+Ereg_in_sda
+Z27 w1773145083
+R1
+R2
+R3
+R4
+R5
+Z28 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/reg_in_SDA.vhd
+Z29 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/reg_in_SDA.vhd
 l0
 L38
 V7F5Iamb<a`QJczGCGdHUj0
@@ -69,8 +155,8 @@ R8
 R9
 !i10b 1
 R10
-Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\I2C\hdl\reg_in_SDA.vhd|
-Z19 !s107 C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\I2C\hdl\reg_in_SDA.vhd|
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/reg_in_SDA.vhd|
+Z31 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/reg_in_SDA.vhd|
 !i113 1
 R13
 R14
@@ -89,31 +175,31 @@ R8
 R9
 !i10b 1
 R10
-R18
-R19
+R30
+R31
 !i113 1
 R13
 R14
 Ereg_out_sda
-Z20 w1773144755
+Z32 w1773144755
 R1
 R2
 R3
 R4
 R5
-Z21 8C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\I2C\hdl\reg_out_SDA.vhd
-Z22 FC:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\I2C\hdl\reg_out_SDA.vhd
+Z33 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/reg_out_SDA.vhd
+Z34 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/reg_out_SDA.vhd
 l0
 L48
 VT5U`2@TX0No0V35Ao^3Y<0
 !s100 IWIKD^0XC6FjMR`ED1^m73
 R8
 32
-Z23 !s110 1773145087
+R9
 !i10b 1
-Z24 !s108 1773145087.000000
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\I2C\hdl\reg_out_SDA.vhd|
-Z26 !s107 C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\I2C\hdl\reg_out_SDA.vhd|
+R10
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/reg_out_SDA.vhd|
+Z36 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/hdl/reg_out_SDA.vhd|
 !i113 1
 R13
 R14
@@ -122,18 +208,62 @@ R1
 R2
 R3
 R4
-Z27 DEx4 work 11 reg_out_sda 0 22 T5U`2@TX0No0V35Ao^3Y<0
+DEx4 work 11 reg_out_sda 0 22 T5U`2@TX0No0V35Ao^3Y<0
 l64
 L60
-Z28 Vl4_jW]k^ez2U=Nz27W4G_1
-Z29 !s100 3IGAbGNNdV9U9?3dbA2aF0
+Vl4_jW]k^ez2U=Nz27W4G_1
+!s100 3IGAbGNNdV9U9?3dbA2aF0
 R8
 32
-R23
+R9
 !i10b 1
-R24
-R25
+R10
+R35
+R36
+!i113 1
+R13
+R14
+Etest_gen_scl
+R21
+R1
+R2
+R3
+R4
+R5
+Z37 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/modelsim/test_gen_SCL.vhd
+Z38 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/modelsim/test_gen_SCL.vhd
+l0
+L60
+VfNBg^gd>0B1OGNmak?D=11
+!s100 CJO4[N`Y>z^lMzzO:iTSA2
+R8
+32
+R9
+!i10b 1
+R10
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/modelsim/test_gen_SCL.vhd|
+Z40 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/I2C/modelsim/test_gen_SCL.vhd|
+!i113 1
+R13
+R14
+Atest
 R26
+R1
+R2
+R3
+R4
+DEx4 work 12 test_gen_scl 0 22 fNBg^gd>0B1OGNmak?D=11
+l88
+L63
+VjhXcn4II6@`QG@IN5Xj[K0
+!s100 Zbb>oMKUDPNiOTm46e:JM3
+R8
+32
+R9
+!i10b 1
+R10
+R39
+R40
 !i113 1
 R13
 R14
