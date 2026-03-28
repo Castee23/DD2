@@ -159,7 +159,7 @@ begin
 
   -- ********************* Generacion de SCL con salida en colector (drenador abierto) ************************
   --
-  n_ctrl_SCL <= '1' when (cnt_SCL <= I2C_FAST_T_SCL_H - 1) or (cnt_SCL = I2C_FAST_T_SCL ) else                               -- reloj i2c
+  n_ctrl_SCL <= '1' when (cnt_SCL <= I2C_FAST_T_SCL_H - 1) or (cnt_SCL = I2C_FAST_T_SCL - 1) else                               -- reloj i2c
                 not ena_SCL;  
 
   SCL <= scl_glitch when scl_glitch = '0' else                                  -- Modelo de la salida SCL en colector abierto

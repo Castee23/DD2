@@ -24,9 +24,9 @@ Vjn^3aSY0A8HD`Uje5RBP?0
 !s100 =4b7FJbj[YPUeGfT_nY3m1
 Z9 OV;C;10.4d;61
 32
-Z10 !s110 1773847179
+Z10 !s110 1774694016
 !i10b 1
-Z11 !s108 1773847179.000000
+Z11 !s108 1774694015.000000
 Z12 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/agente_slave_i2c.vhd|
 Z13 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/agente_slave_i2c.vhd|
 !i113 1
@@ -75,9 +75,9 @@ R9
 32
 R10
 !i10b 1
-R11
-Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/colector_slave_i2c.vhd|
-Z24 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/colector_slave_i2c.vhd|
+Z23 !s108 1774694016.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/colector_slave_i2c.vhd|
+Z25 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/colector_slave_i2c.vhd|
 !i113 1
 R14
 R15
@@ -96,32 +96,32 @@ R9
 32
 R10
 !i10b 1
-R11
 R23
 R24
+R25
 !i113 1
 R14
 R15
 Ectrl_i2c
-Z25 w1773679106
+Z26 w1773679106
 R2
 R3
 R4
 R5
 R6
-Z26 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/control_i2c.vhd
-Z27 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/control_i2c.vhd
+Z27 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/control_i2c.vhd
+Z28 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/control_i2c.vhd
 l0
 L65
 V[4>EPGl_d]z44kk38C2``1
 !s100 k?jSj<7_`33DL;l9]KW`Y3
 R9
 32
-R10
+Z29 !s110 1774694015
 !i10b 1
 R11
-Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/control_i2c.vhd|
-Z29 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/control_i2c.vhd|
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/control_i2c.vhd|
+Z31 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/control_i2c.vhd|
 !i113 1
 R14
 R15
@@ -130,18 +130,18 @@ R2
 R3
 R4
 R5
-Z30 DEx4 work 8 ctrl_i2c 0 22 [4>EPGl_d]z44kk38C2``1
+Z32 DEx4 work 8 ctrl_i2c 0 22 [4>EPGl_d]z44kk38C2``1
 l119
 L104
 VThQ8WP^P^fNIe7d[OLWm?2
 !s100 n573l^<U5A3MHZND4:@k03
 R9
 32
-R10
+R29
 !i10b 1
 R11
-R28
-R29
+R30
+R31
 !i113 1
 R14
 R15
@@ -150,8 +150,8 @@ R0
 R4
 R5
 R6
-Z31 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/driver_clk_nRst.vhd
-Z32 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/driver_clk_nRst.vhd
+Z33 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/driver_clk_nRst.vhd
+Z34 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/driver_clk_nRst.vhd
 l0
 L8
 VdgKHegBA7OTlFnYf?fdE;2
@@ -160,16 +160,16 @@ R9
 32
 R10
 !i10b 1
-R11
-Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/driver_clk_nRst.vhd|
-Z34 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/driver_clk_nRst.vhd|
+R23
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/driver_clk_nRst.vhd|
+Z36 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/driver_clk_nRst.vhd|
 !i113 1
 R14
 R15
 Asim
 R4
 R5
-Z35 DEx4 work 15 driver_clk_nrst 0 22 dgKHegBA7OTlFnYf?fdE;2
+Z37 DEx4 work 15 driver_clk_nrst 0 22 dgKHegBA7OTlFnYf?fdE;2
 l17
 L16
 V9m]NIzjm7mj3gSk__fk1G2
@@ -178,32 +178,32 @@ R9
 32
 R10
 !i10b 1
-R11
-R33
-R34
+R23
+R35
+R36
 !i113 1
 R14
 R15
 Efiltro_sda
-Z36 w1773136764
+Z38 w1774287108
 R2
 R3
 R4
 R5
 R6
-Z37 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/filtro_SDA.vhd
-Z38 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/filtro_SDA.vhd
+Z39 8C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\interfaz-I2C\hdl\filtro_SDA.vhd
+Z40 FC:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\interfaz-I2C\hdl\filtro_SDA.vhd
 l0
 L34
 Vj:?PmGN:kh2O4hbYmR=P[3
 !s100 Az8cVgn;:^_]P_[V0j7h32
 R9
 32
-R10
+Z41 !s110 1774287118
 !i10b 1
-R11
-Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/filtro_SDA.vhd|
-Z40 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/filtro_SDA.vhd|
+Z42 !s108 1774287118.000000
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\interfaz-I2C\hdl\filtro_SDA.vhd|
+Z44 !s107 C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\interfaz-I2C\hdl\filtro_SDA.vhd|
 !i113 1
 R14
 R15
@@ -212,41 +212,84 @@ R2
 R3
 R4
 R5
-Z41 DEx4 work 10 filtro_sda 0 22 j:?PmGN:kh2O4hbYmR=P[3
-l46
+Z45 DEx4 work 10 filtro_sda 0 22 j:?PmGN:kh2O4hbYmR=P[3
+l49
 L42
-VEL0O;7VM^eeKTfdE6<Z8W2
-!s100 @W1z59UHTPnV2^43?D2Cl0
+V]eY`LX@5]Y=VTU=?2<P9m2
+!s100 B;?IgY1_ImNJ@SlAQRR<K3
 R9
 32
-R10
+R41
 !i10b 1
-R11
-R39
-R40
+R42
+R43
+R44
 !i113 1
 R14
 R15
-Egen_scl
-Z42 w1773327809
+Efiltro_sda_50m
+Z46 w1774288583
 R2
 R3
 R4
 R5
 R6
-Z43 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/gen_SCL.vhd
-Z44 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/gen_SCL.vhd
+Z47 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/filtro_SDA.vhd
+Z48 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/filtro_SDA.vhd
+l0
+L34
+VO7IgL8B1b@S9`boo>DB6e3
+!s100 Q7XOL]TMBZAVioLb:MkH53
+R9
+32
+R29
+!i10b 1
+R11
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/filtro_SDA.vhd|
+Z50 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/filtro_SDA.vhd|
+!i113 1
+R14
+R15
+Artl
+R2
+R3
+R4
+R5
+DEx4 work 14 filtro_sda_50m 0 22 O7IgL8B1b@S9`boo>DB6e3
+l49
+L42
+V[ZL`XX5iXOOCCF^Ea]CNR3
+!s100 8ThiC1hZn4`FaX4cH7KM;2
+R9
+32
+R29
+!i10b 1
+R11
+R49
+R50
+!i113 1
+R14
+R15
+Egen_scl
+Z51 w1774694010
+R2
+R3
+R4
+R5
+R6
+Z52 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/gen_SCL.vhd
+Z53 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/gen_SCL.vhd
 l0
 L72
 V9a;Fa:2fP7P8Gg`:86jL93
 !s100 9TIN2CJ?;ef8_CK>XK[4@1
 R9
 32
-R10
+R29
 !i10b 1
 R11
-Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/gen_SCL.vhd|
-Z46 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/gen_SCL.vhd|
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/gen_SCL.vhd|
+Z55 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/gen_SCL.vhd|
 !i113 1
 R14
 R15
@@ -255,18 +298,61 @@ R2
 R3
 R4
 R5
-Z47 DEx4 work 7 gen_scl 0 22 9a;Fa:2fP7P8Gg`:86jL93
+Z56 DEx4 work 7 gen_scl 0 22 9a;Fa:2fP7P8Gg`:86jL93
 l112
 L85
-VfnU579MZmjzaNU7U5emPj1
-!s100 =j@DTIS1hHaZPh4oJZVa>1
+VQL[Z6U=ghEn[fh=Zz];KI2
+!s100 h3e_R6TUeA=i91b1bZ`i33
 R9
 32
-R10
+R29
 !i10b 1
 R11
-R45
-R46
+R54
+R55
+!i113 1
+R14
+R15
+Egen_scl_50m
+Z57 w1774287479
+R2
+R3
+R4
+R5
+R6
+R52
+R53
+l0
+L72
+Vk41ZZ@CKi1^Ia@L391nfQ3
+!s100 i5YIOfbW7V;i<Ea=W?;KH3
+R9
+32
+Z58 !s110 1774287505
+!i10b 1
+Z59 !s108 1774287505.000000
+R54
+R55
+!i113 1
+R14
+R15
+Artl
+R2
+R3
+R4
+R5
+DEx4 work 11 gen_scl_50m 0 22 k41ZZ@CKi1^Ia@L391nfQ3
+l113
+L85
+VfX]BYEK_OBb`n99UGd14K1
+!s100 USBo8[N:j:URZGG=QVg8_3
+R9
+32
+R58
+!i10b 1
+R59
+R54
+R55
 !i113 1
 R14
 R15
@@ -277,44 +363,44 @@ R3
 R4
 R5
 R6
-Z48 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/interfaz_i2c.vhd
-Z49 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/interfaz_i2c.vhd
+Z60 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/interfaz_i2c.vhd
+Z61 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/interfaz_i2c.vhd
 l0
 L43
 V1:I;m@cEK85<YWlRmJLhH3
 !s100 EUFNJ1X8O;GoV@o57=ohO0
 R9
 32
-R10
+R29
 !i10b 1
 R11
-Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/interfaz_i2c.vhd|
-Z51 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/interfaz_i2c.vhd|
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/interfaz_i2c.vhd|
+Z63 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/interfaz_i2c.vhd|
 !i113 1
 R14
 R15
 Aestructural
-Z52 DEx4 work 10 reg_in_sda 0 22 7F5Iamb<a`QJczGCGdHUj0
-R41
-Z53 DEx4 work 11 reg_out_sda 0 22 T5U`2@TX0No0V35Ao^3Y<0
-R30
-R47
+Z64 DEx4 work 10 reg_in_sda 0 22 7F5Iamb<a`QJczGCGdHUj0
+R45
+Z65 DEx4 work 11 reg_out_sda 0 22 T5U`2@TX0No0V35Ao^3Y<0
+R32
+R56
 R2
 R3
 R4
 R5
-Z54 DEx4 work 12 interfaz_i2c 0 22 1:I;m@cEK85<YWlRmJLhH3
+Z66 DEx4 work 12 interfaz_i2c 0 22 1:I;m@cEK85<YWlRmJLhH3
 l74
 L58
 VQDQ[8?aznRSj1RPnVb<;j1
 !s100 kOg7@_dg[GFlj5L3]91oP1
 R9
 32
-R10
+R29
 !i10b 1
 R11
-R50
-R51
+R62
+R63
 !i113 1
 R14
 R15
@@ -325,8 +411,8 @@ R3
 R4
 R5
 R6
-Z55 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_bus_i2c.vhd
-Z56 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_bus_i2c.vhd
+Z67 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_bus_i2c.vhd
+Z68 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_bus_i2c.vhd
 l0
 L9
 Vk`ibg2A[YmP@ijbo<>?`P2
@@ -335,9 +421,9 @@ R9
 32
 R10
 !i10b 1
-R11
-Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_bus_i2c.vhd|
-Z58 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_bus_i2c.vhd|
+R23
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_bus_i2c.vhd|
+Z70 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_bus_i2c.vhd|
 !i113 1
 R14
 R15
@@ -346,7 +432,7 @@ R2
 R3
 R4
 R5
-Z59 DEx4 work 15 monitor_bus_i2c 0 22 k`ibg2A[YmP@ijbo<>?`P2
+Z71 DEx4 work 15 monitor_bus_i2c 0 22 k`ibg2A[YmP@ijbo<>?`P2
 l41
 L15
 V=FUkTXzCE>Em?b7D5MI@E2
@@ -355,9 +441,9 @@ R9
 32
 R10
 !i10b 1
-R11
-R57
-R58
+R23
+R69
+R70
 !i113 1
 R14
 R15
@@ -369,8 +455,8 @@ R3
 R4
 R5
 R6
-Z60 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_slave_i2c.vhd
-Z61 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_slave_i2c.vhd
+Z72 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_slave_i2c.vhd
+Z73 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_slave_i2c.vhd
 l0
 L53
 V?]X@Sgo[QicRV^1F83?f83
@@ -379,9 +465,9 @@ R9
 32
 R10
 !i10b 1
-R11
-Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_slave_i2c.vhd|
-Z63 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_slave_i2c.vhd|
+R23
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_slave_i2c.vhd|
+Z75 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_slave_i2c.vhd|
 !i113 1
 R14
 R15
@@ -400,9 +486,9 @@ R9
 32
 R10
 !i10b 1
-R11
-R62
-R63
+R23
+R74
+R75
 !i113 1
 R14
 R15
@@ -411,8 +497,8 @@ R4
 R5
 R0
 R6
-Z64 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/pack_agente_slave_i2c.vhd
-Z65 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/pack_agente_slave_i2c.vhd
+Z76 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/pack_agente_slave_i2c.vhd
+Z77 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/pack_agente_slave_i2c.vhd
 l0
 L8
 VAhkk1VinfRVjmL>KK?N<53
@@ -422,9 +508,9 @@ R9
 b1
 R10
 !i10b 1
-R11
-Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/pack_agente_slave_i2c.vhd|
-Z67 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/pack_agente_slave_i2c.vhd|
+R23
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/pack_agente_slave_i2c.vhd|
+Z79 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/pack_agente_slave_i2c.vhd|
 !i113 1
 R14
 R15
@@ -442,32 +528,32 @@ R9
 32
 R10
 !i10b 1
-R11
-R66
-R67
+R23
+R78
+R79
 !i113 1
 R14
 R15
 Ereg_in_sda
-Z68 w1773145083
+Z80 w1773145083
 R2
 R3
 R4
 R5
 R6
-Z69 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_in_SDA.vhd
-Z70 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_in_SDA.vhd
+Z81 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_in_SDA.vhd
+Z82 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_in_SDA.vhd
 l0
 L38
 V7F5Iamb<a`QJczGCGdHUj0
 !s100 TDDH;?I`[dkk1fWO5hjIO2
 R9
 32
-R10
+R29
 !i10b 1
 R11
-Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_in_SDA.vhd|
-Z72 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_in_SDA.vhd|
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_in_SDA.vhd|
+Z84 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_in_SDA.vhd|
 !i113 1
 R14
 R15
@@ -476,41 +562,41 @@ R2
 R3
 R4
 R5
-R52
+R64
 l50
 L48
 VlBGCVhOmRSR^4zbA8mZDZ2
 !s100 :_KoYHR^z2kDd7Me9J>Tf1
 R9
 32
-R10
+R29
 !i10b 1
 R11
-R71
-R72
+R83
+R84
 !i113 1
 R14
 R15
 Ereg_out_sda
-Z73 w1773144755
+Z85 w1773144755
 R2
 R3
 R4
 R5
 R6
-Z74 8C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\interfaz-I2C\hdl\reg_out_SDA.vhd
-Z75 FC:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\interfaz-I2C\hdl\reg_out_SDA.vhd
+Z86 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_out_SDA.vhd
+Z87 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_out_SDA.vhd
 l0
 L48
 VT5U`2@TX0No0V35Ao^3Y<0
 !s100 IWIKD^0XC6FjMR`ED1^m73
 R9
 32
-R10
+R29
 !i10b 1
 R11
-Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\interfaz-I2C\hdl\reg_out_SDA.vhd|
-Z77 !s107 C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\interfaz-I2C\hdl\reg_out_SDA.vhd|
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_out_SDA.vhd|
+Z89 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_out_SDA.vhd|
 !i113 1
 R14
 R15
@@ -519,18 +605,18 @@ R2
 R3
 R4
 R5
-R53
+R65
 l64
 L60
 Vl4_jW]k^ez2U=Nz27W4G_1
 !s100 3IGAbGNNdV9U9?3dbA2aF0
 R9
 32
-R10
+R29
 !i10b 1
 R11
-R76
-R77
+R88
+R89
 !i113 1
 R14
 R15
@@ -542,8 +628,8 @@ R3
 R4
 R5
 R6
-Z78 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/responder_slave_i2c.vhd
-Z79 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/responder_slave_i2c.vhd
+Z90 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/responder_slave_i2c.vhd
+Z91 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/responder_slave_i2c.vhd
 l0
 L40
 Vk?liIK5KYNe=BWn1ZBlKC2
@@ -552,9 +638,9 @@ R9
 32
 R10
 !i10b 1
-R11
-Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/responder_slave_i2c.vhd|
-Z81 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/responder_slave_i2c.vhd|
+R23
+Z92 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/responder_slave_i2c.vhd|
+Z93 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/responder_slave_i2c.vhd|
 !i113 1
 R14
 R15
@@ -573,9 +659,9 @@ R9
 32
 R10
 !i10b 1
-R11
-R80
-R81
+R23
+R92
+R93
 !i113 1
 R14
 R15
@@ -587,19 +673,19 @@ R3
 R4
 R5
 R6
-Z82 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/secuenciador_interfaz_i2c.vhd
-Z83 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/secuenciador_interfaz_i2c.vhd
+Z94 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/secuenciador_interfaz_i2c.vhd
+Z95 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/secuenciador_interfaz_i2c.vhd
 l0
 L17
 VlPo]I@l[?Yb`N3:FTTB>`0
 !s100 IcWdGO?HO=]UkLP^akM?h0
 R9
 32
-Z84 !s110 1773847180
+R10
 !i10b 1
-R11
-Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/secuenciador_interfaz_i2c.vhd|
-Z86 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/secuenciador_interfaz_i2c.vhd|
+R23
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/secuenciador_interfaz_i2c.vhd|
+Z97 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/secuenciador_interfaz_i2c.vhd|
 !i113 1
 R14
 R15
@@ -609,18 +695,18 @@ R2
 R3
 R4
 R5
-Z87 DEx4 work 25 secuenciador_interfaz_i2c 0 22 lPo]I@l[?Yb`N3:FTTB>`0
+Z98 DEx4 work 25 secuenciador_interfaz_i2c 0 22 lPo]I@l[?Yb`N3:FTTB>`0
 l33
 L32
 V@oNi2ARICRZFEdhDD[a9Z0
 !s100 N_GjK^X@439VZM3`JKHY]0
 R9
 32
-R84
+R10
 !i10b 1
-R11
-R85
-R86
+R23
+R96
+R97
 !i113 1
 R14
 R15
@@ -632,19 +718,19 @@ R3
 R4
 R5
 R6
-Z88 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/sequencer_slave_i2c.vhd
-Z89 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/sequencer_slave_i2c.vhd
+Z99 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/sequencer_slave_i2c.vhd
+Z100 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/sequencer_slave_i2c.vhd
 l0
 L30
 V8dLkgDO;[G;J4Cl0:5=472
 !s100 lo6??Qd>iCna3ZilED?`93
 R9
 32
-R84
+R10
 !i10b 1
-Z90 !s108 1773847180.000000
-Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/sequencer_slave_i2c.vhd|
-Z92 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/sequencer_slave_i2c.vhd|
+R23
+Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/sequencer_slave_i2c.vhd|
+Z102 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/sequencer_slave_i2c.vhd|
 !i113 1
 R14
 R15
@@ -661,11 +747,11 @@ V?SanYW[dN55]Nk1?X1AiY3
 !s100 7IZLkTaUJ1X;@`a04l@3N0
 R9
 32
-R84
+R10
 !i10b 1
-R90
-R91
-R92
+R23
+R101
+R102
 !i113 1
 R14
 R15
@@ -677,45 +763,45 @@ R3
 R4
 R5
 R6
-Z93 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/test_basico_interfaz_i2c.vhd
-Z94 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/test_basico_interfaz_i2c.vhd
+Z103 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/test_basico_interfaz_i2c.vhd
+Z104 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/test_basico_interfaz_i2c.vhd
 l0
 L17
 VhezS_o1^kO0TQ6_ZI_]461
 !s100 LYTakjnK5V;NY@<3[3B:00
 R9
 32
-R84
+R10
 !i10b 1
-R90
-Z95 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/test_basico_interfaz_i2c.vhd|
-Z96 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/test_basico_interfaz_i2c.vhd|
+R23
+Z105 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/test_basico_interfaz_i2c.vhd|
+Z106 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/test_basico_interfaz_i2c.vhd|
 !i113 1
 R14
 R15
 Atest
 R20
-R59
-R87
-R35
-R54
+R71
+R98
+R37
+R66
 R1
 R2
 R3
 R4
 R5
-Z97 DEx4 work 24 test_basico_interfaz_i2c 0 22 hezS_o1^kO0TQ6_ZI_]461
+Z107 DEx4 work 24 test_basico_interfaz_i2c 0 22 hezS_o1^kO0TQ6_ZI_]461
 l38
 L20
-Z98 V7h]z`gVVelSNDR8M9WVJ11
-Z99 !s100 f`if3aAhBCibAW9Pgh]Zg3
+Z108 V7h]z`gVVelSNDR8M9WVJ11
+Z109 !s100 f`if3aAhBCibAW9Pgh]Zg3
 R9
 32
-R84
+R10
 !i10b 1
-R90
-R95
-R96
+R23
+R105
+R106
 !i113 1
 R14
 R15

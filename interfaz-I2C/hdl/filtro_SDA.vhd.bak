@@ -42,45 +42,10 @@ end entity;
 architecture rtl of filtro_SDA_50M is
   signal SDA_in_T:   std_logic_vector(4 downto 1);   -- Rango con referencias                --signal SDA_in_T:   std_logic_vector(6 downto 1);
   signal SDA_T_0:    std_logic;                      -- Simplificacion del codigo
-signal reg1_SDA_T0: std_logic;
-  signal reg2_SDA_T0: std_logic;
-  signal reg3_SDA_T0: std_logic;
 
 begin
 
---SDA_T_0 <= To_X01(SDA_in);                               -- SDA_T_0 vale '0' o 'H'
-
-  process(clk, nRst)                                 --  flip-flop de sincronizacion 1                              
-  begin
-    if nRst = '0' then
-      reg1_SDA_T0 <= '0';
-
-    elsif clk'event and clk = '1' then
-	  reg1_SDA_T0 <= SDA_in;
-	end if;
-  end process;
-  
-  process(clk, nRst)                                 -- flip-flop de sincronizacion 2, metaestable                            
-  begin
-    if nRst = '0' then
-      reg2_SDA_T0 <= '0';
-
-    elsif clk'event and clk = '1' then
-	  reg2_SDA_T0 <= reg1_SDA_T0;
-	end if;
-  end process;
-
-process(clk, nRst)                                 -- flip-flop de sincronizacion 2, metaestable                            
-  begin
-    if nRst = '0' then
-      reg3_SDA_T0 <= '0';
-
-    elsif clk'event and clk = '1' then
-	  reg3_SDA_T0 <= reg2_SDA_T0;
-	end if;
-  end process;
-  
-  SDA_T_0 <= To_X01(reg3_SDA_T0);                     -- SDA_T_0 vale '0' o 'H'                           -- SDA_T_0 vale '0' o 'H'
+SDA_T_0 <= To_X01(SDA_in);                               -- SDA_T_0 vale '0' o 'H'
 
   process(clk, nRst)                                 -- Filtrado de glitches = 50 ns (3x20ns = 60ns) DEPENDIENTE DEL RELOJ
   begin

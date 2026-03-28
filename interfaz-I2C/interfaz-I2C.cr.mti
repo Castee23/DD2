@@ -1,4 +1,4 @@
-C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_out_SDA.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\interfaz-I2C\hdl\reg_out_SDA.vhd}
+C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_out_SDA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_out_SDA.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -34,8 +34,8 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package std_logic_1164
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity filtro_SDA
--- Compiling architecture rtl of filtro_SDA
+-- Compiling entity filtro_SDA_50M
+-- Compiling architecture rtl of filtro_SDA_50M
 
 } {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_slave_i2c.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/monitor_slave_i2c.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
@@ -48,6 +48,16 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling entity monitor_slave_i2c
 -- Compiling architecture sim of monitor_slave_i2c
 
+} {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/gen_SCL.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/gen_SCL.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity gen_SCL
+-- Compiling architecture rtl of gen_SCL
+
 } {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/responder_slave_i2c.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/responder_slave_i2c.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
@@ -58,16 +68,6 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package pack_agente_slave_i2c
 -- Compiling entity responder_slave_i2c
 -- Compiling architecture sim of responder_slave_i2c
-
-} {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/gen_SCL.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/gen_SCL.vhd
-Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity gen_SCL
--- Compiling architecture rtl of gen_SCL
 
 } {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_in_SDA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_in_SDA.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
