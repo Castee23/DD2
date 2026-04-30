@@ -1,0 +1,11 @@
+C:/Users/r.gmoro/Desktop/DDII/Proy2/Conv-BCD_Ca2/HDL/conv-bcd_ca2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/r.gmoro/Desktop/DDII/Proy2/Conv-BCD_Ca2/HDL/conv-bcd_ca2.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity conv_bcd_ca2
+-- Compiling architecture rtl of conv_bcd_ca2
+
+} {} {}}
