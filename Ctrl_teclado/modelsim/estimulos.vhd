@@ -4,7 +4,7 @@
 -- Fecha: 17-02-2021
 --------------------------------------------------------------------------------------------------
 -- Estimulos para el test del controlador de teclado.
--- El reloj y el reset asíncrono se aplican directamente en elnivel superior de la jerarquia del
+-- El reloj y el reset asíncrono se aplican directamente en el nivel superior de la jerarquia del
 -- test
 --------------------------------------------------------------------------------------------------
 library ieee;
@@ -33,8 +33,6 @@ stim: process
     wait for 30*T_CLK;
     wait until clk'event and clk = '1';
     -- Para completar por los estudiantes (inicio)
-    -- ...
--- Para completar por los estudiantes (inicio)
 
 -- Esperar a que el sistema arranque
 espera_TIC(clk, tic, 5);
@@ -61,8 +59,6 @@ espera_TIC(clk, tic, 5);
 
 pulsa_tecla(clk, x"9", pulsacion_larga, tecla_test, duracion_test, pulsar_tecla);
 espera_TIC(clk, tic, 5);
-
-
 
 	
     -- Para completar por los estudiantes (fin) 

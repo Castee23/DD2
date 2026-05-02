@@ -1,0 +1,289 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/ConversorBCD_C2/Modelsim
+Ebin_a_bcd_secuencial
+Z0 w1777720726
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/ConversorC2_BCD/Modelsim
+Z5 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/ConversorC2_BCD/HDL/convca2_bcd.vhd
+Z6 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/ConversorC2_BCD/HDL/convca2_bcd.vhd
+l0
+L5
+V>>><aUG[0o;Gok:TNWd@m0
+!s100 MA6WnUSFQ6VH^SmSNYBH63
+Z7 OV;C;10.4d;61
+32
+Z8 !s110 1777720937
+!i10b 1
+Z9 !s108 1777720937.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/ConversorC2_BCD/HDL/convca2_bcd.vhd|
+Z11 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/ConversorC2_BCD/HDL/convca2_bcd.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1
+Aestructural
+R1
+R2
+R3
+DEx4 work 20 bin_a_bcd_secuencial 0 22 >>><aUG[0o;Gok:TNWd@m0
+l37
+L16
+Vi6QA[i8knCHS0X8Am_WoG3
+!s100 ]CR;YB__ennP:OlAfFW0O0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Econv_ca2_bcd
+Z14 w1777719982
+R1
+R2
+R3
+R4
+R5
+R6
+l0
+L7
+V0NTOC2zeA?N2GoOeZUB?^2
+!s100 A_Zm19^PfLE5Mm[;eNdSJ1
+R7
+32
+Z15 !s110 1777720482
+!i10b 1
+Z16 !s108 1777720482.000000
+R10
+R11
+!i113 1
+R12
+R13
+Artl
+R1
+R2
+R3
+DEx4 work 12 conv_ca2_bcd 0 22 0NTOC2zeA?N2GoOeZUB?^2
+l76
+L16
+Vj?o:TM2mHmKoc8MXDe=Rg3
+!s100 6kH@XHz<6^8g]_OIHe3ZV3
+R7
+32
+R15
+!i10b 1
+R16
+R10
+R11
+!i113 1
+R12
+R13
+Econvca2_bcd
+Z17 w1777724727
+Z18 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z19 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R2
+R3
+R4
+Z20 8C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\ConversorC2_BCD\HDL\convca2_bcd.vhd
+Z21 FC:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\ConversorC2_BCD\HDL\convca2_bcd.vhd
+l0
+L5
+V>bgmF1Zm^M;Gk34i:b>:R0
+!s100 bj1T2[Mm6l4jAI8DTEOSk1
+R7
+32
+Z22 !s110 1777724732
+!i10b 1
+Z23 !s108 1777724732.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\ConversorC2_BCD\HDL\convca2_bcd.vhd|
+Z25 !s107 C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\ConversorC2_BCD\HDL\convca2_bcd.vhd|
+!i113 1
+R12
+R13
+Artl
+Z26 DEx4 work 15 sumadorbcd_6dig 0 22 70EchQ=[cicNF<eXQ6?XJ0
+R18
+R19
+R2
+R3
+Z27 DEx4 work 11 convca2_bcd 0 22 >bgmF1Zm^M;Gk34i:b>:R0
+l28
+L17
+Va4Ag02aoK5I[QmIW?MmHf1
+!s100 kZWW2DdG>ELioSLIT<d4h1
+R7
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R12
+R13
+Econvca2_bcd_tb
+Z28 w1777724511
+R18
+R19
+R2
+R3
+R4
+Z29 8C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\ConversorC2_BCD\Modelsim\convca2_bcd_tb.vhd
+Z30 FC:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\ConversorC2_BCD\Modelsim\convca2_bcd_tb.vhd
+l0
+L5
+VQ2?kDUO`_6^m2<mZ=a0G32
+!s100 Mo`z;5?n;n<BgT@=ef3VF0
+R7
+32
+R22
+!i10b 1
+R23
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\ConversorC2_BCD\Modelsim\convca2_bcd_tb.vhd|
+Z32 !s107 C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\ConversorC2_BCD\Modelsim\convca2_bcd_tb.vhd|
+!i113 1
+R12
+R13
+Atest
+R27
+R18
+R19
+R2
+R3
+DEx4 work 14 convca2_bcd_tb 0 22 Q2?kDUO`_6^m2<mZ=a0G32
+l19
+L8
+VN2b5Wa@_zoGTzdno7gke21
+!s100 4RCU?^aA1VVh8nTNC5bd?1
+R7
+32
+R22
+!i10b 1
+R23
+R31
+R32
+!i113 1
+R12
+R13
+Esumador_bcd
+Z33 w1777723114
+R18
+R19
+R2
+R3
+R4
+Z34 8C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\ConversorC2_BCD\Modelsim\sumador_bcd.vhd
+Z35 FC:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\ConversorC2_BCD\Modelsim\sumador_bcd.vhd
+l0
+L5
+VE9znfhSmB<QY95b7>RBF70
+!s100 GfIg6Zjb3Xea^562zkAfL3
+R7
+32
+R22
+!i10b 1
+R23
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\ConversorC2_BCD\Modelsim\sumador_bcd.vhd|
+Z37 !s107 C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\ConversorC2_BCD\Modelsim\sumador_bcd.vhd|
+!i113 1
+R12
+R13
+Artl
+R18
+R19
+R2
+R3
+Z38 DEx4 work 11 sumador_bcd 0 22 E9znfhSmB<QY95b7>RBF70
+l17
+L15
+V1Xl]^=V5;BXYHFdZ6k@XR1
+!s100 <BKE2=m8^]<a@bAZVa^?S2
+R7
+32
+R22
+!i10b 1
+R23
+R36
+R37
+!i113 1
+R12
+R13
+Acomportamental
+R1
+R2
+R3
+DEx4 work 11 sumador_bcd 0 22 KC>MJN4MVYLo:L>i7F9fk2
+l16
+L15
+VN<M<iafj6f9XDK0OK:oRk1
+!s100 7m8VlJ<2m8zTd>UWP682h3
+R7
+32
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/ConversorC2_BCD/Modelsim/sumador_bcd.vhd|
+!s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/ConversorC2_BCD/Modelsim/sumador_bcd.vhd|
+!i113 1
+R12
+R13
+FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/ConversorC2_BCD/Modelsim/sumador_bcd.vhd
+w1777720751
+8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/ConversorC2_BCD/Modelsim/sumador_bcd.vhd
+Esumadorbcd_6dig
+Z39 w1777721800
+R18
+R19
+R2
+R3
+R4
+Z40 8C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\ConversorC2_BCD\Modelsim\sumadorBCD_6dig.vhd
+Z41 FC:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\ConversorC2_BCD\Modelsim\sumadorBCD_6dig.vhd
+l0
+L5
+V70EchQ=[cicNF<eXQ6?XJ0
+!s100 gG0P1C3;<H1l<44Xc_=Ef0
+R7
+32
+R22
+!i10b 1
+R23
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\ConversorC2_BCD\Modelsim\sumadorBCD_6dig.vhd|
+Z43 !s107 C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\ConversorC2_BCD\Modelsim\sumadorBCD_6dig.vhd|
+!i113 1
+R12
+R13
+Artl
+R38
+R18
+R19
+R2
+R3
+R26
+l18
+L15
+Z44 VN06zA?D1Ba`zk8lIA_GLm3
+Z45 !s100 KLOlGEhHLi:71d?Zm>m`70
+R7
+32
+R22
+!i10b 1
+R23
+R42
+R43
+!i113 1
+R12
+R13

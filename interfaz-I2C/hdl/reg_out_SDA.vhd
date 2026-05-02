@@ -3,7 +3,7 @@
 -- Modelo VHDL 2002 de un circuito que maneja el dato de salida en la linea
 -- bidireccional SDA de una interfaz FAST I2C
 
--- Especificación funcional y detalles de la implementación:
+-- Especificaciï¿½n funcional y detalles de la implementaciï¿½n:
 
 -- 1.- Salida SDA_out y entradas sincronas:
 -- Especificacion: El circuito debe serializar los bytes que se envian en operaciones de escritura en el bus I2C
@@ -21,7 +21,7 @@
 --     c.- El master tenga que activar ACK (poner a 0 SDA en el intervalo de ACK) cuando lee datos; en este caso tambien se
 --         activa reset_SDA
 --
--- 2.- Se deba generar una condición de STOP(puesta a 1 de SDA con SCL a nivel alto)
+-- 2.- Se deba generar una condiciï¿½n de STOP(puesta a 1 de SDA con SCL a nivel alto)
 --     a.- La condicion de STOP consiste en la carga de  un '1' en el bit de mayor peso del registro, que es el que esta
 --         conectado a la salida SDA; dicha carga se realiza cuando se activa, a nivel alto, la entrada preset_SDA, que esta
 --         conectada a la salida homonima del modulo de control
@@ -38,7 +38,7 @@
 --              de la interfaz.
 --
 --    Designer: DTE
---    Versión: 1.0
+--    Versiï¿½n: 1.0
 --    Fecha: 25-11-2016 
  
 library ieee;

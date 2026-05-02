@@ -146,7 +146,7 @@ R32
 R14
 R15
 Ectrl_tec
-Z33 w1774702832
+Z33 w1775745909
 R2
 R3
 R4
@@ -160,9 +160,9 @@ VEXUjk45XbjRD3:6D@HJXe1
 !s100 UT6`[[NJWo;3Ondozb:KQ3
 R9
 32
-Z36 !s110 1774702852
+Z36 !s110 1775745935
 !i10b 1
-Z37 !s108 1774702851.000000
+Z37 !s108 1775745935.000000
 Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/ctrl_tec.vhd|
 Z39 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/ctrl_tec.vhd|
 !i113 1
@@ -176,8 +176,8 @@ R5
 Z40 DEx4 work 8 ctrl_tec 0 22 EXUjk45XbjRD3:6D@HJXe1
 l29
 L21
-VUS8`iHYezYk^BRbSTKkam0
-!s100 7V;AR9[Q[[DXGPEEzXN4T0
+Z41 VH@J4j?:KE;o:IA9F<kb731
+Z42 !s100 5DBdC09BDCXcWZ=:hPXd^1
 R9
 32
 R36
@@ -193,8 +193,8 @@ R0
 R4
 R5
 R6
-Z41 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/driver_clk_nRst.vhd
-Z42 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/driver_clk_nRst.vhd
+Z43 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/driver_clk_nRst.vhd
+Z44 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/driver_clk_nRst.vhd
 l0
 L8
 VdgKHegBA7OTlFnYf?fdE;2
@@ -203,16 +203,16 @@ R9
 32
 R23
 !i10b 1
-Z43 !s108 1774708748.000000
-Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/driver_clk_nRst.vhd|
-Z45 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/driver_clk_nRst.vhd|
+Z45 !s108 1774708748.000000
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/driver_clk_nRst.vhd|
+Z47 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/driver_clk_nRst.vhd|
 !i113 1
 R14
 R15
 Asim
 R4
 R5
-Z46 DEx4 work 15 driver_clk_nrst 0 22 dgKHegBA7OTlFnYf?fdE;2
+Z48 DEx4 work 15 driver_clk_nrst 0 22 dgKHegBA7OTlFnYf?fdE;2
 l17
 L16
 V9m]NIzjm7mj3gSk__fk1G2
@@ -221,54 +221,54 @@ R9
 32
 R23
 !i10b 1
-R43
-R44
 R45
+R46
+R47
 !i113 1
 R14
 R15
 Eestimulos
-Z47 w1774697047
-Z48 DPx4 work 17 pack_test_teclado 0 22 DT5dZg`;h7bfb1gb3i3_X3
+Z49 w1774714067
+Z50 DPx4 work 17 pack_test_teclado 0 22 DT5dZg`;h7bfb1gb3i3_X3
 R2
 R3
 R4
 R5
 R6
-Z49 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/estimulos.vhd
-Z50 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/estimulos.vhd
+Z51 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/estimulos.vhd
+Z52 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/estimulos.vhd
 l0
 L15
 V:GjnWFTzaBk`5MTjoGC^k0
 !s100 TJll>0`4^:<ZdNj]cfa[T3
 R9
 32
-Z51 !s110 1774702851
+R36
 !i10b 1
-R37
-Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/estimulos.vhd|
-Z53 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/estimulos.vhd|
+Z53 !s108 1775745934.000000
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/estimulos.vhd|
+Z55 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/estimulos.vhd|
 !i113 1
 R14
 R15
 Atest
-R48
+R50
 R2
 R3
 R4
 R5
-Z54 DEx4 work 9 estimulos 0 22 :GjnWFTzaBk`5MTjoGC^k0
+Z56 DEx4 work 9 estimulos 0 22 :GjnWFTzaBk`5MTjoGC^k0
 l27
 L25
-VMgRBAbaaMCYF4nUg=f[HT0
-!s100 F4a;`ZS3OQnD=Rh8Ec;6=2
+VQb39mTilV=z^cLHY<85782
+!s100 ZB5Fb1INZGQg6nOeSj1oY1
 R9
 32
-R51
+R36
 !i10b 1
-R37
-R52
 R53
+R54
+R55
 !i113 1
 R14
 R15
@@ -279,8 +279,8 @@ R3
 R4
 R5
 R6
-Z55 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/hdl/filtro_SDA.vhd
-Z56 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/hdl/filtro_SDA.vhd
+Z57 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/hdl/filtro_SDA.vhd
+Z58 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/hdl/filtro_SDA.vhd
 l0
 L34
 VO7IgL8B1b@S9`boo>DB6e3
@@ -290,8 +290,8 @@ R9
 R29
 !i10b 1
 R30
-Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/hdl/filtro_SDA.vhd|
-Z58 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/hdl/filtro_SDA.vhd|
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/hdl/filtro_SDA.vhd|
+Z60 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/hdl/filtro_SDA.vhd|
 !i113 1
 R14
 R15
@@ -307,11 +307,11 @@ V[ZL`XX5iXOOCCF^Ea]CNR3
 !s100 8ThiC1hZn4`FaX4cH7KM;2
 R9
 32
-Z59 !s110 1774708839
+!s110 1774708839
 !i10b 1
-Z60 !s108 1774708839.000000
-R57
-R58
+!s108 1774708839.000000
+R59
+R60
 !i113 1
 R14
 R15
@@ -383,8 +383,8 @@ R30
 R14
 R15
 Emonitor
-Z66 w1774694474
-R48
+Z66 w1774698074
+R50
 R2
 R3
 R4
@@ -398,7 +398,7 @@ VDE<R40DNa5U;IE^`62iD03
 !s100 Lb8iHZUR:f?CcV:gzRQFg1
 R9
 32
-R51
+R36
 !i10b 1
 R37
 Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/monitor.vhd|
@@ -407,7 +407,7 @@ Z70 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsi
 R14
 R15
 Atest
-R48
+R50
 R2
 R3
 R4
@@ -419,7 +419,7 @@ VZC<N:K67`Ck[K;8?CEgSX3
 !s100 Om5oDN]RJBK>TE75oZ7JO2
 R9
 32
-R51
+R36
 !i10b 1
 R37
 R69
@@ -444,7 +444,7 @@ R9
 32
 R23
 !i10b 1
-R43
+R45
 Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/monitor_bus_i2c.vhd|
 Z75 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/monitor_bus_i2c.vhd|
 !i113 1
@@ -464,7 +464,7 @@ R9
 32
 R23
 !i10b 1
-R43
+R45
 R74
 R75
 !i113 1
@@ -488,7 +488,7 @@ R9
 32
 R23
 !i10b 1
-R43
+R45
 Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/monitor_slave_i2c.vhd|
 Z80 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/monitor_slave_i2c.vhd|
 !i113 1
@@ -509,7 +509,7 @@ R9
 32
 R23
 !i10b 1
-R43
+R45
 R79
 R80
 !i113 1
@@ -531,7 +531,7 @@ R9
 b1
 R23
 !i10b 1
-R43
+R45
 Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/pack_agente_slave_i2c.vhd|
 Z84 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/pack_agente_slave_i2c.vhd|
 !i113 1
@@ -551,7 +551,7 @@ R9
 32
 R23
 !i10b 1
-R43
+R45
 R83
 R84
 !i113 1
@@ -573,7 +573,7 @@ VDT5dZg`;h7bfb1gb3i3_X3
 R9
 32
 b1
-R51
+R36
 !i10b 1
 R37
 Z87 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/pack_test_teclado.vhd|
@@ -582,7 +582,7 @@ Z88 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsi
 R14
 R15
 Bbody
-R48
+R50
 R2
 R3
 R4
@@ -593,7 +593,7 @@ VBmi3>JQRHmY:h2i3j_3hg3
 !s100 mfi2@MCGR?kUSQdaAO`KE3
 R9
 32
-R51
+R36
 !i10b 1
 R37
 R87
@@ -672,11 +672,11 @@ R2
 R3
 R4
 R5
-Z100 DEx4 work 11 reg_out_sda 0 22 T5U`2@TX0No0V35Ao^3Y<0
+DEx4 work 11 reg_out_sda 0 22 T5U`2@TX0No0V35Ao^3Y<0
 l64
 L60
-Z101 Vl4_jW]k^ez2U=Nz27W4G_1
-Z102 !s100 3IGAbGNNdV9U9?3dbA2aF0
+Vl4_jW]k^ez2U=Nz27W4G_1
+!s100 3IGAbGNNdV9U9?3dbA2aF0
 R9
 32
 R97
@@ -695,8 +695,8 @@ R3
 R4
 R5
 R6
-Z103 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/responder_slave_i2c.vhd
-Z104 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/responder_slave_i2c.vhd
+Z100 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/responder_slave_i2c.vhd
+Z101 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/responder_slave_i2c.vhd
 l0
 L40
 Vk?liIK5KYNe=BWn1ZBlKC2
@@ -705,9 +705,9 @@ R9
 32
 R23
 !i10b 1
-R43
-Z105 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/responder_slave_i2c.vhd|
-Z106 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/responder_slave_i2c.vhd|
+R45
+Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/responder_slave_i2c.vhd|
+Z103 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/responder_slave_i2c.vhd|
 !i113 1
 R14
 R15
@@ -726,9 +726,9 @@ R9
 32
 R23
 !i10b 1
-R43
-R105
-R106
+R45
+R102
+R103
 !i113 1
 R14
 R15
@@ -740,19 +740,19 @@ R3
 R4
 R5
 R6
-Z107 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/secuenciador_interfaz_i2c.vhd
-Z108 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/secuenciador_interfaz_i2c.vhd
+Z104 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/secuenciador_interfaz_i2c.vhd
+Z105 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/secuenciador_interfaz_i2c.vhd
 l0
 L17
 VlPo]I@l[?Yb`N3:FTTB>`0
 !s100 IcWdGO?HO=]UkLP^akM?h0
 R9
 32
-Z109 !s110 1774708749
+Z106 !s110 1774708749
 !i10b 1
-R43
-Z110 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/secuenciador_interfaz_i2c.vhd|
-Z111 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/secuenciador_interfaz_i2c.vhd|
+R45
+Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/secuenciador_interfaz_i2c.vhd|
+Z108 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/secuenciador_interfaz_i2c.vhd|
 !i113 1
 R14
 R15
@@ -762,18 +762,18 @@ R2
 R3
 R4
 R5
-Z112 DEx4 work 25 secuenciador_interfaz_i2c 0 22 lPo]I@l[?Yb`N3:FTTB>`0
+Z109 DEx4 work 25 secuenciador_interfaz_i2c 0 22 lPo]I@l[?Yb`N3:FTTB>`0
 l33
 L32
 V@oNi2ARICRZFEdhDD[a9Z0
 !s100 N_GjK^X@439VZM3`JKHY]0
 R9
 32
-R109
+R106
 !i10b 1
-R43
-R110
-R111
+R45
+R107
+R108
 !i113 1
 R14
 R15
@@ -785,8 +785,8 @@ R3
 R4
 R5
 R6
-Z113 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/sequencer_slave_i2c.vhd
-Z114 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/sequencer_slave_i2c.vhd
+Z110 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/sequencer_slave_i2c.vhd
+Z111 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/sequencer_slave_i2c.vhd
 l0
 L30
 V8dLkgDO;[G;J4Cl0:5=472
@@ -796,8 +796,8 @@ R9
 R10
 !i10b 1
 R11
-Z115 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/sequencer_slave_i2c.vhd|
-Z116 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/sequencer_slave_i2c.vhd|
+Z112 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/sequencer_slave_i2c.vhd|
+Z113 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/sequencer_slave_i2c.vhd|
 !i113 1
 R14
 R15
@@ -817,8 +817,8 @@ R9
 R10
 !i10b 1
 R11
-R115
-R116
+R112
+R113
 !i113 1
 R14
 R15
@@ -827,37 +827,37 @@ R66
 R4
 R5
 R6
-Z117 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/teclado.vhd
-Z118 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/teclado.vhd
+Z114 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/teclado.vhd
+Z115 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/teclado.vhd
 l0
 L22
 VZf<WKn_XFb@bKhJJ6h_P12
 !s100 oNGGM<Jb4PQ_kT5<kPoDm2
 R9
 32
-R51
+R36
 !i10b 1
 R37
-Z119 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/teclado.vhd|
-Z120 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/teclado.vhd|
+Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/teclado.vhd|
+Z117 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/teclado.vhd|
 !i113 1
 R14
 R15
 Atest
 R4
 R5
-Z121 DEx4 work 7 teclado 0 22 Zf<WKn_XFb@bKhJJ6h_P12
+Z118 DEx4 work 7 teclado 0 22 Zf<WKn_XFb@bKhJJ6h_P12
 l32
 L30
 V=Zm`oe5izNC0V3f0R<?D[3
 !s100 fZba[g:X[gA1ee43FSh:T0
 R9
 32
-R51
+R36
 !i10b 1
 R37
-R119
-R120
+R116
+R117
 !i113 1
 R14
 R15
@@ -869,8 +869,8 @@ R3
 R4
 R5
 R6
-Z122 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/test_basico_interfaz_i2c.vhd
-Z123 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/test_basico_interfaz_i2c.vhd
+Z119 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/test_basico_interfaz_i2c.vhd
+Z120 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/test_basico_interfaz_i2c.vhd
 l0
 L17
 VhezS_o1^kO0TQ6_ZI_]461
@@ -880,16 +880,16 @@ R9
 R10
 !i10b 1
 R11
-Z124 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/test_basico_interfaz_i2c.vhd|
-Z125 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/test_basico_interfaz_i2c.vhd|
+Z121 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/test_basico_interfaz_i2c.vhd|
+Z122 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C-100MHz/modelsim/test_basico_interfaz_i2c.vhd|
 !i113 1
 R14
 R15
 Atest
 R20
 R76
-R112
-R46
+R109
+R48
 DEx4 work 12 interfaz_i2c 0 22 1:I;m@cEK85<YWlRmJLhH3
 R1
 R2
@@ -906,41 +906,41 @@ R9
 R10
 !i10b 1
 R11
-R124
-R125
+R121
+R122
 !i113 1
 R14
 R15
 Etest_ctrl_tec
 R66
-R48
+R50
 R2
 R3
 R4
 R5
 R6
-Z126 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/test_ctrl_tec.vhd
-Z127 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/test_ctrl_tec.vhd
+Z123 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/test_ctrl_tec.vhd
+Z124 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/test_ctrl_tec.vhd
 l0
 L48
 V?i8<MjSZogjZnN4?Lij`Y3
 !s100 3H^W8oQj`jQ8^d>2;09A;3
 R9
 32
-R51
+R36
 !i10b 1
 R37
-Z128 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/test_ctrl_tec.vhd|
-Z129 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/test_ctrl_tec.vhd|
+Z125 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/test_ctrl_tec.vhd|
+Z126 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Ctrl_teclado/modelsim/test_ctrl_tec.vhd|
 !i113 1
 R14
 R15
 Atest
 R71
-R54
+R56
 R40
-R121
-R48
+R118
+R50
 R2
 R3
 R4
@@ -952,11 +952,11 @@ V8XAG@Dn_UiHlA:7YzF4n:3
 !s100 TW;]6SK`S5:]?nB_>PNkT1
 R9
 32
-R51
+R36
 !i10b 1
 R37
-R128
-R129
+R125
+R126
 !i113 1
 R14
 R15

@@ -74,6 +74,7 @@ begin
     end case;
   end if;
 end process;
+
   process(clk, nRst)
   begin
     if nRst = '0' then
@@ -91,14 +92,16 @@ end process;
 
           col_reg <= columna;
 
-          if cnt_tic < SEG then
+          if cnt_tic < TICS_2s then
             cnt_tic <= cnt_tic + 1;
           end if;
 
           tecla_reg <= tecla_temp;
+        end if;
 
-
-          if cnt_tic >= SEG then
+      end if;
+    
+          if cnt_tic >= TICS_2s then
             pulso_largo_reg <= '1';
           else
             pulso_largo_reg <= '0';
@@ -106,9 +109,9 @@ end process;
 
           tecla_pulsada_reg <= '0';
 
-        else
+        
 
-          if cnt_tic > 0 and cnt_tic < SEG then
+          if cnt_tic > 0 and cnt_tic < TICS_2s then
             tecla_pulsada_reg <= '1'; -- pulso corto
           else
             tecla_pulsada_reg <= '0';
@@ -124,10 +127,8 @@ end process;
             when "1011" => fila_reg <= "0111";
             when others => fila_reg <= "1110";
           end case;
-        end if;
-
-      end if;
-    end if;
+	end if;
   end process;
 
 end rtl;
+

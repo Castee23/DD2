@@ -1,14 +1,4 @@
-C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_out_SDA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_out_SDA.vhd
-Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity reg_out_SDA
--- Compiling architecture rtl of reg_out_SDA
-
-} {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/driver_clk_nRst.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/driver_clk_nRst.vhd
+C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/driver_clk_nRst.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/driver_clk_nRst.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -68,16 +58,6 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package pack_agente_slave_i2c
 -- Compiling entity responder_slave_i2c
 -- Compiling architecture sim of responder_slave_i2c
-
-} {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_in_SDA.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/hdl/reg_in_SDA.vhd
-Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity reg_in_SDA
--- Compiling architecture rtl of reg_in_SDA
 
 } {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/pack_agente_slave_i2c.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C/modelsim/pack_agente_slave_i2c.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015

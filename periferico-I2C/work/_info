@@ -1,0 +1,1615 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/interfaz-I2C
+Eagente_ibr_perif_i2c
+Z0 w1776348471
+Z1 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+Z2 DPx4 work 21 pack_random_functions 0 22 F>9H=kQ^j[57XcUT2JENK1
+Z3 DPx4 work 25 pack_agente_ibr_perif_i2c 0 22 hFY00lKK40]X28WoMQjHn3
+Z4 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z5 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 dC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C
+Z9 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/agente_ibr_perif_i2c.vhd
+Z10 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/agente_ibr_perif_i2c.vhd
+l0
+L12
+VAAeSojagFUK8K=]<cGKN?2
+!s100 @8NVQE7_mgMaIMlIU^VZ<3
+Z11 OV;C;10.4d;61
+32
+Z12 !s110 1776958029
+!i10b 1
+Z13 !s108 1776958029.000000
+Z14 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/agente_ibr_perif_i2c.vhd|
+Z15 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/agente_ibr_perif_i2c.vhd|
+!i113 1
+Z16 o-work work -2002 -explicit
+Z17 tExplicit 1
+Astruct_sim
+Z18 DEx4 work 17 seq_ibr_perif_i2c 0 22 ebTmzIQYdjbTOdkPi<B?51
+Z19 DEx4 work 21 monitor_ibr_perif_i2c 0 22 BgOUHA5Tz>[mb6>S;6GGa3
+Z20 DEx4 work 22 colector_ibr_perif_i2c 0 22 HiS4ke`E;NTb_b`J[V?3J1
+Z21 DEx4 work 20 driver_ibr_perif_i2c 0 22 G=k^fAGzWlE<IbFLd@oKc3
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+Z22 DEx4 work 20 agente_ibr_perif_i2c 0 22 AAeSojagFUK8K=]<cGKN?2
+l42
+L34
+V_Pk<7JNoY;SP74bR1TBH]1
+!s100 z[d<47PT?md_5WnjP1A`[2
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 1
+R16
+R17
+Eagente_slave_i2c
+Z23 w1776952320
+R1
+R2
+Z24 DPx4 work 21 pack_agente_slave_i2c 0 22 i1TAaLHQ3^G?R7PGmWMAB2
+R4
+R5
+R6
+R7
+R8
+Z25 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/agente_slave_i2c.vhd
+Z26 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/agente_slave_i2c.vhd
+l0
+L11
+Vjn^3aSY0A8HD`Uje5RBP?0
+!s100 =4b7FJbj[YPUeGfT_nY3m1
+R11
+32
+Z27 !s110 1776958030
+!i10b 1
+R13
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/agente_slave_i2c.vhd|
+Z29 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/agente_slave_i2c.vhd|
+!i113 1
+R16
+R17
+Asim_struct
+Z30 DPx4 work 18 pack_seq_slave_i2c 0 22 f3jIdLM[^Bbb`In31PWaX3
+Z31 DEx4 work 19 sequencer_slave_i2c 0 22 ej:DjLO5DV[HAd[nE<h7<2
+Z32 DEx4 work 17 monitor_slave_i2c 0 22 ?]X@Sgo[QicRV^1F83?f83
+Z33 DEx4 work 18 colector_slave_i2c 0 22 1haYeohBAgMGT?IeT[]cY1
+Z34 DEx4 work 19 responder_slave_i2c 0 22 k?liIK5KYNe=BWn1ZBlKC2
+R1
+R2
+R24
+R4
+R5
+R6
+R7
+Z35 DEx4 work 16 agente_slave_i2c 0 22 jn^3aSY0A8HD`Uje5RBP?0
+l32
+L22
+V?_bB@gbzB_e^RjYPh`Of90
+!s100 V`cKN71m;o4YkA@;1Y=dP3
+R11
+32
+R27
+!i10b 1
+R13
+R28
+R29
+!i113 1
+R16
+R17
+Ecolector_ibr_perif_i2c
+R0
+R1
+R2
+R4
+R5
+R3
+R6
+R7
+R8
+Z36 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/colector_ibr_perif_i2c.vhd
+Z37 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/colector_ibr_perif_i2c.vhd
+l0
+L11
+VHiS4ke`E;NTb_b`J[V?3J1
+!s100 2R9eZZ5kEEi2LM]5K5QMd3
+R11
+32
+R27
+!i10b 1
+Z38 !s108 1776958030.000000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/colector_ibr_perif_i2c.vhd|
+Z40 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/colector_ibr_perif_i2c.vhd|
+!i113 1
+R16
+R17
+Asim
+R1
+R2
+R4
+R5
+R3
+R6
+R7
+R20
+l29
+L28
+V<:0jDjb`8MNB]@UOSoDD62
+!s100 B86Q<b?`5ORG>L=fPjVCN3
+R11
+32
+R27
+!i10b 1
+R38
+R39
+R40
+!i113 1
+R16
+R17
+Ecolector_slave_i2c
+R23
+R1
+R2
+R24
+R4
+R5
+R6
+R7
+R8
+Z41 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/colector_slave_i2c.vhd
+Z42 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/colector_slave_i2c.vhd
+l0
+L35
+V1haYeohBAgMGT?IeT[]cY1
+!s100 5RX2icEjCZEF2zOim1^je2
+R11
+32
+Z43 !s110 1776958022
+!i10b 1
+Z44 !s108 1776958022.000000
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/colector_slave_i2c.vhd|
+Z46 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/colector_slave_i2c.vhd|
+!i113 1
+R16
+R17
+Asim
+R1
+R2
+R24
+R4
+R5
+R6
+R7
+R33
+l53
+L46
+V9gm8ZYL<Tf;224@;@1aVN0
+!s100 `>OAVT4YLBhRg[RjIXH6b2
+R11
+32
+R43
+!i10b 1
+R44
+R45
+R46
+!i113 1
+R16
+R17
+Ectrl_i2c
+Z47 w1773682706
+R4
+R5
+R6
+R7
+R8
+Z48 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/control_i2c.vhd
+Z49 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/control_i2c.vhd
+l0
+L65
+V[4>EPGl_d]z44kk38C2``1
+!s100 k?jSj<7_`33DL;l9]KW`Y3
+R11
+32
+R27
+!i10b 1
+R38
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/control_i2c.vhd|
+Z51 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/control_i2c.vhd|
+!i113 1
+R16
+R17
+Artl
+R4
+R5
+R6
+R7
+Z52 DEx4 work 8 ctrl_i2c 0 22 [4>EPGl_d]z44kk38C2``1
+l119
+L104
+VThQ8WP^P^fNIe7d[OLWm?2
+!s100 n573l^<U5A3MHZND4:@k03
+R11
+32
+R27
+!i10b 1
+R38
+R50
+R51
+!i113 1
+R16
+R17
+Edriver_clk_nrst
+R23
+R6
+R7
+R8
+Z53 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/driver_clk_nRst.vhd
+Z54 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/driver_clk_nRst.vhd
+l0
+L8
+VdgKHegBA7OTlFnYf?fdE;2
+!s100 @j]Jzm[oR>=iRjbZ==cjb3
+R11
+32
+R43
+!i10b 1
+R44
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/driver_clk_nRst.vhd|
+Z56 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/driver_clk_nRst.vhd|
+!i113 1
+R16
+R17
+Asim
+R6
+R7
+Z57 DEx4 work 15 driver_clk_nrst 0 22 dgKHegBA7OTlFnYf?fdE;2
+l17
+L16
+V9m]NIzjm7mj3gSk__fk1G2
+!s100 MWSl@CKm4>3WQg6z50bCB2
+R11
+32
+R43
+!i10b 1
+R44
+R55
+R56
+!i113 1
+R16
+R17
+Edriver_ibr_perif_i2c
+R0
+R1
+R2
+R4
+R5
+R3
+R6
+R7
+R8
+Z58 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/driver_ibr_perif_i2c.vhd
+Z59 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/driver_ibr_perif_i2c.vhd
+l0
+L11
+VG=k^fAGzWlE<IbFLd@oKc3
+!s100 hi>b^ZMNUldjoH2K;c:5S3
+R11
+32
+R43
+!i10b 1
+R44
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/driver_ibr_perif_i2c.vhd|
+Z61 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/driver_ibr_perif_i2c.vhd|
+!i113 1
+R16
+R17
+Asim
+R1
+R2
+R4
+R5
+R3
+R6
+R7
+R21
+l29
+L28
+V>PHDd8Tn9Sg9iBmiR?Wi81
+!s100 >;;Ih1:oHXQ>MN[6ikBCg3
+R11
+32
+R43
+!i10b 1
+R44
+R60
+R61
+!i113 1
+R16
+R17
+Efifo_256x8_dp
+R0
+R4
+R5
+R6
+R7
+R8
+Z62 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/fifo_256x8_dp.vhd
+Z63 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/fifo_256x8_dp.vhd
+l0
+L11
+Vml?g8;k[ERiifWG0k4NN72
+!s100 ce>`2AUSd>fbRaEo8EAnc2
+R11
+32
+R27
+!i10b 1
+R38
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/fifo_256x8_dp.vhd|
+Z65 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/fifo_256x8_dp.vhd|
+!i113 1
+R16
+R17
+Artl
+Z66 DPx9 altera_mf 20 altera_mf_components 0 22 JIZVPUohD7dNa?8:C5^LG2
+Z67 DEx4 work 12 ram_dp_256x8 0 22 S]jOh2I`XMiDW3HjF`<XJ3
+R4
+R5
+R6
+R7
+Z68 DEx4 work 13 fifo_256x8_dp 0 22 ml?g8;k[ERiifWG0k4NN72
+l33
+L25
+VjP^c0Vc9J`E68md7L=BUR1
+!s100 =ETN`e3HDO;=?a1`__>D`2
+R11
+32
+R27
+!i10b 1
+R38
+R64
+R65
+!i113 1
+R16
+R17
+Efifo_dp_256x8
+R0
+R6
+R7
+R8
+Z69 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/FIFO_dp_256x8.vhd
+Z70 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/FIFO_dp_256x8.vhd
+l0
+L43
+Vz:f8QI[PK5z6z:So`XdS50
+!s100 45WYU0kLGh`XO^Kh>2NL[0
+R11
+32
+R27
+!i10b 1
+R38
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/FIFO_dp_256x8.vhd|
+Z72 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/FIFO_dp_256x8.vhd|
+!i113 1
+R16
+R17
+Asyn
+R6
+R7
+Z73 DEx4 work 13 fifo_dp_256x8 0 22 z:f8QI[PK5z6z:So`XdS50
+l96
+L60
+VKSEIEmX:WkGPndBSM8Q:U3
+!s100 FE39O_[@JSLH^zVPcQ@;;0
+R11
+32
+R27
+!i10b 1
+R38
+R71
+R72
+!i113 1
+R16
+R17
+Efiltro_sda_100m
+Z74 w1774713225
+R4
+R5
+R6
+R7
+R8
+Z75 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/filtro_SDA.vhd
+Z76 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/filtro_SDA.vhd
+l0
+L34
+VL4LC857b=7Y@LFSR;d9Lk0
+!s100 6M4m>`eAD3>d@L6?VbVlf2
+R11
+32
+R27
+!i10b 1
+R38
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/filtro_SDA.vhd|
+Z78 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/filtro_SDA.vhd|
+!i113 1
+R16
+R17
+Artl
+R4
+R5
+R6
+R7
+Z79 DEx4 work 15 filtro_sda_100m 0 22 L4LC857b=7Y@LFSR;d9Lk0
+l49
+L42
+VP8`Y@eYAjj>57Wb`l^bzU0
+!s100 XVJWkUiBTmbBAWlPjXbMU0
+R11
+32
+R27
+!i10b 1
+R38
+R77
+R78
+!i113 1
+R16
+R17
+Egen_scl
+Z80 w1774713748
+R4
+R5
+R6
+R7
+R8
+Z81 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/gen_SCL.vhd
+Z82 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/gen_SCL.vhd
+l0
+L72
+V9a;Fa:2fP7P8Gg`:86jL93
+!s100 9TIN2CJ?;ef8_CK>XK[4@1
+R11
+32
+R27
+!i10b 1
+R38
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/gen_SCL.vhd|
+Z84 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/gen_SCL.vhd|
+!i113 1
+R16
+R17
+Artl
+R4
+R5
+R6
+R7
+Z85 DEx4 work 7 gen_scl 0 22 9a;Fa:2fP7P8Gg`:86jL93
+l112
+L85
+V>gS1PJX2OkgV@T70IBfR:2
+!s100 c;92AALYMhOeYkdl1BgNm0
+R11
+32
+R27
+!i10b 1
+R38
+R83
+R84
+!i113 1
+R16
+R17
+Einterfaz_i2c
+Z86 w1774712856
+R4
+R5
+R6
+R7
+R8
+Z87 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/interfaz_i2c.vhd
+Z88 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/interfaz_i2c.vhd
+l0
+L43
+V1:I;m@cEK85<YWlRmJLhH3
+!s100 EUFNJ1X8O;GoV@o57=ohO0
+R11
+32
+R27
+!i10b 1
+R38
+Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/interfaz_i2c.vhd|
+Z90 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/interfaz_i2c.vhd|
+!i113 1
+R16
+R17
+Aestructural
+Z91 DEx4 work 10 reg_in_sda 0 22 7F5Iamb<a`QJczGCGdHUj0
+R79
+Z92 DEx4 work 11 reg_out_sda 0 22 T5U`2@TX0No0V35Ao^3Y<0
+R52
+R85
+R4
+R5
+R6
+R7
+Z93 DEx4 work 12 interfaz_i2c 0 22 1:I;m@cEK85<YWlRmJLhH3
+l74
+L58
+VJL`;DzccS>C83UXACeZ:h2
+!s100 J[Pdb8bLWFo?df`OzeY_J1
+R11
+32
+R27
+!i10b 1
+R38
+R89
+R90
+!i113 1
+R16
+R17
+Einterfaz_periferico
+R0
+R4
+R5
+R6
+R7
+R8
+Z94 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/interfaz_periferico.vhd
+Z95 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/interfaz_periferico.vhd
+l0
+L51
+V85SAl=KD9;i_h<[9k0CR01
+!s100 ^Z]UL@Jn>SlhWoiGfc>6H2
+R11
+32
+Z96 !s110 1776958031
+!i10b 1
+R38
+Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/interfaz_periferico.vhd|
+Z98 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/interfaz_periferico.vhd|
+!i113 1
+R16
+R17
+Artl
+R68
+R73
+R4
+R5
+R6
+R7
+Z99 DEx4 work 19 interfaz_periferico 0 22 85SAl=KD9;i_h<[9k0CR01
+l100
+L71
+VlLDRiU19W04ocRcOh3]?a0
+!s100 gQeSWeVS@0V]U6L`clIO02
+R11
+32
+R96
+!i10b 1
+R38
+R97
+R98
+!i113 1
+R16
+R17
+Emonitor_bus_i2c
+R23
+R4
+R5
+R6
+R7
+R8
+Z100 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/monitor_bus_i2c.vhd
+Z101 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/monitor_bus_i2c.vhd
+l0
+L9
+Vk`ibg2A[YmP@ijbo<>?`P2
+!s100 E=H0E93:S2bXk`5D^nHEK1
+R11
+32
+R43
+!i10b 1
+R44
+Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/monitor_bus_i2c.vhd|
+Z103 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/monitor_bus_i2c.vhd|
+!i113 1
+R16
+R17
+Asim
+R4
+R5
+R6
+R7
+Z104 DEx4 work 15 monitor_bus_i2c 0 22 k`ibg2A[YmP@ijbo<>?`P2
+l41
+L15
+V=FUkTXzCE>Em?b7D5MI@E2
+!s100 _T7TN@YSGi3JLK6Mei?G51
+R11
+32
+R43
+!i10b 1
+R44
+R102
+R103
+!i113 1
+R16
+R17
+Emonitor_ibr_perif_i2c
+R0
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z105 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/monitor_ibr_perif_i2c.vhd
+Z106 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/monitor_ibr_perif_i2c.vhd
+l0
+L12
+VBgOUHA5Tz>[mb6>S;6GGa3
+!s100 YVUoNo677E7]7N30@Q7l21
+R11
+32
+R43
+!i10b 1
+R44
+Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/monitor_ibr_perif_i2c.vhd|
+Z108 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/monitor_ibr_perif_i2c.vhd|
+!i113 1
+R16
+R17
+Asim
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R19
+l30
+L29
+VGLMh;d=c?So[]>Uf3ecUh0
+!s100 MUdFB7_j;@=n9c<ooP5YY1
+R11
+32
+R43
+!i10b 1
+R44
+R107
+R108
+!i113 1
+R16
+R17
+Emonitor_slave_i2c
+R23
+R1
+R2
+R24
+R4
+R5
+R6
+R7
+R8
+Z109 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/monitor_slave_i2c.vhd
+Z110 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/monitor_slave_i2c.vhd
+l0
+L53
+V?]X@Sgo[QicRV^1F83?f83
+!s100 _m<6=EAF6WCUF1Az:j^3B0
+R11
+32
+R43
+!i10b 1
+R44
+Z111 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/monitor_slave_i2c.vhd|
+Z112 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/monitor_slave_i2c.vhd|
+!i113 1
+R16
+R17
+Asim
+R1
+R2
+R24
+R4
+R5
+R6
+R7
+R32
+l69
+L68
+VLPHcEm=eDNN6JN_DYOIVk1
+!s100 ^gj9ki<i598SLlQIc]j]=3
+R11
+32
+R43
+!i10b 1
+R44
+R111
+R112
+!i113 1
+R16
+R17
+Ppack_agente_ibr_perif_i2c
+R1
+R2
+R4
+R5
+R6
+R7
+R0
+R8
+8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/pack_agente_ibr_perif_i2c.vhd
+FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/pack_agente_ibr_perif_i2c.vhd
+l0
+L7
+VhFY00lKK40]X28WoMQjHn3
+!s100 ^05U3^@I]DI555F9RR[4D2
+R11
+32
+R43
+!i10b 1
+R44
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/pack_agente_ibr_perif_i2c.vhd|
+!s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/pack_agente_ibr_perif_i2c.vhd|
+!i113 1
+R16
+R17
+Ppack_agente_slave_i2c
+R1
+R4
+R5
+R2
+R6
+R7
+R23
+R8
+Z113 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/pack_agente_slave_i2c.vhd
+Z114 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/pack_agente_slave_i2c.vhd
+l0
+L10
+Vi1TAaLHQ3^G?R7PGmWMAB2
+!s100 :m2do0__Nnf8nQ^ULW_EA2
+R11
+32
+b1
+Z115 !s110 1776958023
+!i10b 1
+R44
+Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/pack_agente_slave_i2c.vhd|
+Z117 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/pack_agente_slave_i2c.vhd|
+!i113 1
+R16
+R17
+Bbody
+R24
+R1
+R4
+R5
+R2
+R6
+R7
+l0
+L79
+V]FkM9z8f3Q:nHM8J_N>:Z3
+!s100 JKj0_W_nCVFIl]zMInSD60
+R11
+32
+R115
+!i10b 1
+R44
+R116
+R117
+!i113 1
+R16
+R17
+Ppack_random_functions
+R1
+R4
+R5
+R6
+R7
+R23
+R8
+Z118 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/pack_random_functions.vhd
+Z119 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/pack_random_functions.vhd
+l0
+L10
+VF>9H=kQ^j[57XcUT2JENK1
+!s100 @_@AXAD4n1mU<O@jW@3>h2
+R11
+32
+b1
+R115
+!i10b 1
+Z120 !s108 1776958023.000000
+Z121 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/pack_random_functions.vhd|
+Z122 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/pack_random_functions.vhd|
+!i113 1
+R16
+R17
+Bbody
+R2
+R1
+R4
+R5
+R6
+R7
+l0
+L44
+V4IO`<m=9=AMC>7ZLFkdTY2
+!s100 Un?LVZ:gkQ3J77ozm^NoA3
+R11
+32
+R115
+!i10b 1
+R120
+R121
+R122
+!i113 1
+R16
+R17
+Ppack_seq_slave_i2c
+R24
+R1
+R4
+R5
+R2
+R6
+R7
+R23
+R8
+Z123 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/pack_seq_slave_i2c.vhd
+Z124 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/pack_seq_slave_i2c.vhd
+l0
+L11
+Vf3jIdLM[^Bbb`In31PWaX3
+!s100 :jC=1eSX>Wjnc_7GOX1B63
+R11
+32
+b1
+R115
+!i10b 1
+R120
+Z125 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/pack_seq_slave_i2c.vhd|
+Z126 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/pack_seq_slave_i2c.vhd|
+!i113 1
+R16
+R17
+Bbody
+R30
+R24
+R1
+R4
+R5
+R2
+R6
+R7
+l0
+L61
+V89WV<4PW2bjAZQ_MP<0MD1
+!s100 CzGWYR3P2e`:]l5>4U@kY2
+R11
+32
+R115
+!i10b 1
+R120
+R125
+R126
+!i113 1
+R16
+R17
+Eperiferico_i2c
+R0
+R4
+R5
+R6
+R7
+R8
+Z127 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/periferico_i2c.vhd
+Z128 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/periferico_i2c.vhd
+l0
+L51
+VY]lJV@fYMoHRGFW>26=l:1
+!s100 e>zlD3=i`lWgPEJ>a;16d3
+R11
+32
+R96
+!i10b 1
+Z129 !s108 1776958031.000000
+Z130 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/periferico_i2c.vhd|
+Z131 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/periferico_i2c.vhd|
+!i113 1
+R16
+R17
+Aestructural
+R93
+R99
+R4
+R5
+R6
+R7
+Z132 DEx4 work 14 periferico_i2c 0 22 Y]lJV@fYMoHRGFW>26=l:1
+l73
+L64
+VbPGZ<mfFP34XgY2bI^5E?0
+!s100 VnFBAciVFiQjPb29@9HKE1
+R11
+32
+R96
+!i10b 1
+R129
+R130
+R131
+!i113 1
+R16
+R17
+Epll_100mhz_conarst
+Z133 w1776957627
+R6
+R7
+R8
+Z134 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/pll_100MHz_conarst.vhd
+Z135 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/pll_100MHz_conarst.vhd
+l0
+L43
+VoPo9:1fPPQV^`ajU;d<gB3
+!s100 g>jL6kb7PC<31EiS6l6411
+R11
+32
+Z136 !s110 1776958032
+!i10b 1
+Z137 !s108 1776958032.000000
+Z138 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/pll_100MHz_conarst.vhd|
+Z139 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/pll_100MHz_conarst.vhd|
+!i113 1
+R16
+R17
+Asyn
+R6
+R7
+Z140 DEx4 work 18 pll_100mhz_conarst 0 22 oPo9:1fPPQV^`ajU;d<gB3
+l126
+L52
+Z141 VKAi<TB6G`FiQ<o`0jEeaJ3
+Z142 !s100 blIf5Om=Q3dUdjHaB>oGh0
+R11
+32
+R136
+!i10b 1
+R137
+R138
+R139
+!i113 1
+R16
+R17
+Epresentacion_medida
+R23
+R4
+R5
+R6
+R7
+R8
+Z143 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/presentacion_medida.vhd
+Z144 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/presentacion_medida.vhd
+l0
+L5
+V=XNLN_^o8b9F[[oPDF9a71
+!s100 jzn56DChJ9m47^04>e52<2
+R11
+32
+R96
+!i10b 1
+R129
+Z145 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/presentacion_medida.vhd|
+Z146 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/presentacion_medida.vhd|
+!i113 1
+R16
+R17
+Artl
+R4
+R5
+R6
+R7
+Z147 DEx4 work 19 presentacion_medida 0 22 =XNLN_^o8b9F[[oPDF9a71
+l42
+L18
+VGN=B6jhBiIG_j^f;JFLGM2
+!s100 9k;Rl3I]N;3@oOm:]OnRN3
+R11
+32
+R96
+!i10b 1
+R129
+R145
+R146
+!i113 1
+R16
+R17
+Eprocesador_medida
+R23
+R4
+R5
+R6
+R7
+R8
+Z148 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/procesador_medida.vhd
+Z149 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/procesador_medida.vhd
+l0
+L16
+Vj[bBH2AWDJ7NRjF;6JZLG3
+!s100 4DR?fCT880;h7mhLURCm<3
+R11
+32
+R96
+!i10b 1
+R129
+Z150 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/procesador_medida.vhd|
+Z151 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/procesador_medida.vhd|
+!i113 1
+R16
+R17
+Artl
+R4
+R5
+R6
+R7
+Z152 DEx4 work 17 procesador_medida 0 22 j[bBH2AWDJ7NRjF;6JZLG3
+l65
+L37
+V>d2iGUC3g5fmEh`S:XPRD0
+!s100 SA;dF^j665UNl1D1i;mEa1
+R11
+32
+R96
+!i10b 1
+R129
+R150
+R151
+!i113 1
+R16
+R17
+Eprototipo_medida_th
+Z153 w1776957883
+R6
+R7
+R8
+Z154 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/prototipo_medida_TH.vhd
+Z155 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/prototipo_medida_TH.vhd
+l0
+L4
+V872@b]AfgLd?^DNMD[84<2
+!s100 ;nY3Dn4jDEN8[M2@H53Mo1
+R11
+32
+R96
+!i10b 1
+R129
+Z156 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/prototipo_medida_TH.vhd|
+Z157 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/prototipo_medida_TH.vhd|
+!i113 1
+R16
+R17
+Aestructural
+R140
+R147
+R152
+R132
+R4
+R5
+Z158 DEx4 work 12 timer_medida 0 22 eBPfMAYL:dF5YJF8C22N73
+R6
+R7
+Z159 DEx4 work 19 prototipo_medida_th 0 22 872@b]AfgLd?^DNMD[84<2
+l31
+L14
+VHN>ZK64b_7CEXdJhE<N^b0
+!s100 bfP8=0dU6i][Rc?h?AKlU1
+R11
+32
+R96
+!i10b 1
+R129
+R156
+R157
+!i113 1
+R16
+R17
+Eram_dp_256x8
+R0
+R66
+R6
+R7
+R8
+Z160 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/RAM_DP_256x8.vhd
+Z161 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/RAM_DP_256x8.vhd
+l0
+L43
+VS]jOh2I`XMiDW3HjF`<XJ3
+!s100 RbU^_4IELz84gQCa5NhJ51
+R11
+32
+R96
+!i10b 1
+R129
+Z162 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/RAM_DP_256x8.vhd|
+Z163 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/RAM_DP_256x8.vhd|
+!i113 1
+R16
+R17
+Asyn
+R66
+R6
+R7
+R67
+l61
+L57
+V[?EnFTn5Pigm8RFGbIA903
+!s100 _jd^4UcGJE>]?TndSbjN00
+R11
+32
+R96
+!i10b 1
+R129
+R162
+R163
+!i113 1
+R16
+R17
+Ereg_in_sda
+Z164 w1773148683
+R4
+R5
+R6
+R7
+R8
+Z165 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/reg_in_SDA.vhd
+Z166 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/reg_in_SDA.vhd
+l0
+L38
+V7F5Iamb<a`QJczGCGdHUj0
+!s100 TDDH;?I`[dkk1fWO5hjIO2
+R11
+32
+R96
+!i10b 1
+R129
+Z167 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/reg_in_SDA.vhd|
+Z168 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/reg_in_SDA.vhd|
+!i113 1
+R16
+R17
+Artl
+R4
+R5
+R6
+R7
+R91
+l50
+L48
+VlBGCVhOmRSR^4zbA8mZDZ2
+!s100 :_KoYHR^z2kDd7Me9J>Tf1
+R11
+32
+R96
+!i10b 1
+R129
+R167
+R168
+!i113 1
+R16
+R17
+Ereg_out_sda
+Z169 w1773148355
+R4
+R5
+R6
+R7
+R8
+Z170 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/reg_out_SDA.vhd
+Z171 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/reg_out_SDA.vhd
+l0
+L48
+VT5U`2@TX0No0V35Ao^3Y<0
+!s100 IWIKD^0XC6FjMR`ED1^m73
+R11
+32
+R96
+!i10b 1
+R129
+Z172 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/reg_out_SDA.vhd|
+Z173 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/reg_out_SDA.vhd|
+!i113 1
+R16
+R17
+Artl
+R4
+R5
+R6
+R7
+R92
+l64
+L60
+Vl4_jW]k^ez2U=Nz27W4G_1
+!s100 3IGAbGNNdV9U9?3dbA2aF0
+R11
+32
+R96
+!i10b 1
+R129
+R172
+R173
+!i113 1
+R16
+R17
+Eresponder_slave_i2c
+R23
+R1
+R2
+R24
+R4
+R5
+R6
+R7
+R8
+Z174 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/responder_slave_i2c.vhd
+Z175 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/responder_slave_i2c.vhd
+l0
+L40
+Vk?liIK5KYNe=BWn1ZBlKC2
+!s100 RmkmgYX73MKKPKQh8_bNQ1
+R11
+32
+R115
+!i10b 1
+R120
+Z176 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/responder_slave_i2c.vhd|
+Z177 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/responder_slave_i2c.vhd|
+!i113 1
+R16
+R17
+Asim
+R1
+R2
+R24
+R4
+R5
+R6
+R7
+R34
+l59
+L51
+VElP`ZFj::5nzG4XehKX_M2
+!s100 Y`B^G;M_gziF[Qzjn9FOC1
+R11
+32
+R115
+!i10b 1
+R120
+R176
+R177
+!i113 1
+R16
+R17
+Escoreboard_perif_i2c
+R0
+R24
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+Z178 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/scoreboard_perif_i2c.vhd
+Z179 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/scoreboard_perif_i2c.vhd
+l0
+L13
+VH>d=j[I[:ZYoAd`1QoPSI0
+!s100 ^WBl]8SGULCcD@FVPGcG42
+R11
+32
+R115
+!i10b 1
+R120
+Z180 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/scoreboard_perif_i2c.vhd|
+Z181 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/scoreboard_perif_i2c.vhd|
+!i113 1
+R16
+R17
+Asim
+R24
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+Z182 DEx4 work 20 scoreboard_perif_i2c 0 22 H>d=j[I[:ZYoAd`1QoPSI0
+l24
+L23
+VCoI7TR]Ac[nc<D:A3^97J3
+!s100 fdW:zCN5;;CeoH2PS6Q>m2
+R11
+32
+R115
+!i10b 1
+R120
+R180
+R181
+!i113 1
+R16
+R17
+Eseq_ibr_perif_i2c
+R0
+R3
+R1
+R2
+R4
+R5
+R6
+R7
+R8
+Z183 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/seq_ibr_perif_i2c.vhd
+Z184 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/seq_ibr_perif_i2c.vhd
+l0
+L12
+VebTmzIQYdjbTOdkPi<B?51
+!s100 edHo:[@mekP4O2Z=D_g_?2
+R11
+32
+R115
+!i10b 1
+R120
+Z185 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/seq_ibr_perif_i2c.vhd|
+Z186 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/seq_ibr_perif_i2c.vhd|
+!i113 1
+R16
+R17
+Asim
+R3
+R1
+R2
+R4
+R5
+R6
+R7
+R18
+l26
+L24
+V=eWaQNQWkY;7O<odX0dYI2
+!s100 4D`0RgLLLmD8XeKeRW4Al3
+R11
+32
+R115
+!i10b 1
+R120
+R185
+R186
+!i113 1
+R16
+R17
+Esequencer_slave_i2c
+R23
+R30
+R24
+R1
+R2
+R4
+R5
+R6
+R7
+R8
+Z187 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/sequencer_slave_i2c.vhd
+Z188 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/sequencer_slave_i2c.vhd
+l0
+L32
+Vej:DjLO5DV[HAd[nE<h7<2
+!s100 Zz2KH]jKnFeXXMClP@:m02
+R11
+32
+Z189 !s110 1776958027
+!i10b 1
+Z190 !s108 1776958027.000000
+Z191 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/sequencer_slave_i2c.vhd|
+Z192 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/sequencer_slave_i2c.vhd|
+!i113 1
+R16
+R17
+Asim
+R30
+R24
+R1
+R2
+R4
+R5
+R6
+R7
+R31
+l46
+L45
+V`0i;<Q@E3WIzjnIQi5UiV1
+!s100 <X3_?FEB1>e8SIZ8Pe]G?2
+R11
+32
+R189
+!i10b 1
+R190
+R191
+R192
+!i113 1
+R16
+R17
+Etest_periferico_i2c
+R0
+R3
+R1
+R2
+R24
+R4
+R5
+R6
+R7
+R8
+Z193 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/test_periferico_i2c.vhd
+Z194 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/test_periferico_i2c.vhd
+l0
+L25
+VR?@k2HXEkJfR?LKQ1E?;P3
+!s100 ^L`H0=cDUm8ggPmAl0li`0
+R11
+32
+Z195 !s110 1776958028
+!i10b 1
+Z196 !s108 1776958028.000000
+Z197 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/test_periferico_i2c.vhd|
+Z198 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/modelsim/test_periferico_i2c.vhd|
+!i113 1
+R16
+R17
+Atest
+R104
+R182
+R35
+R22
+R57
+R132
+R3
+R1
+R2
+R24
+R4
+R5
+R6
+R7
+DEx4 work 19 test_periferico_i2c 0 22 R?@k2HXEkJfR?LKQ1E?;P3
+l52
+L28
+VAXkINZ_nT>=@R4_zoW0fG1
+!s100 NR>dACV1_TWF6L`l4j`?=1
+R11
+32
+R195
+!i10b 1
+R196
+R197
+R198
+!i113 1
+R16
+R17
+Etest_prototipo_medida_th
+Z199 w1776958013
+R1
+R2
+R24
+R4
+R5
+R6
+R7
+R8
+Z200 8C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\periferico-I2C\modelsim\test_prototipo_medida_TH.vhd
+Z201 FC:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\periferico-I2C\modelsim\test_prototipo_medida_TH.vhd
+l0
+L12
+V6P4:0SPooeF7_m<XM911N3
+!s100 d>j?HGj42S1Z=91]Dk]XP3
+R11
+32
+R136
+!i10b 1
+R129
+Z202 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\periferico-I2C\modelsim\test_prototipo_medida_TH.vhd|
+Z203 !s107 C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\periferico-I2C\modelsim\test_prototipo_medida_TH.vhd|
+!i113 1
+R16
+R17
+Atest
+R104
+R35
+R57
+R159
+R1
+R2
+R24
+R4
+R5
+R6
+R7
+DEx4 work 24 test_prototipo_medida_th 0 22 6P4:0SPooeF7_m<XM911N3
+l32
+L15
+VBOEQ`;:84g9WPol@cneDl0
+!s100 ;<0P2Wk7Y9iOabLQ8IbTc2
+R11
+32
+R136
+!i10b 1
+R129
+R202
+R203
+!i113 1
+R16
+R17
+Etimer_medida
+R23
+R4
+R5
+R6
+R7
+R8
+Z204 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/timer_medida.vhd
+Z205 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/timer_medida.vhd
+l0
+L5
+VeBPfMAYL:dF5YJF8C22N73
+!s100 FWmEzGFn[PXh?h^ol^WI^0
+R11
+32
+R96
+!i10b 1
+R129
+Z206 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/timer_medida.vhd|
+Z207 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/periferico-I2C/hdl/timer_medida.vhd|
+!i113 1
+R16
+R17
+Artl
+R4
+R5
+R6
+R7
+R158
+l24
+L15
+V_GTQ]jRo=9:1S6mRGaV=z2
+!s100 _O=T@j8mU0n`GFN;JJk<J3
+R11
+32
+R96
+!i10b 1
+R129
+R206
+R207
+!i113 1
+R16
+R17

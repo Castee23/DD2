@@ -74,6 +74,7 @@ begin
     end case;
   end if;
 end process;
+
   process(clk, nRst)
   begin
     if nRst = '0' then
@@ -117,7 +118,6 @@ end process;
           pulso_largo_reg <= '0';
           cnt_tic <= (others => '0');
 
-
           case fila_reg is
             when "1110" => fila_reg <= "1101";
             when "1101" => fila_reg <= "1011";
@@ -131,3 +131,4 @@ end process;
   end process;
 
 end rtl;
+

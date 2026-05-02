@@ -1,9 +1,9 @@
 -- Modelo de master i2c
 -- Fichero reg_in_SDA.vhd
--- Modelo VHDL 2002 de un circuito que lee los bytes transferidos en una transacción en el bus I2C
+-- Modelo VHDL 2002 de un circuito que lee los bytes transferidos en una transacciï¿½n en el bus I2C
 -- El reloj del circuito es de 50 MHz (Tclk = 20 ns)
 
--- Especificación funcional y detalles de la implementación:
+-- Especificaciï¿½n funcional y detalles de la implementaciï¿½n:
 
 -- 1.- Salida dato_out y entradas sincronas:
 -- Especificacion: 
@@ -28,7 +28,7 @@
 --              de la interfaz.
 --
 --    Designer: DTE
---    Versión: 1.0
+--    Versiï¿½n: 1.0
 --    Fecha: 25-11-2016 
 
 library ieee;
@@ -59,7 +59,7 @@ begin
         reg_SDA <= (others => '0');
 
       elsif leer_bit_SDA = '1' then  
-	reg_SDA <= reg_SDA(6 downto 0) & SDA_in;      
+	      reg_SDA <= reg_SDA(6 downto 0) & SDA_in;      
 
       end if;
     end if;
