@@ -1,0 +1,270 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera/16.0
+Econv_bcd_ca2
+Z0 w1777908552
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dE:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim
+Z6 8E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/convbcd_ca2.vhd
+Z7 FE:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/convbcd_ca2.vhd
+l0
+L7
+VC=leOY;MZ6lUj<leoFkNC3
+!s100 TbGLVca`z6;<BkC`]Ra^R0
+Z8 OV;C;10.4d;61
+32
+Z9 !s110 1777908659
+!i10b 1
+Z10 !s108 1777908659.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/convbcd_ca2.vhd|
+Z12 !s107 E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/convbcd_ca2.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1
+Artl
+R1
+R2
+R3
+R4
+Z15 DEx4 work 12 conv_bcd_ca2 0 22 C=leOY;MZ6lUj<leoFkNC3
+l16
+L14
+V_M3bdA7J9HYel`?J3XbYd3
+!s100 ;H_DUVG_gZKbm7=`JGX8g0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Econvbcd_ca2_tb
+Z16 w1777908654
+R3
+R4
+R5
+Z17 8E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/convbcd_ca2_tb.vhd
+Z18 FE:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/convbcd_ca2_tb.vhd
+l0
+L5
+Vm5ZL^dXETWFNcGOVc1NOE3
+!s100 @HzPi:nJTdJoWkZ8^l3z82
+R8
+32
+R9
+!i10b 1
+R10
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/convbcd_ca2_tb.vhd|
+Z20 !s107 E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/convbcd_ca2_tb.vhd|
+!i113 1
+R13
+R14
+Atest
+R1
+R2
+R15
+R3
+R4
+DEx4 work 14 convbcd_ca2_tb 0 22 m5ZL^dXETWFNcGOVc1NOE3
+l15
+L8
+V>_18z^HNMG``ZVhHgZ=mA3
+!s100 0HA;5L1=_l>@RVZ8U5EW_1
+R8
+32
+R9
+!i10b 1
+R10
+R19
+R20
+!i113 1
+R13
+R14
+Econvca2_bcd
+R0
+R1
+R2
+R3
+R4
+R5
+Z21 8E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/convca2_bcd.vhd
+Z22 FE:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/convca2_bcd.vhd
+l0
+L6
+V4S=EYLBUQhHFe^PYEaKgz1
+!s100 S[1GE=?m11R45JPmSGH<S2
+R8
+32
+R9
+!i10b 1
+R10
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/convca2_bcd.vhd|
+Z24 !s107 E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/convca2_bcd.vhd|
+!i113 1
+R13
+R14
+Artl
+Z25 DEx4 work 15 sumadorbcd_6dig 0 22 70EchQ=[cicNF<eXQ6?XJ0
+R1
+R2
+R3
+R4
+Z26 DEx4 work 11 convca2_bcd 0 22 4S=EYLBUQhHFe^PYEaKgz1
+l29
+L18
+V9dzH:mVYkgI_kz`Qz`TJC3
+!s100 jo:Vj0Sd[9X6?Z^D?zh0m1
+R8
+32
+R9
+!i10b 1
+R10
+R23
+R24
+!i113 1
+R13
+R14
+Econvca2_bcd_tb
+Z27 w1777908656
+R1
+R2
+R3
+R4
+R5
+Z28 8E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/convca2_bcd_tb.vhd
+Z29 FE:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/convca2_bcd_tb.vhd
+l0
+L6
+VLgUMf=o@MHiX@^5^GWB530
+!s100 FLNemG=hM2=;WBF2OWY9]3
+R8
+32
+R9
+!i10b 1
+R10
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/convca2_bcd_tb.vhd|
+Z31 !s107 E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/convca2_bcd_tb.vhd|
+!i113 1
+R13
+R14
+Atest
+R26
+R1
+R2
+R3
+R4
+DEx4 work 14 convca2_bcd_tb 0 22 LgUMf=o@MHiX@^5^GWB530
+l20
+L9
+Vl8<HSI]ZG_5Z?2ER^oXWY3
+!s100 3S^oRKZhfg1^m2YS?]1Dj2
+R8
+32
+R9
+!i10b 1
+R10
+R30
+R31
+!i113 1
+R13
+R14
+Esumador_bcd
+Z32 w1777908016
+R1
+R2
+R3
+R4
+R5
+Z33 8E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/sumador_BCD.vhd
+Z34 FE:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/sumador_BCD.vhd
+l0
+L5
+VUjnNi_XMLC2JL0<8_oo2J2
+!s100 ZAJN2d_4:j868eZe6;V2F0
+R8
+32
+R9
+!i10b 1
+R10
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/sumador_BCD.vhd|
+Z36 !s107 E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/sumador_BCD.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R2
+R3
+R4
+Z37 DEx4 work 11 sumador_bcd 0 22 UjnNi_XMLC2JL0<8_oo2J2
+l17
+L15
+V?m`:C3SPLbb=hJTnRYzLG3
+!s100 nG9chhObe@]c7WQ14@X033
+R8
+32
+R9
+!i10b 1
+R10
+R35
+R36
+!i113 1
+R13
+R14
+Esumadorbcd_6dig
+Z38 w1777908022
+R1
+R2
+R3
+R4
+R5
+Z39 8E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/sumadorBCD_6dig.vhd
+Z40 FE:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/sumadorBCD_6dig.vhd
+l0
+L5
+V70EchQ=[cicNF<eXQ6?XJ0
+!s100 gG0P1C3;<H1l<44Xc_=Ef0
+R8
+32
+R9
+!i10b 1
+R10
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/sumadorBCD_6dig.vhd|
+Z42 !s107 E:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/proyectoModelSim/sumadorBCD_6dig.vhd|
+!i113 1
+R13
+R14
+Artl
+R37
+R1
+R2
+R3
+R4
+R25
+l18
+L15
+V_gD[;`W80ZVQTAoZaVFB^0
+!s100 0O[aQ<2z4^:5dCbR6VAh32
+R8
+32
+R9
+!i10b 1
+R10
+R41
+R42
+!i113 1
+R13
+R14
