@@ -46,7 +46,7 @@ begin
      when OPERANDO1 =>
        if tecla <= X"9" then --Meter dato
          if op1_reg = X"000" then
-           if tecla /= "0" then
+           if tecla /= X"0" then
              op1_reg(3 downto 0) <= tecla;
            end if;
          elsif op1_reg(11 downto 8) = X"0" then
@@ -60,7 +60,7 @@ begin
          if tecla = X"A" then
            operacion_reg <= "00";-- Suma
          elsif tecla = X"D" then
-           operacion_reg <= "10";  --Resta
+           operacion_reg <= "01";  --Resta
          elsif tecla = X"E" then
            operacion_reg <= "10";  --Multplicacion
          end if;
@@ -70,7 +70,7 @@ begin
      when OPERANDO2 =>
        if tecla <= X"9" then --Meter dato
          if op2_reg = X"000" then
-           if tecla /= "0" then
+           if tecla /= X"0" then
              op2_reg(3 downto 0) <= tecla;
            end if;
          elsif op2_reg(11 downto 8) = X"0" then
