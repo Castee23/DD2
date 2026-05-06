@@ -1,0 +1,166 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity calculadora is
+    port (
+        clk         : in  std_logic;
+        nRst        : in  std_logic;
+        
+        -- Entradas y salidas del Teclado Matricial
+        columna     : in  std_logic_vector(3 downto 0);
+        fila        : out std_logic_vector(3 downto 0);
+        
+        -- Salidas a los Displays de 7 segmentos
+        segmentos   : out std_logic_vector(7 downto 0); -- 8 bits (incluye punto)
+        anodos      : out std_logic_vector(7 downto 0)  -- 8 dígitos
+    );
+end calculadora;
+
+architecture struct of calculadora is
+
+    -- ==========================================
+    -- SEÑALES INTERNAS
+    -- ==========================================
+    
+    -- Timer
+    signal tic_1ms        : std_logic;
+
+    -- Control Teclado
+    signal tecla_pulsada  : std_logic;
+    signal tecla          : std_logic_vector(3 downto 0);
+
+    -- FSM
+    signal op1_fsm        : std_logic_vector(11 downto 0);
+    signal op2_fsm        : std_logic_vector(11 downto 0);
+    signal op1_sgn_fsm    : std_logic;
+    signal op2_sgn_fsm    : std_logic;
+    signal operacion      : std_logic_vector(1 downto 0);
+    signal pres           : std_logic_vector(1 downto 0);
+
+    -- Conversores BCD -> CA2
+    signal op1_ca2        : std_logic_vector(10 downto 0);
+    signal op2_ca2        : std_logic_vector(10 downto 0);
+
+    -- ALU
+    signal inicio_alu     : std_logic;
+    signal res_alu        : std_logic_vector(19 downto 0);
+
+    -- Conversor CA2 -> BCD
+    signal signo_res      : std_logic;
+    signal num_bcd_res    : std_logic_vector(23 downto 0);
+
+begin
+
+    -- ==========================================
+    -- 1. TIMER
+    -- ==========================================
+    u_timer: entity work.timer
+    port map (
+        clk       => clk,
+        nRst      => nRst,
+        tic_1ms   => tic_1ms,
+        -- Dejamos abiertos (open) los tics que no usamos en el top-level
+        tic_125ms => open,
+        tic_025s  => open,
+        tic_1s    => open,
+        tic_5ms   => open
+    );
+
+    -- ==========================================
+    -- 2. CONTROL TECLADO
+    -- ==========================================
+    u_ctrl_tec: entity work.ctrl_tec
+    port map (
+        clk           => clk,
+        nRst          => nRst,
+        tic           => tic_1ms,
+        columna       => columna,
+        fila          => fila,
+        tecla         => tecla,
+        tecla_pulsada => tecla_pulsada,
+        pulso_largo   => open  -- No lo usamos en este diseño actual
+    );
+
+    -- ==========================================
+    -- 3. FSM (Máquina de estados principal)
+    -- ==========================================
+    u_fsm: entity work.fsm_calculadora
+    port map (
+        clk           => clk,
+        nRst          => nRst,
+        tecla_pulsada => tecla_pulsada,
+        tecla         => tecla,
+        op1           => op1_fsm,
+        op1_sgn       => op1_sgn_fsm,
+        op2           => op2_fsm,
+        op2_sgn       => op2_sgn_fsm,
+        operacion     => operacion,
+        pres          => pres
+    );
+
+    -- ==========================================
+    -- 4. CONVERSORES BCD a CA2 (Para OP1 y OP2)
+    -- ==========================================
+    u_conv_op1: entity work.conv_bcd_ca2
+    port map (
+        num_bcd => op1_fsm,
+        signo   => op1_sgn_fsm,
+        num_ca2 => op1_ca2
+    );
+
+    u_conv_op2: entity work.conv_bcd_ca2
+    port map (
+        num_bcd => op2_fsm,
+        signo   => op2_sgn_fsm,
+        num_ca2 => op2_ca2
+    );
+
+    -- ==========================================
+    -- 5. ALU
+    -- ==========================================
+    u_alu: entity work.alu
+    port map (
+        clk       => clk,
+        nRst      => nRst,
+        op1       => op1_ca2,
+        op2       => op2_ca2,
+        operacion => operacion,
+        resultado => res_alu,
+        inicio    => inicio_alu
+    );
+
+    -- ==========================================
+    -- 6. CONVERSOR CA2 a BCD (Para el Resultado)
+    -- ==========================================
+    u_conv_res: entity work.convca2_bcd
+    port map (
+        clk     => clk,
+        nRst    => nRst,
+        inicio  => inicio_alu,
+        num_c2  => res_alu,
+        signo   => signo_res,
+        num_bcd => num_bcd_res,
+        fin     => open -- Si no necesitas señalizar el fin, se puede quedar abierto
+    );
+
+    -- ==========================================
+    -- 7. DISPLAYS
+    -- ==========================================
+    u_displays: entity work.displays
+    port map (
+        clk       => clk,
+        nRst      => nRst,
+        tic_1ms   => tic_1ms,
+        pres      => pres,
+        op1       => op1_fsm,
+        op1_sgn   => op1_sgn_fsm,
+        op2       => op2_fsm,
+        op2_sgn   => op2_sgn_fsm,
+        res       => num_bcd_res,
+        res_sgn   => signo_res,
+        mux_disp  => anodos,
+        disp      => segmentos
+    );
+
+end struct;

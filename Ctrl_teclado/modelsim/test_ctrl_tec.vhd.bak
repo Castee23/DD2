@@ -83,7 +83,8 @@ architecture test of test_ctrl_tec is
     	columna       => columna,
     	fila          => fila,
     	tecla_pulsada => tecla_pulsada,
-    	tecla         => tecla
+    	tecla         => tecla,
+    	pulso_largo   => pulso_largo
   );
   -- Estimulos (pulsacion de teclas)
   estim: entity work.estimulos(test) port map(

@@ -13,7 +13,6 @@ entity ctrl_tec is
     columna       : in  std_logic_vector(3 downto 0);
     fila          : buffer std_logic_vector(3 downto 0);
     tecla_pulsada : buffer std_logic;
-    pulso_largo   : buffer std_logic;
     tecla         : buffer std_logic_vector(3 downto 0)
   );
 end entity;
@@ -25,13 +24,11 @@ architecture rtl of ctrl_tec is
   signal tecla_temp: std_logic_vector(3 downto 0);
   signal cnt_tic   : std_logic_vector(8 downto 0);
   signal tecla_pulsada_reg : std_logic;
-  signal pulso_largo_reg   : std_logic;
 begin
 
   fila <= fila_reg;
   tecla <= tecla_reg;
   tecla_pulsada <= tecla_pulsada_reg;
-  pulso_largo <= pulso_largo_reg;
 
 process(fila_reg, columna)
 begin
@@ -83,7 +80,6 @@ end process;
       tecla_reg <= (others => '0');
       cnt_tic <= (others => '0');
       tecla_pulsada_reg <= '0';
-      pulso_largo_reg <= '0';
 
     elsif clk'event and clk='1' then
       if tic = '1' then
@@ -98,13 +94,6 @@ end process;
 
           tecla_reg <= tecla_temp;
 
-
-          if cnt_tic >= TICS_2s then
-            pulso_largo_reg <= '1';
-          else
-            pulso_largo_reg <= '0';
-          end if;
-
           tecla_pulsada_reg <= '0';
 
         else
@@ -115,7 +104,6 @@ end process;
             tecla_pulsada_reg <= '0';
           end if;
 
-          pulso_largo_reg <= '0';
           cnt_tic <= (others => '0');
 
           case fila_reg is
