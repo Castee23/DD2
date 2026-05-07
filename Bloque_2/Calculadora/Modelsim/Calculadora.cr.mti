@@ -1,4 +1,4 @@
-C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/timer.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/timer.vhd
+C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/timer.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\timer.vhd}
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -7,16 +7,6 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity timer
 -- Compiling architecture rtl of timer
-
-} {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/displays.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/displays.vhd
-Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity displays
--- Compiling architecture rtl of displays
 
 } {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumadorBCD_6dig.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumadorBCD_6dig.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
@@ -29,6 +19,44 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling architecture rtl of sumadorBCD_6dig
 -- Loading entity sumador_bcd
 
+} {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/displays.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/displays.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity displays
+-- Compiling architecture rtl of displays
+
+} {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/alu.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\alu.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity alu
+-- Compiling architecture rtl of alu
+
+} {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\calculadora.vhd}
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity calculadora
+-- Compiling architecture structural of calculadora
+-- Loading entity timer
+-- Loading entity ctrl_tec
+-- Loading entity fsm_calculadora
+-- Loading entity conv_bcd_ca2
+-- Loading package STD_LOGIC_SIGNED
+-- Loading entity alu
+-- Loading entity convca2_bcd
+-- Loading entity displays
+
 } {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumador_bcd.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumador_bcd.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
@@ -39,35 +67,19 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling entity sumador_bcd
 -- Compiling architecture rtl of sumador_bcd
 
-} {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora.vhd
+} {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora_tb.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity calculadora_tb
+-- Compiling architecture sim of calculadora_tb
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity calculadora
--- Compiling architecture struct of calculadora
--- Loading entity timer
-** Error: C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora.vhd(42): near ")": syntax error
-** Error: C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora.vhd(44): Statement cannot be labeled.
--- Loading entity ctrl_tec
-** Error: C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora.vhd(53): near ")": syntax error
-** Error: C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora.vhd(55): Statement cannot be labeled.
--- Loading entity fsm_calculadora
--- Loading entity conv_bcd_ca2
-** Error: (vcom-11) Could not find work.alu.
+-- Loading entity calculadora
 
-** Error (suppressible): C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora.vhd(83): (vcom-1195) Cannot find expanded name "work.alu".
-
-** Error: C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora.vhd(83): Unknown expanded name.
--- Loading entity convca2_bcd
-** Error: C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora.vhd(103): near ")": syntax error
-** Error: C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora.vhd(105): Statement cannot be labeled.
--- Loading entity displays
-** Error: C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora.vhd(121): VHDL Compiler exiting
-
-} {11.0 13.0 14.0 16.0 18.0 19.0 22.0 23.0 24.0 26.0 27.0 28.0} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/ctrl_tec.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/ctrl_tec.vhd
+} {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/ctrl_tec.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\ctrl_tec.vhd}
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -77,15 +89,15 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling entity ctrl_tec
 -- Compiling architecture rtl of ctrl_tec
 
-} {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/fsm_calculadora.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/fsm_calculadora.vhd
+} {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convbcd_ca2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convbcd_ca2.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity fsm_calculadora
--- Compiling architecture rtl of fsm_calculadora
+-- Compiling entity conv_bcd_ca2
+-- Compiling architecture rtl of conv_bcd_ca2
 
 } {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convca2_bcd.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convca2_bcd.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
@@ -98,14 +110,14 @@ Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling architecture rtl of convca2_bcd
 -- Loading entity sumadorBCD_6dig
 
-} {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convbcd_ca2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convbcd_ca2.vhd
+} {} {}} C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/fsm_calculadora.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/fsm_calculadora.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity conv_bcd_ca2
--- Compiling architecture rtl of conv_bcd_ca2
+-- Compiling entity fsm_calculadora
+-- Compiling architecture rtl of fsm_calculadora
 
 } {} {}}

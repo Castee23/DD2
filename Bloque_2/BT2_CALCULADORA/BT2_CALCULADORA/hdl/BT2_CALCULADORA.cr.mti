@@ -1,0 +1,122 @@
+C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/lpm_multiplicacion.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/lpm_multiplicacion.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity lpm_multiplicacion
+-- Compiling architecture SYN of lpm_multiplicacion
+
+} {} {}} C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/calculadora_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/calculadora_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity calculadora_tb
+-- Compiling architecture sim of calculadora_tb
+-- Loading entity CALCULADORA
+
+} {} {}} C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CONVCA2_BCD/sumador_BCD.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CONVCA2_BCD/sumador_BCD.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity sumador_BCD
+-- Compiling architecture rtl of sumador_BCD
+
+} {} {}} C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CONVCA2_BCD/sumadorBCD_6dig.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CONVCA2_BCD/sumadorBCD_6dig.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity sumadorBCD_6dig
+-- Compiling architecture rtl of sumadorBCD_6dig
+-- Loading entity sumador_BCD
+
+} {} {}} C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/CALCULADORA.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/CALCULADORA.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CALCULADORA
+-- Compiling architecture estructural of CALCULADORA
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity timer
+-- Loading entity ctrl_tec
+-- Loading entity fsm_calculadora
+-- Loading entity conv_bcd_ca2
+-- Loading package STD_LOGIC_SIGNED
+-- Loading entity alu
+-- Loading entity convca2_bcd
+-- Loading entity displays
+** Error (suppressible): C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/CALCULADORA.vhd(106): (vcom-1272) Length of formal "res_o" is 21; length of actual is 20.
+
+** Error: C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/CALCULADORA.vhd(138): VHDL Compiler exiting
+
+} {20.0 21.0} {}} C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Control_Teclado/ctrl_tec.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Control_Teclado/ctrl_tec.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ctrl_tec
+-- Compiling architecture rtl of ctrl_tec
+
+} {} {}} C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/fsm_calculadora.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/fsm_calculadora.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity fsm_calculadora
+-- Compiling architecture rtl of fsm_calculadora
+
+} {} {}} C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/alu.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/alu.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity alu
+-- Compiling architecture rtl of alu
+-- Loading entity lpm_multiplicacion
+
+} {} {}} C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CON_BCD_CA2/convbcd_ca2.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CON_BCD_CA2/convbcd_ca2.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity conv_bcd_ca2
+-- Compiling architecture rtl of conv_bcd_ca2
+
+} {} {}} C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Displays/displays.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Displays/displays.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity displays
+-- Compiling architecture rtl of displays
+
+} {} {}} C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Timer/timer.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Timer/timer.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity timer
+-- Compiling architecture rtl of timer
+
+} {} {}}

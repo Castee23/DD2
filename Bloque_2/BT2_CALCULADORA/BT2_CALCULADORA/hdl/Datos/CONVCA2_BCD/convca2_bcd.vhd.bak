@@ -1,0 +1,90 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity convca2_bcd is
+    Port ( 
+        clk     : in  std_logic;
+        nRst     : in  std_logic;
+        inicio  : in  std_logic;                      
+        num_c2  : in  std_logic_vector (19 downto 0);  -- CAMBIADO ANTES :19 downto 0
+        signo   : out std_logic; 
+        num_bcd : out std_logic_vector (23 downto 0); 
+        fin     : out std_logic                       
+    );
+end convca2_bcd;
+
+architecture rtl of convca2_bcd is
+
+    type t_estados is (REPOSO, CALCULO, FINAL);
+    signal estado : t_estados;
+
+    signal reg_bin      : std_logic_vector(19 downto 0);
+    signal reg_bcd      : std_logic_vector(23 downto 0); --El acumulador
+    signal suma_bcd : std_logic_vector(23 downto 0);
+    signal contador         : integer range 0 to 20;
+    signal acarreo_salida   : std_logic;
+
+begin
+
+    --Usamos el sumador de 6 digitos BCD para hacer la multiplicación sumando el mismo número.
+    sumador: entity work.sumadorBCD_6dig port map (
+        DatoA    => reg_bcd,
+        DatoB    => reg_bcd,
+        AcarreoEnt  => reg_bin(19),
+        Suma => suma_bcd,
+        AcarreoSal => acarreo_salida
+    );
+
+    process(clk, nRst)
+    begin
+        if nRst = '0' then
+            estado  <= REPOSO;
+            reg_bin <= (others => '0');
+            reg_bcd <= (others => '0');
+            num_bcd <= (others => '0');
+            contador    <= 0;
+            fin     <= '0';
+        elsif clk'event and clk = '1' then
+            
+            case estado is
+                
+                when REPOSO =>
+                    fin <= '0';
+                    if inicio = '1' then
+                        if num_c2(19) = '1' then
+                            reg_bin <= not (num_c2 - 1);
+                            signo   <= '1';
+                        else
+                            reg_bin <= num_c2;
+                            signo   <= '0';
+                        end if;
+
+                        reg_bcd <= (others => '0');
+                        contador    <= 0;
+                        estado  <= CALCULO;
+                    end if;
+
+                when CALCULO =>
+                    if contador < 20 then
+                        reg_bcd <= suma_bcd;    --Obtenemos la suma del ciclo actual
+                        reg_bin <= reg_bin(18 downto 0) & '0';
+                        contador <= contador + 1;
+                    else
+                        estado <= FINAL;
+                    end if;
+
+                when FINAL =>
+                    num_bcd <= reg_bcd;
+                    fin     <= '1';  
+                    estado  <= REPOSO;
+
+                when others =>
+                    estado <= REPOSO;
+            end case;
+        end if;
+    end process;
+
+
+end rtl;

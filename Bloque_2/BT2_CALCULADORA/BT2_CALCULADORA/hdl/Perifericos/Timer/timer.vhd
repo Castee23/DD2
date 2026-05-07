@@ -1,14 +1,19 @@
 -- Temporizador para MEDTH
 --
--- Genera las seï¿½ales de temporizacion para el resto de circuitos. Todas son tics de un periodo
+-- Genera las señales de temporizacion para el resto de circuitos. Todas son tics de un periodo
 -- de reloj:
 -- tic_1ms
+-- tic_5ms
+-- tic_125ms
+-- tic_025s
+-- tic_1s
 -- Genericos:
----- DIV_1ms (divisor para generar tics de 1 ms a partir del reloj de 50 MHz)
+---- DIV_125ms (divisor para generar 125 ms a partir del tic de 5 ms)
+---- DIV_1ms (divisor para generar tics de 1 ms a partir del reloj de 100 MHz)
 ---- Los valores por defecto son para sintesis
 --
 --    Designer: DTE
---    Versiï¿½n: 1.0
+--    Versión: 1.0
 --    Fecha: 24-11-2016
 
 library ieee;
@@ -23,16 +28,19 @@ generic(
 port(
     clk           : in std_logic;
     nRst          : in std_logic;
-    tic_1ms       : buffer std_logic
+    tic_1ms       : buffer std_logic;
+    tic_5ms       : buffer std_logic
     );  
 end entity;
 
 architecture rtl of timer is
   signal cnt_div_1ms : std_logic_vector(16 downto 0);
+  signal cnt_div_5ms : std_logic_vector(2 downto 0);
+  constant DIV_5ms: natural :=4;
 begin
   
- -- generaciï¿½n del tic de 1 ms
- process(clk, nRst)
+ -- generación del tic de 1 ms
+ divisor_1ms: process(clk, nRst)
   begin
     if nRst = '0' then
       cnt_div_1ms <= (others => '0');
@@ -43,11 +51,10 @@ begin
         cnt_div_1ms <= cnt_div_1ms + 1;
       end if;
     end if;
-  end process;
-
+  end process divisor_1ms;
   tic_1ms <= '1' when cnt_div_1ms = DIV_1ms else '0';
 
- -- generaciï¿½n del tic de 5 ms
+ -- generación del tic de 5 ms
  divisor_5ms: process(clk, nRst)
   begin
     if nRst = '0' then
@@ -61,5 +68,6 @@ begin
     end if;
   end process divisor_5ms;
   tic_5ms <= '1' when cnt_div_5ms = DIV_5ms and tic_1ms = '1' else '0';
-  
+
+
 end rtl;

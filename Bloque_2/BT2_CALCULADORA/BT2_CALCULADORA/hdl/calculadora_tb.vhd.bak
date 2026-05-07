@@ -1,0 +1,177 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity calculadora_tb is
+-- Entidad vacía, típico de un testbench
+end entity;
+
+architecture sim of calculadora_tb is
+
+    -- Constantes de tiempo
+    constant T_CLK : time := 20 ns; -- Reloj de 50 MHz (XDECA)
+    constant T_PULSACION : time := 40 ms; -- Tiempo simulado de dedo en la tecla
+    constant T_REPOSO    : time := 40 ms; -- Tiempo entre pulsaciones
+
+    -- Señales del Top Level
+    signal clk_s      : std_logic := '0';
+    signal nRst_s     : std_logic := '0';
+    signal columna_s  : std_logic_vector(3 downto 0);
+    signal fila_s     : std_logic_vector(3 downto 0);
+    signal mux_disp_s : std_logic_vector(7 downto 0);
+    signal disp_s     : std_logic_vector(7 downto 0);
+
+    -- Señal de control para nuestra matriz de teclado virtual
+    -- -1 indica reposo (ninguna tecla pulsada)
+    -- 0 a 15 corresponden a las teclas en hexadecimal
+    signal tecla_simulada : integer := -1; 
+
+begin
+
+    -- 1. Instancia del Top Level (UUT)
+    uut: entity work.CALCULADORA
+        port map(
+            clk      => clk_s,
+            nRst     => nRst_s,
+            columna  => columna_s,
+            fila     => fila_s,
+            mux_disp => mux_disp_s,
+            disp     => disp_s
+        );
+
+    -- 2. Generador de Reloj
+    clk_s <= not clk_s after T_CLK / 2;
+
+    -- 3. Emulador de Teclado Matricial Físico
+    -- Esto une la fila de barrido con la columna de lectura según la tecla asignada.
+    -- (Asumiendo una disposición típica 4x4. Ajusta si tu XDECA tiene otro mapeo)
+    process(fila_s, tecla_simulada)
+    begin
+        -- Por defecto, todas las columnas a '1' (resistencias de pull-up)
+        columna_s <= "1111";
+        
+        case tecla_simulada is
+            -- Fila 0 (Teclas 1, 2, 3, A)
+            when 1  => columna_s(0) <= fila_s(0);
+            when 2  => columna_s(1) <= fila_s(0);
+            when 3  => columna_s(2) <= fila_s(0);
+            when 10 => columna_s(3) <= fila_s(0); -- 'A' = 10 (Suma)
+            
+            -- Fila 1 (Teclas 4, 5, 6, B)
+            when 4  => columna_s(0) <= fila_s(1);
+            when 5  => columna_s(1) <= fila_s(1);
+            when 6  => columna_s(2) <= fila_s(1);
+            when 11 => columna_s(3) <= fila_s(1); -- 'B' = 11 (Igual / Resultado)
+            
+            -- Fila 2 (Teclas 7, 8, 9, C)
+            when 7  => columna_s(0) <= fila_s(2);
+            when 8  => columna_s(1) <= fila_s(2);
+            when 9  => columna_s(2) <= fila_s(2);
+            when 12 => columna_s(3) <= fila_s(2); -- 'C' = 12 (Cambio de signo)
+            
+            -- Fila 3 (Teclas E, 0, F, D)
+            when 14 => columna_s(0) <= fila_s(3); -- 'E' = 14 (Multiplicación)
+            when 0  => columna_s(1) <= fila_s(3);
+            when 15 => columna_s(2) <= fila_s(3); -- 'F' = 15 (Libre)
+            when 13 => columna_s(3) <= fila_s(3); -- 'D' = 13 (Resta)
+            
+            when others => null; -- Reposo
+        end case;
+    end process;
+
+    -- 4. Proceso Principal de Estímulos (El usuario tecleando)
+    process
+        -- Procedimiento local para simplificar la escritura de la simulación
+        procedure press_key(k : integer) is
+        begin
+            tecla_simulada <= k;          -- Dedo presiona la tecla
+            wait for T_PULSACION;         -- Mantiene pulsado (permite barrido y antirebotes)
+            tecla_simulada <= -1;         -- Dedo suelta la tecla
+            wait for T_REPOSO;            -- Espera a la siguiente pulsación
+        end procedure;
+    begin
+        -- ESTADO INICIAL Y RESET
+        nRst_s <= '0';
+        wait for 100 ns;
+        nRst_s <= '1';
+        wait for 10 ms; -- Dejar que el sistema se estabilice
+
+        -- =========================================================================
+        -- PRUEBA 1: COMPORTAMIENTO BÁSICO, CEROS INICIALES Y DESBORDE
+        -- Requisitos probados: ESP01, ESP07, ESP10
+        -- Objetivo: Introducir "001234" -> Debería quedarse en "123"
+        -- =========================================================================
+        press_key(0); -- Ignorado (ESP10)
+        press_key(0); -- Ignorado (ESP10)
+        press_key(1);
+        press_key(2);
+        press_key(3);
+        press_key(4); -- Ignorado por sobrepasar 3 dígitos (ESP01)
+        
+        -- Validar Operando 1 con Suma (ESP08)
+        press_key(10); -- Tecla 'A' (Suma)
+
+        -- =========================================================================
+        -- PRUEBA 2: OPERANDO 2 CON CAMBIO DE SIGNO
+        -- Requisitos probados: ESP09, ESP11, ESP12
+        -- Objetivo: Introducir "-45" y dar al igual. (123 + (-45) = 78)
+        -- =========================================================================
+        press_key(4);
+        press_key(5);
+        press_key(12); -- Tecla 'C' (Cambio de signo: pone en negativo)
+        
+        -- Ejecutar Operación (ESP12)
+        press_key(11); -- Tecla 'B' (Igual)
+        
+        -- Dejamos tiempo para que la ALU y los conversores terminen
+        wait for 50 ms; 
+
+        -- =========================================================================
+        -- PRUEBA 3: SALIDA DE RESULTADO Y MULTIPLICACIÓN EXTREMA
+        -- Requisitos probados: ESP13, ESP02
+        -- Objetivo: Salir de RESULTADO pulsando número, calcular 999 * -999 = -998001
+        -- =========================================================================
+        -- Empezar nuevo Operando 1 saliendo de RESULTADO (ESP13)
+        press_key(9); 
+        press_key(9);
+        press_key(9);
+        
+        -- Validar con Multiplicación
+        press_key(14); -- Tecla 'E' (Multiplicación)
+        
+        -- Introducir Operando 2
+        press_key(9);
+        press_key(9);
+        press_key(9);
+        press_key(12); -- Tecla 'C' (Cambio de signo)
+        
+        -- Ejecutar
+        press_key(11); -- Tecla 'B' (Igual)
+        
+        wait for 50 ms;
+
+        -- =========================================================================
+        -- PRUEBA 4: SALIDA POR TECLA NO NUMÉRICA Y RESTA
+        -- Requisitos probados: ESP13 (salida a cero inicial), ESP06 (ceros eliminados)
+        -- Objetivo: Pulsar tecla función en estado RESULTADO para ir a Operando 1 a cero.
+        -- Luego calcular 10 - 20 = -10.
+        -- =========================================================================
+        press_key(10); -- 'A', u otra tecla. Esto fuerza ir a inicio con "0" (ESP13)
+        press_key(1);
+        press_key(0);
+        
+        press_key(13); -- Tecla 'D' (Resta)
+        
+        press_key(2);
+        press_key(0);
+        
+        press_key(11); -- Tecla 'B' (Igual)
+
+        wait for 50 ms;
+
+        -- Fin de simulación
+        assert false report "=== TEST FINALIZADO ===" severity failure;
+    end process;
+
+end sim;

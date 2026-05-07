@@ -8,372 +8,487 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/Modelsim
-Ecalculadora
-w1778058152
-Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Ealu
+Z1 w1778142282
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora.vhd
-FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora.vhd
+Z6 8C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\alu.vhd
+Z7 FC:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\alu.vhd
 l0
 L5
-V2g0OAg;YdgmAH5EFMoSS93
-!s100 9OI:_mc_FXXOTV3AOlzIU3
-Z5 OV;C;10.4d;61
+VBm3BVV2`lfz=O9ZCl9FdT3
+!s100 `E<=<^jYNNeX1zMT00Z<:2
+Z8 OV;C;10.4d;61
 32
-Z6 !s110 1778059139
+Z9 !s110 1778144141
 !i10b 1
-!s108 1778059139.000000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora.vhd|
-!s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora.vhd|
+Z10 !s108 1778144141.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\alu.vhd|
+Z12 !s107 C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\alu.vhd|
 !i113 1
-Z7 o-work work -2002 -explicit
-Z8 tExplicit 1
-Econv_bcd_ca2
-Z9 w1777711534
-R1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1
+Artl
 R2
 R3
 R4
+R5
+Z15 DEx4 work 3 alu 0 22 Bm3BVV2`lfz=O9ZCl9FdT3
+l23
+L17
+VY>KD_IhUBF?cE[8`[zC2]0
+!s100 zaoPY8RXCI@]<X>k;eI]M2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ecalculadora
+Z16 w1778144073
+R2
+Z17 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R4
+R5
 R0
-Z10 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convbcd_ca2.vhd
-Z11 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convbcd_ca2.vhd
+Z18 8C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\calculadora.vhd
+Z19 FC:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\calculadora.vhd
+l0
+L5
+VY>kF5GAL0[QLbaol4Yj;S2
+!s100 @d8PI^f3?oVG96DOh>OCe0
+R8
+32
+R9
+!i10b 1
+R10
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\calculadora.vhd|
+Z21 !s107 C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\calculadora.vhd|
+!i113 1
+R13
+R14
+Astructural
+Z22 DEx4 work 8 displays 0 22 :m=OC2^I3=QF<<^gUjoO30
+Z23 DEx4 work 11 convca2_bcd 0 22 >bgmF1Zm^M;Gk34i:b>:R0
+R3
+R15
+Z24 DEx4 work 12 conv_bcd_ca2 0 22 C=leOY;MZ6lUj<leoFkNC3
+Z25 DEx4 work 15 fsm_calculadora 0 22 ;``2o2SgThab<j;cb8GC_0
+Z26 DEx4 work 8 ctrl_tec 0 22 EXUjk45XbjRD3:6D@HJXe1
+Z27 DEx4 work 5 timer 0 22 Mac`_CEib0cnE_4]FUB<T1
+R2
+R17
+R4
+R5
+Z28 DEx4 work 11 calculadora 0 22 Y>kF5GAL0[QLbaol4Yj;S2
+l39
+L16
+VYhJPj;3J9b_ij3:Uh<JFZ3
+!s100 X9kol3g_6I:>Z[=IXSM6?3
+R8
+32
+R9
+!i10b 1
+R10
+R20
+R21
+!i113 1
+R13
+R14
+Ecalculadora_tb
+R1
+Z29 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R4
+R5
+R0
+Z30 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora_tb.vhd
+Z31 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora_tb.vhd
+l0
+L5
+VIBWYL92nzDh6Y:Lzz:6R51
+!s100 05Y>>1LXOT:>OcFL6@8oO0
+R8
+32
+R9
+!i10b 1
+R10
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora_tb.vhd|
+Z33 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/calculadora_tb.vhd|
+!i113 1
+R13
+R14
+Asim
+R2
+R17
+R28
+R29
+R4
+R5
+DEx4 work 14 calculadora_tb 0 22 IBWYL92nzDh6Y:Lzz:6R51
+l25
+L8
+Vk[[8gE;fZ<@`CLmV9@Zkh1
+!s100 FeHEJl3@]z>VGEXbI0h=;3
+R8
+32
+R9
+!i10b 1
+R10
+R32
+R33
+!i113 1
+R13
+R14
+Econv_bcd_ca2
+Z34 w1777711534
+R2
+R17
+R4
+R5
+R0
+Z35 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convbcd_ca2.vhd
+Z36 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convbcd_ca2.vhd
 l0
 L7
 VC=leOY;MZ6lUj<leoFkNC3
 !s100 TbGLVca`z6;<BkC`]Ra^R0
-R5
-32
-Z12 !s110 1778059138
-!i10b 1
-Z13 !s108 1778059138.000000
-Z14 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convbcd_ca2.vhd|
-Z15 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convbcd_ca2.vhd|
-!i113 1
-R7
 R8
+32
+Z37 !s110 1778144140
+!i10b 1
+Z38 !s108 1778144140.000000
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convbcd_ca2.vhd|
+Z40 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convbcd_ca2.vhd|
+!i113 1
+R13
+R14
 Artl
-R1
 R2
-R3
+R17
 R4
-DEx4 work 12 conv_bcd_ca2 0 22 C=leOY;MZ6lUj<leoFkNC3
+R5
+R24
 l16
 L14
 V_M3bdA7J9HYel`?J3XbYd3
 !s100 ;H_DUVG_gZKbm7=`JGX8g0
-R5
+R8
 32
-R12
+R37
 !i10b 1
+R38
+R39
+R40
+!i113 1
 R13
 R14
-R15
-!i113 1
-R7
-R8
 Econvca2_bcd
-Z16 w1777724727
-R1
+Z41 w1777724727
 R2
-R3
+R17
 R4
+R5
 R0
-Z17 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convca2_bcd.vhd
-Z18 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convca2_bcd.vhd
+Z42 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convca2_bcd.vhd
+Z43 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convca2_bcd.vhd
 l0
 L5
 V>bgmF1Zm^M;Gk34i:b>:R0
 !s100 bj1T2[Mm6l4jAI8DTEOSk1
-R5
-32
-R12
-!i10b 1
-R13
-Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convca2_bcd.vhd|
-Z20 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convca2_bcd.vhd|
-!i113 1
-R7
 R8
+32
+R37
+!i10b 1
+R38
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convca2_bcd.vhd|
+Z45 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/convca2_bcd.vhd|
+!i113 1
+R13
+R14
 Artl
-Z21 DEx4 work 15 sumadorbcd_6dig 0 22 70EchQ=[cicNF<eXQ6?XJ0
-R1
+Z46 DEx4 work 15 sumadorbcd_6dig 0 22 70EchQ=[cicNF<eXQ6?XJ0
 R2
-R3
+R17
 R4
-DEx4 work 11 convca2_bcd 0 22 >bgmF1Zm^M;Gk34i:b>:R0
+R5
+R23
 l28
 L17
 Va4Ag02aoK5I[QmIW?MmHf1
 !s100 kZWW2DdG>ELioSLIT<d4h1
-R5
-32
-R12
-!i10b 1
-R13
-R19
-R20
-!i113 1
-R7
 R8
+32
+R37
+!i10b 1
+R38
+R44
+R45
+!i113 1
+R13
+R14
 Ectrl_tec
-Z22 w1775745909
-R1
+Z47 w1778142769
 R2
-R3
+R17
 R4
+R5
 R0
-Z23 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/ctrl_tec.vhd
-Z24 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/ctrl_tec.vhd
+Z48 8C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\ctrl_tec.vhd
+Z49 FC:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\ctrl_tec.vhd
 l0
 L5
 VEXUjk45XbjRD3:6D@HJXe1
 !s100 UT6`[[NJWo;3Ondozb:KQ3
-R5
-32
-R12
-!i10b 1
-R13
-Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/ctrl_tec.vhd|
-Z26 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/ctrl_tec.vhd|
-!i113 1
-R7
 R8
+32
+R37
+!i10b 1
+R38
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\ctrl_tec.vhd|
+Z51 !s107 C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\ctrl_tec.vhd|
+!i113 1
+R13
+R14
 Artl
-R1
 R2
-R3
+R17
 R4
-DEx4 work 8 ctrl_tec 0 22 EXUjk45XbjRD3:6D@HJXe1
-l29
-L21
-VH@J4j?:KE;o:IA9F<kb731
-!s100 5DBdC09BDCXcWZ=:hPXd^1
 R5
-32
-R12
-!i10b 1
-R13
-R25
 R26
-!i113 1
-R7
+l30
+L21
+VQa5MD_zWQH]kX`lFTm6XO1
+!s100 4d>D22T4Mn7D=JeP89<1o3
 R8
+32
+R37
+!i10b 1
+R38
+R50
+R51
+!i113 1
+R13
+R14
 Edisplays
-Z27 w1778056608
-R1
+Z52 w1778056608
 R2
-R3
+R17
 R4
+R5
 R0
-Z28 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/displays.vhd
-Z29 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/displays.vhd
+Z53 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/displays.vhd
+Z54 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/displays.vhd
 l0
 L5
 V:m=OC2^I3=QF<<^gUjoO30
 !s100 95IJGR0kbCEf_elDKCi9O1
-R5
-32
-R12
-!i10b 1
-R13
-Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/displays.vhd|
-Z31 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/displays.vhd|
-!i113 1
-R7
 R8
+32
+R37
+!i10b 1
+R38
+Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/displays.vhd|
+Z56 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/displays.vhd|
+!i113 1
+R13
+R14
 Artl
-R1
 R2
-R3
+R17
 R4
-DEx4 work 8 displays 0 22 :m=OC2^I3=QF<<^gUjoO30
+R5
+R22
 l28
 L21
 V2A9o7iPjJz:U4[iOHKWW<2
 !s100 n:`hzo^d0VS=4h[b3cOJR3
-R5
-32
-R12
-!i10b 1
-R13
-R30
-R31
-!i113 1
-R7
 R8
+32
+R37
+!i10b 1
+R38
+R55
+R56
+!i113 1
+R13
+R14
 Efsm_calculadora
-Z32 w1778056408
-R1
+Z57 w1778056408
 R2
-R3
+R17
 R4
+R5
 R0
-Z33 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/fsm_calculadora.vhd
-Z34 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/fsm_calculadora.vhd
+Z58 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/fsm_calculadora.vhd
+Z59 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/fsm_calculadora.vhd
 l0
 L5
 V;``2o2SgThab<j;cb8GC_0
 !s100 cN7OmAmR?96Q8D_l=9UJ20
-R5
-32
-R12
-!i10b 1
-R13
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/fsm_calculadora.vhd|
-Z36 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/fsm_calculadora.vhd|
-!i113 1
-R7
 R8
+32
+R37
+!i10b 1
+R38
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/fsm_calculadora.vhd|
+Z61 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/fsm_calculadora.vhd|
+!i113 1
+R13
+R14
 Artl
-R1
 R2
-R3
+R17
 R4
-DEx4 work 15 fsm_calculadora 0 22 ;``2o2SgThab<j;cb8GC_0
+R5
+R25
 l31
 L20
 VB_;_X0SnCfEJHEaZLB<5k2
 !s100 0VkEA@nQY^7XYZMYkcT4U1
-R5
-32
-R12
-!i10b 1
-R13
-R35
-R36
-!i113 1
-R7
 R8
+32
+R37
+!i10b 1
+R38
+R60
+R61
+!i113 1
+R13
+R14
 Esumador_bcd
-Z37 w1777723114
-R1
+Z62 w1777723114
 R2
-R3
+R17
 R4
+R5
 R0
-Z38 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumador_bcd.vhd
-Z39 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumador_bcd.vhd
+Z63 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumador_bcd.vhd
+Z64 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumador_bcd.vhd
 l0
 L5
 VE9znfhSmB<QY95b7>RBF70
 !s100 GfIg6Zjb3Xea^562zkAfL3
-R5
-32
-R12
-!i10b 1
-R13
-Z40 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumador_bcd.vhd|
-Z41 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumador_bcd.vhd|
-!i113 1
-R7
 R8
+32
+R9
+!i10b 1
+R38
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumador_bcd.vhd|
+Z66 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumador_bcd.vhd|
+!i113 1
+R13
+R14
 Artl
-R1
 R2
-R3
+R17
 R4
-Z42 DEx4 work 11 sumador_bcd 0 22 E9znfhSmB<QY95b7>RBF70
+R5
+Z67 DEx4 work 11 sumador_bcd 0 22 E9znfhSmB<QY95b7>RBF70
 l17
 L15
 V1Xl]^=V5;BXYHFdZ6k@XR1
 !s100 <BKE2=m8^]<a@bAZVa^?S2
-R5
-32
-R12
-!i10b 1
-R13
-R40
-R41
-!i113 1
-R7
 R8
+32
+R9
+!i10b 1
+R38
+R65
+R66
+!i113 1
+R13
+R14
 Esumadorbcd_6dig
-Z43 w1777721800
-R1
+Z68 w1777721800
 R2
-R3
+R17
 R4
+R5
 R0
-Z44 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumadorBCD_6dig.vhd
-Z45 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumadorBCD_6dig.vhd
+Z69 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumadorBCD_6dig.vhd
+Z70 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumadorBCD_6dig.vhd
 l0
 L5
 V70EchQ=[cicNF<eXQ6?XJ0
 !s100 gG0P1C3;<H1l<44Xc_=Ef0
-R5
-32
-R12
-!i10b 1
-R13
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumadorBCD_6dig.vhd|
-Z47 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumadorBCD_6dig.vhd|
-!i113 1
-R7
 R8
+32
+R9
+!i10b 1
+R10
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumadorBCD_6dig.vhd|
+Z72 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/sumadorBCD_6dig.vhd|
+!i113 1
+R13
+R14
 Artl
-R42
-R1
+R67
 R2
-R3
+R17
 R4
-R21
+R5
+R46
 l18
 L15
 VN06zA?D1Ba`zk8lIA_GLm3
 !s100 KLOlGEhHLi:71d?Zm>m`70
-R5
-32
-R12
-!i10b 1
-R13
-R46
-R47
-!i113 1
-R7
 R8
+32
+R9
+!i10b 1
+R10
+R71
+R72
+!i113 1
+R13
+R14
 Etimer
-Z48 w1778059131
-R1
+Z73 w1778143042
 R2
-R3
+R17
 R4
+R5
 R0
-Z49 8C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/timer.vhd
-Z50 FC:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/timer.vhd
+Z74 8C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\timer.vhd
+Z75 FC:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\timer.vhd
 l0
 L19
-VdzTooNioFKgl9?@oam2:=0
-!s100 R>G0fBX:;bT@45[]ed`;e1
-R5
-32
-R6
-!i10b 1
-R13
-Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/timer.vhd|
-Z52 !s107 C:/Users/guill/Desktop/Uni/OctavoSemestre/DD2/DD2/Bloque_2/Calculadora/HDL/timer.vhd|
-!i113 1
-R7
+VMac`_CEib0cnE_4]FUB<T1
+!s100 1oYKVd]HQlg9=i12;`iVI0
 R8
+32
+R9
+!i10b 1
+R10
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\timer.vhd|
+Z77 !s107 C:\Users\guill\Desktop\Uni\OctavoSemestre\DD2\DD2\Bloque_2\Calculadora\HDL\timer.vhd|
+!i113 1
+R13
+R14
 Artl
-R1
 R2
-R3
+R17
 R4
-DEx4 work 5 timer 0 22 dzTooNioFKgl9?@oam2:=0
-l32
-L30
-VFYV61I[hCfJcCiBLMeWfC0
-!s100 _GR[SjReQeIi:2zXOg1]z3
 R5
-32
-R6
-!i10b 1
-R13
-R51
-R52
-!i113 1
-R7
+R27
+l36
+L31
+VbM8YdC1d>CmB@ZlG^a<_I1
+!s100 oC]@gS?`S9kgjed@CiLcU1
 R8
+32
+R9
+!i10b 1
+R10
+R76
+R77
+!i113 1
+R13
+R14

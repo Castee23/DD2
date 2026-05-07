@@ -1,0 +1,574 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/Universidad/8_Cuatrimestre/DD2/BT2/Calculadora/hdl
+Ealu
+Z0 w1778162769
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl
+Z6 8C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/alu.vhd
+Z7 FC:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/alu.vhd
+l0
+L5
+VBm3BVV2`lfz=O9ZCl9FdT3
+!s100 `E<=<^jYNNeX1zMT00Z<:2
+Z8 OV;C;10.4d;61
+32
+Z9 !s110 1778163219
+!i10b 1
+Z10 !s108 1778163219.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/alu.vhd|
+Z12 !s107 C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/alu.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1
+Artl
+Z15 DEx4 work 18 lpm_multiplicacion 0 22 VlVhgTD`U@O4g2`J;KdQG0
+R1
+R2
+R3
+R4
+Z16 DEx4 work 3 alu 0 22 Bm3BVV2`lfz=O9ZCl9FdT3
+l23
+L17
+VhNoV1nnMfX`E9fWRDa?fg0
+!s100 =oXhiGh8foO7LhGJACBdK0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ealu_tb
+Z17 w1778078512
+R1
+R2
+R3
+R4
+Z18 dE:/Universidad/8_Cuatrimestre/DD2/BT2/BT2_CALCULADORA/hdl
+Z19 8E:/Universidad/8_Cuatrimestre/DD2/BT2/BT2_CALCULADORA/hdl/alu_tb.vhd
+Z20 FE:/Universidad/8_Cuatrimestre/DD2/BT2/BT2_CALCULADORA/hdl/alu_tb.vhd
+l0
+L6
+VKHkeYXgej8H98>^inoQXU3
+!s100 RJ`DjbfigSB^2S9aL[cE?1
+R8
+32
+Z21 !s110 1778087704
+!i10b 1
+Z22 !s108 1778087704.000000
+Z23 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/Universidad/8_Cuatrimestre/DD2/BT2/BT2_CALCULADORA/hdl/alu_tb.vhd|
+Z24 !s107 E:/Universidad/8_Cuatrimestre/DD2/BT2/BT2_CALCULADORA/hdl/alu_tb.vhd|
+!i113 1
+R13
+R14
+Asim
+R16
+R1
+R2
+R3
+R4
+DEx4 work 6 alu_tb 0 22 KHkeYXgej8H98>^inoQXU3
+l21
+L10
+V^TlK`d<13o44Ze4hWU`2I2
+!s100 Qj_OgX<>;]`SkXe0;WDlE2
+R8
+32
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R13
+R14
+Ecalculadora
+Z25 w1778163214
+R3
+R4
+R5
+Z26 8C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/CALCULADORA.vhd
+Z27 FC:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/CALCULADORA.vhd
+l0
+L4
+VcFZ2:OBYJ387fSNj30B>B3
+!s100 4^?;>L`IaRVeHAi:nfA9P1
+R8
+32
+R9
+!i10b 1
+R10
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/CALCULADORA.vhd|
+Z29 !s107 C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/CALCULADORA.vhd|
+!i113 1
+R13
+R14
+Aestructural
+Z30 DEx4 work 8 displays 0 22 iMkoJLdF;EGWkQme=RM2`1
+Z31 DEx4 work 11 convca2_bcd 0 22 Y74nTO]@bBh1gKSfShh=_2
+R2
+R16
+Z32 DEx4 work 12 conv_bcd_ca2 0 22 C=leOY;MZ6lUj<leoFkNC3
+Z33 DEx4 work 15 fsm_calculadora 0 22 CQj4AfY<m?SezQ[B[g39H2
+Z34 DEx4 work 8 ctrl_tec 0 22 EXUjk45XbjRD3:6D@HJXe1
+R1
+Z35 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z36 DEx4 work 5 timer 0 22 XjkfPH2`o91P<J^D0W[hO0
+R3
+R4
+Z37 DEx4 work 11 calculadora 0 22 cFZ2:OBYJ387fSNj30B>B3
+l44
+L15
+V[eDBLACGWXX`OIVOD@HVW0
+!s100 Yc0@RAT6dID<WB[>YIc4F2
+R8
+32
+R9
+!i10b 1
+R10
+R28
+R29
+!i113 1
+R13
+R14
+Ecalculadora_tb
+Z38 w1778142282
+Z39 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R3
+R4
+R5
+Z40 8C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/calculadora_tb.vhd
+Z41 FC:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/calculadora_tb.vhd
+l0
+L5
+VIBWYL92nzDh6Y:Lzz:6R51
+!s100 05Y>>1LXOT:>OcFL6@8oO0
+R8
+32
+Z42 !s110 1778163220
+!i10b 1
+Z43 !s108 1778163220.000000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/calculadora_tb.vhd|
+Z45 !s107 C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/calculadora_tb.vhd|
+!i113 1
+R13
+R14
+Asim
+R37
+R39
+R3
+R4
+DEx4 work 14 calculadora_tb 0 22 IBWYL92nzDh6Y:Lzz:6R51
+l25
+L8
+Vk[[8gE;fZ<@`CLmV9@Zkh1
+!s100 FeHEJl3@]z>VGEXbI0h=;3
+R8
+32
+R42
+!i10b 1
+R43
+R44
+R45
+!i113 1
+R13
+R14
+Econv_bcd_ca2
+R38
+R1
+R35
+R3
+R4
+R5
+Z46 8C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CON_BCD_CA2/convbcd_ca2.vhd
+Z47 FC:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CON_BCD_CA2/convbcd_ca2.vhd
+l0
+L7
+VC=leOY;MZ6lUj<leoFkNC3
+!s100 TbGLVca`z6;<BkC`]Ra^R0
+R8
+32
+R9
+!i10b 1
+R10
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CON_BCD_CA2/convbcd_ca2.vhd|
+Z49 !s107 C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CON_BCD_CA2/convbcd_ca2.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R35
+R3
+R4
+R32
+l16
+L14
+V_M3bdA7J9HYel`?J3XbYd3
+!s100 ;H_DUVG_gZKbm7=`JGX8g0
+R8
+32
+R9
+!i10b 1
+R10
+R48
+R49
+!i113 1
+R13
+R14
+Econvca2_bcd
+Z50 w1778163153
+R1
+R35
+R3
+R4
+R5
+Z51 8C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CONVCA2_BCD/convca2_bcd.vhd
+Z52 FC:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CONVCA2_BCD/convca2_bcd.vhd
+l0
+L6
+VY74nTO]@bBh1gKSfShh=_2
+!s100 lnDg1KoQPm3=Ue]Odj08i2
+R8
+32
+R9
+!i10b 1
+R10
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CONVCA2_BCD/convca2_bcd.vhd|
+Z54 !s107 C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CONVCA2_BCD/convca2_bcd.vhd|
+!i113 1
+R13
+R14
+Artl
+Z55 DEx4 work 15 sumadorbcd_6dig 0 22 70EchQ=[cicNF<eXQ6?XJ0
+R1
+R35
+R3
+R4
+R31
+l29
+L18
+V`;[dJDdV]hDC`Rd0lJN`80
+!s100 MhTBG`1CVOIS2LA5Q@m7F2
+R8
+32
+R9
+!i10b 1
+R10
+R53
+R54
+!i113 1
+R13
+R14
+Ectrl_tec
+R38
+R1
+R35
+R3
+R4
+R5
+Z56 8C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Control_Teclado/ctrl_tec.vhd
+Z57 FC:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Control_Teclado/ctrl_tec.vhd
+l0
+L5
+VEXUjk45XbjRD3:6D@HJXe1
+!s100 UT6`[[NJWo;3Ondozb:KQ3
+R8
+32
+R42
+!i10b 1
+R43
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Control_Teclado/ctrl_tec.vhd|
+Z59 !s107 C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Control_Teclado/ctrl_tec.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R35
+R3
+R4
+R34
+l30
+L21
+VdQV04bW>6BM=Ja8;KJch81
+!s100 7Z?EI2PzIdcC`jMX4]P[92
+R8
+32
+R42
+!i10b 1
+R43
+R58
+R59
+!i113 1
+R13
+R14
+Edisplays
+R38
+R1
+R35
+R3
+R4
+R5
+Z60 8C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Displays/displays.vhd
+Z61 FC:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Displays/displays.vhd
+l0
+L6
+ViMkoJLdF;EGWkQme=RM2`1
+!s100 72X1HZ72XicEeH3PgIJ^G3
+R8
+32
+R42
+!i10b 1
+R43
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Displays/displays.vhd|
+Z63 !s107 C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Displays/displays.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R35
+R3
+R4
+R30
+l29
+L22
+V3V_LUZY@^k<3^VM@`DIl30
+!s100 D<fVe;JY>>8CfJ:n9@[Cn1
+R8
+32
+R42
+!i10b 1
+R43
+R62
+R63
+!i113 1
+R13
+R14
+Efsm_calculadora
+R38
+R1
+R35
+R3
+R4
+R5
+Z64 8C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/fsm_calculadora.vhd
+Z65 FC:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/fsm_calculadora.vhd
+l0
+L6
+VCQj4AfY<m?SezQ[B[g39H2
+!s100 SUJN97WH1E_k_<mXD6o2h1
+R8
+32
+R9
+!i10b 1
+R10
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/fsm_calculadora.vhd|
+Z67 !s107 C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/fsm_calculadora.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R35
+R3
+R4
+R33
+l32
+L21
+VmePOYkh:7O:@_lCbQRQMW0
+!s100 mm6XChzSV14VB?ZME<m_C2
+R8
+32
+R9
+!i10b 1
+R10
+R66
+R67
+!i113 1
+R13
+R14
+Elpm_multiplicacion
+Z68 w1778162320
+R3
+R4
+R5
+Z69 8C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/lpm_multiplicacion.vhd
+Z70 FC:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/lpm_multiplicacion.vhd
+l0
+L43
+VVlVhgTD`U@O4g2`J;KdQG0
+!s100 M_<TDbA2QLIR?nl>42Ul@1
+R8
+32
+R42
+!i10b 1
+R43
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/lpm_multiplicacion.vhd|
+Z72 !s107 C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/lpm_multiplicacion.vhd|
+!i113 1
+R13
+R14
+Asyn
+R3
+R4
+R15
+l75
+L53
+Z73 Vk?J6Z^mkV=Zj1_^N:8D<U2
+Z74 !s100 PM0YX4iFk^Cl?BoB`CdFP3
+R8
+32
+R42
+!i10b 1
+R43
+R71
+R72
+!i113 1
+R13
+R14
+Esumador_bcd
+R38
+R1
+R35
+R3
+R4
+R5
+Z75 8C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CONVCA2_BCD/sumador_BCD.vhd
+Z76 FC:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CONVCA2_BCD/sumador_BCD.vhd
+l0
+L5
+VUjnNi_XMLC2JL0<8_oo2J2
+!s100 ZAJN2d_4:j868eZe6;V2F0
+R8
+32
+R42
+!i10b 1
+R10
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CONVCA2_BCD/sumador_BCD.vhd|
+Z78 !s107 C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CONVCA2_BCD/sumador_BCD.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R35
+R3
+R4
+Z79 DEx4 work 11 sumador_bcd 0 22 UjnNi_XMLC2JL0<8_oo2J2
+l17
+L15
+V?m`:C3SPLbb=hJTnRYzLG3
+!s100 nG9chhObe@]c7WQ14@X033
+R8
+32
+R42
+!i10b 1
+R10
+R77
+R78
+!i113 1
+R13
+R14
+Esumadorbcd_6dig
+R38
+R1
+R35
+R3
+R4
+R5
+Z80 8C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CONVCA2_BCD/sumadorBCD_6dig.vhd
+Z81 FC:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CONVCA2_BCD/sumadorBCD_6dig.vhd
+l0
+L5
+V70EchQ=[cicNF<eXQ6?XJ0
+!s100 gG0P1C3;<H1l<44Xc_=Ef0
+R8
+32
+R42
+!i10b 1
+R43
+Z82 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CONVCA2_BCD/sumadorBCD_6dig.vhd|
+Z83 !s107 C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Datos/CONVCA2_BCD/sumadorBCD_6dig.vhd|
+!i113 1
+R13
+R14
+Artl
+R79
+R1
+R35
+R3
+R4
+R55
+l18
+L15
+V_gD[;`W80ZVQTAoZaVFB^0
+!s100 0O[aQ<2z4^:5dCbR6VAh32
+R8
+32
+R42
+!i10b 1
+R43
+R82
+R83
+!i113 1
+R13
+R14
+Etimer
+Z84 w1778161838
+R1
+R35
+R3
+R4
+R5
+Z85 8C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Timer/timer.vhd
+Z86 FC:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Timer/timer.vhd
+l0
+L24
+VXjkfPH2`o91P<J^D0W[hO0
+!s100 F70LKd]c?CGjHoSB`7Enh3
+R8
+32
+R42
+!i10b 1
+R43
+Z87 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Timer/timer.vhd|
+Z88 !s107 C:/Users/guill/Downloads/BT2_CALCULADORA/BT2_CALCULADORA/hdl/Perifericos/Timer/timer.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R35
+R3
+R4
+R36
+l40
+L36
+VH5l[5zL>FL::EVh8>k;Jj0
+!s100 WD@^X;9naT:fFDRL;aoof0
+R8
+32
+R42
+!i10b 1
+R43
+R87
+R88
+!i113 1
+R13
+R14

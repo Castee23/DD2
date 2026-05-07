@@ -4,18 +4,19 @@ use ieee.std_logic_unsigned.all;
 
 entity calculadora is
     port (
-        clk    	     	: in  std_logic;
+        clk    	    : in  std_logic;
         nRst   		: in  std_logic;
         columna 	: in  std_logic_vector(3 downto 0);
         fila       	: out std_logic_vector(3 downto 0);
         disp		: out std_logic_vector(7 downto 0); 
-        mux_disp      	: out std_logic_vector(7 downto 0)  
+        mux_disp    : out std_logic_vector(7 downto 0)  
     );
 end calculadora;
 
-architecture struct of calculadora is
+architecture structural of calculadora is
 
     signal tic_1ms        : std_logic;
+    signal tic_5ms        : std_logic;
     signal tecla_pulsada  : std_logic;
     signal tecla          : std_logic_vector(3 downto 0);
     signal op1_fsm        : std_logic_vector(11 downto 0);
@@ -24,13 +25,16 @@ architecture struct of calculadora is
     signal op2_sgn_fsm    : std_logic;
     signal operacion      : std_logic_vector(1 downto 0);
     signal pres           : std_logic_vector(1 downto 0);
+    
     signal op1_ca2        : std_logic_vector(10 downto 0);
     signal op2_ca2        : std_logic_vector(10 downto 0);
 
-    --Falta la parte de la ALU
+    signal res_alu        : std_logic_vector(20 downto 0);
+    signal inicio_alu     : std_logic;
 
     signal signo_res      : std_logic;
     signal num_bcd_res    : std_logic_vector(23 downto 0);
+    signal fin_conv       : std_logic;
 
 begin
 
@@ -39,17 +43,19 @@ begin
         clk       => clk,
         nRst      => nRst,
         tic_1ms   => tic_1ms,
+        tic_5ms   => tic_5ms
     );
 
     U_Ctrl_Tec : entity work.ctrl_tec
     port map (
         clk           => clk,
         nRst          => nRst,
-        tic           => tic_1ms,
+        tic           => tic_5ms,
         columna       => columna,
         fila          => fila,
         tecla         => tecla,
         tecla_pulsada => tecla_pulsada,
+        pulso_largo   => open
     );
 
     U_FSM : entity work.fsm_calculadora
@@ -82,13 +88,11 @@ begin
 
     U_ALU : entity work.alu
     port map (
-        clk       => clk,
-        nRst      => nRst,
-        op1       => op1_ca2,
-        op2       => op2_ca2,
+        op1_i     => op1_ca2,
+        op2_i     => op2_ca2,
         operacion => operacion,
-        resultado => res_alu,
-        inicio    => inicio_alu
+        res_o 	  => res_alu,
+        inicio    => inicio_alu  --??
     );
 
     U_Conv_C2_BCD : entity work.convca2_bcd
@@ -96,10 +100,10 @@ begin
         clk     => clk,
         nRst    => nRst,
         inicio  => inicio_alu,
-        num_c2  => res_alu,
+        num_c2  => res_alu (19 downto 0),
         signo   => signo_res,
         num_bcd => num_bcd_res,
-        fin     => -- A donde chcuchas meto esto?
+        fin     => fin_conv --??
     );
 
     U_displays : entity work.displays
@@ -118,4 +122,4 @@ begin
         disp      => disp
     );
 
-end struct;
+end structural;
