@@ -23,12 +23,12 @@ architecture rtl of convca2_bcd is
     signal reg_bin      : std_logic_vector(20 downto 0);
     signal reg_bcd      : std_logic_vector(23 downto 0); --El acumulador
     signal suma_bcd : std_logic_vector(23 downto 0);
-    signal contador         : integer range 0 to 20;
+    signal contador         : integer range 0 to 21;
     signal acarreo_salida   : std_logic;
 
 begin
 
-    --Usamos el sumador de 6 digitos BCD para hacer la multiplicación sumando el mismo número.
+    --Usamos el sumador de 6 digitos BCD para hacer la multiplicaciï¿½n sumando el mismo nï¿½mero.
     sumador: entity work.sumadorBCD_6dig port map (
         DatoA    => reg_bcd,
         DatoB    => reg_bcd,
@@ -54,7 +54,7 @@ begin
                     fin <= '0';
                     if inicio = '1' then
                         if num_c2(20) = '1' then
-                            reg_bin <= not (num_c2 - 1);
+                            reg_bin <= (not num_c2) + 1;
                             signo   <= '1';
                         else
                             reg_bin <= num_c2;
@@ -67,7 +67,7 @@ begin
                     end if;
 
                 when CALCULO =>
-                    if contador < 20 then
+                    if contador < 21 then
                         reg_bcd <= suma_bcd;    --Obtenemos la suma del ciclo actual
                         reg_bin <= reg_bin(19 downto 0) & '0';
                         contador <= contador + 1;

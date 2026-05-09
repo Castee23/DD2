@@ -79,7 +79,6 @@ begin
             op1_sgn        => op1_sgn_s,
             op2            => op2_bcd_s,
             op2_sgn        => op2_sgn_s
-            --inicio         => inicio_conv_s
         );
 
     -- 4. Conversores de Entrada (BCD a Ca2)
@@ -103,7 +102,8 @@ begin
             op1_i     => op1_ca2_s,
             op2_i     => op2_ca2_s,
             operacion => operacion_s,
-            res_o     => res_ca2_s
+            res_o     => res_ca2_s,
+	    inicio    => inicio_conv_s
         );
 
     -- 6. Conversor de Salida (Ca2 a BCD)
