@@ -8,39 +8,40 @@ z2
 !i10f 100
 cModel Technology
 dC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/Conv-BCD_Ca2/MODELSIM
-Ectrl_tec
-Z0 w1779299458
+Ealu
+Z0 w1779535816
 Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z2 DPx4 ieee 16 std_logic_signed 0 22 C<aanc0R`<LWPSe[JYRP^3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z5 dC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/MODELSIM
-Z6 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd
-Z7 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd
+Z6 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/alu.vhd
+Z7 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/alu.vhd
 l0
 L5
-VEXUjk45XbjRD3:6D@HJXe1
-!s100 UT6`[[NJWo;3Ondozb:KQ3
+VBm3BVV2`lfz=O9ZCl9FdT3
+!s100 `E<=<^jYNNeX1zMT00Z<:2
 Z8 OV;C;10.4d;61
 32
-Z9 !s110 1779302803
+Z9 !s110 1779552482
 !i10b 1
-Z10 !s108 1779302802.000000
-Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd|
-Z12 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd|
+Z10 !s108 1779552482.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/alu.vhd|
+Z12 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/alu.vhd|
 !i113 1
 Z13 o-work work -2002 -explicit
 Z14 tExplicit 1
 Artl
+Z15 DEx4 work 18 lpm_multiplicacion 0 22 VlVhgTD`U@O4g2`J;KdQG0
 R1
 R2
 R3
 R4
-DEx4 work 8 ctrl_tec 0 22 EXUjk45XbjRD3:6D@HJXe1
-l30
-L21
-VdQV04bW>6BM=Ja8;KJch81
-!s100 7Z?EI2PzIdcC`jMX4]P[92
+Z16 DEx4 work 3 alu 0 22 Bm3BVV2`lfz=O9ZCl9FdT3
+l23
+L17
+Vm7<3CY?^=4a3d]l7CdFU>0
+!s100 [062QiOi>01gd2KX2il5T2
 R8
 32
 R9
@@ -51,71 +52,529 @@ R12
 !i113 1
 R13
 R14
-Ppack_test_calculadora
+Ecalculadora
+R0
 R1
-R2
+Z17 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 R3
 R4
-Z15 w1779304638
 R5
-Z16 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd
-Z17 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd
+Z18 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/calculadora.vhd
+Z19 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/calculadora.vhd
 l0
 L5
-VEo5GJ7jK42gC^LhmL`>K<0
-!s100 PBdXi8F:<a8ij13`keC>h1
+VY>kF5GAL0[QLbaol4Yj;S2
+!s100 @d8PI^f3?oVG96DOh>OCe0
 R8
 32
-b1
-Z18 !s110 1779304643
+R9
 !i10b 1
-Z19 !s108 1779304643.000000
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd|
-Z21 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd|
+R10
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/calculadora.vhd|
+Z21 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/calculadora.vhd|
 !i113 1
 R13
 R14
-Bbody
-Z22 DPx4 work 21 pack_test_calculadora 0 22 Eo5GJ7jK42gC^LhmL`>K<0
-R1
+Astructural
+Z22 DEx4 work 8 displays 0 22 :m=OC2^I3=QF<<^gUjoO30
+Z23 DEx4 work 11 convca2_bcd 0 22 >bgmF1Zm^M;Gk34i:b>:R0
 R2
+R16
+Z24 DEx4 work 12 conv_bcd_ca2 0 22 C=leOY;MZ6lUj<leoFkNC3
+Z25 DEx4 work 15 fsm_calculadora 0 22 CQj4AfY<m?SezQ[B[g39H2
+Z26 DEx4 work 8 ctrl_tec 0 22 EXUjk45XbjRD3:6D@HJXe1
+Z27 DEx4 work 5 timer 0 22 Mac`_CEib0cnE_4]FUB<T1
+R1
+R17
 R3
 R4
-l0
-L59
-VM35LbHYhZ<O1CUmdIik>P3
-!s100 VC2Ok>f7JmgkNl2BO8hdg3
+Z28 DEx4 work 11 calculadora 0 22 Y>kF5GAL0[QLbaol4Yj;S2
+l39
+L16
+VYhJPj;3J9b_ij3:Uh<JFZ3
+!s100 X9kol3g_6I:>Z[=IXSM6?3
 R8
 32
-R18
+R9
 !i10b 1
-R19
+R10
 R20
 R21
 !i113 1
 R13
 R14
-Etb_calculadora
-w1779304989
+Econv_bcd_ca2
+R0
 R1
-R2
-R22
+R17
 R3
 R4
 R5
-8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd
-FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd
+Z29 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convbcd_ca2.vhd
+Z30 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convbcd_ca2.vhd
+l0
+L7
+VC=leOY;MZ6lUj<leoFkNC3
+!s100 TbGLVca`z6;<BkC`]Ra^R0
+R8
+32
+R9
+!i10b 1
+R10
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convbcd_ca2.vhd|
+Z32 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convbcd_ca2.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R17
+R3
+R4
+R24
+l16
+L14
+V_M3bdA7J9HYel`?J3XbYd3
+!s100 ;H_DUVG_gZKbm7=`JGX8g0
+R8
+32
+R9
+!i10b 1
+R10
+R31
+R32
+!i113 1
+R13
+R14
+Econvca2_bcd
+R0
+R1
+R17
+R3
+R4
+R5
+Z33 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convca2_bcd.vhd
+Z34 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convca2_bcd.vhd
+l0
+L5
+V>bgmF1Zm^M;Gk34i:b>:R0
+!s100 bj1T2[Mm6l4jAI8DTEOSk1
+R8
+32
+R9
+!i10b 1
+R10
+Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convca2_bcd.vhd|
+Z36 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convca2_bcd.vhd|
+!i113 1
+R13
+R14
+Artl
+Z37 DEx4 work 15 sumadorbcd_6dig 0 22 70EchQ=[cicNF<eXQ6?XJ0
+R1
+R17
+R3
+R4
+R23
+l28
+L17
+Va4Ag02aoK5I[QmIW?MmHf1
+!s100 kZWW2DdG>ELioSLIT<d4h1
+R8
+32
+R9
+!i10b 1
+R10
+R35
+R36
+!i113 1
+R13
+R14
+Ectrl_tec
+Z38 w1779299458
+R1
+R17
+R3
+R4
+R5
+Z39 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd
+Z40 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd
+l0
+L5
+VEXUjk45XbjRD3:6D@HJXe1
+!s100 UT6`[[NJWo;3Ondozb:KQ3
+R8
+32
+R9
+!i10b 1
+R10
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd|
+Z42 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R17
+R3
+R4
+R26
+l30
+L21
+VdQV04bW>6BM=Ja8;KJch81
+!s100 7Z?EI2PzIdcC`jMX4]P[92
+R8
+32
+R9
+!i10b 1
+R10
+R41
+R42
+!i113 1
+R13
+R14
+Edisplays
+R0
+R1
+R17
+R3
+R4
+R5
+Z43 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/displays.vhd
+Z44 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/displays.vhd
+l0
+L5
+V:m=OC2^I3=QF<<^gUjoO30
+!s100 95IJGR0kbCEf_elDKCi9O1
+R8
+32
+R9
+!i10b 1
+R10
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/displays.vhd|
+Z46 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/displays.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R17
+R3
+R4
+R22
+l28
+L21
+V2A9o7iPjJz:U4[iOHKWW<2
+!s100 n:`hzo^d0VS=4h[b3cOJR3
+R8
+32
+R9
+!i10b 1
+R10
+R45
+R46
+!i113 1
+R13
+R14
+Efsm_calculadora
+R0
+R1
+R17
+R3
+R4
+R5
+Z47 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/fsm_calculadora.vhd
+Z48 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/fsm_calculadora.vhd
+l0
+L6
+VCQj4AfY<m?SezQ[B[g39H2
+!s100 SUJN97WH1E_k_<mXD6o2h1
+R8
+32
+R9
+!i10b 1
+R10
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/fsm_calculadora.vhd|
+Z50 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/fsm_calculadora.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R17
+R3
+R4
+R25
+l32
+L21
+VmePOYkh:7O:@_lCbQRQMW0
+!s100 mm6XChzSV14VB?ZME<m_C2
+R8
+32
+R9
+!i10b 1
+R10
+R49
+R50
+!i113 1
+R13
+R14
+Elpm_multiplicacion
+R0
+R3
+R4
+R5
+Z51 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/lpm_multiplicacion.vhd
+Z52 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/lpm_multiplicacion.vhd
+l0
+L43
+VVlVhgTD`U@O4g2`J;KdQG0
+!s100 M_<TDbA2QLIR?nl>42Ul@1
+R8
+32
+R9
+!i10b 1
+R10
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/lpm_multiplicacion.vhd|
+Z54 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/lpm_multiplicacion.vhd|
+!i113 1
+R13
+R14
+Asyn
+R3
+R4
+R15
+l75
+L53
+Vk?J6Z^mkV=Zj1_^N:8D<U2
+!s100 PM0YX4iFk^Cl?BoB`CdFP3
+R8
+32
+R9
+!i10b 1
+R10
+R53
+R54
+!i113 1
+R13
+R14
+Ppack_test_calculadora
+R1
+R17
+R3
+R4
+Z55 w1779552442
+R5
+Z56 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd
+Z57 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd
+l0
+L5
+VJSE`5d0ZU[zZ4SV=e=b0B3
+!s100 XE=S?=UgU=L^@KZMP>Maz2
+R8
+32
+b1
+R9
+!i10b 1
+Z58 !s108 1779552481.000000
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd|
+Z60 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd|
+!i113 1
+R13
+R14
+Bbody
+Z61 DPx4 work 21 pack_test_calculadora 0 22 JSE`5d0ZU[zZ4SV=e=b0B3
+R1
+R17
+R3
+R4
+l0
+L59
+V1A0TNKAV?@ON6BzH3k6f_1
+!s100 W[i2a]bZfF;`:V5D<;FQ91
+R8
+32
+R9
+!i10b 1
+R58
+R59
+R60
+!i113 1
+R13
+R14
+Esumador_bcd
+R0
+R1
+R17
+R3
+R4
+R5
+Z62 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd
+Z63 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd
+l0
+L5
+VE9znfhSmB<QY95b7>RBF70
+!s100 GfIg6Zjb3Xea^562zkAfL3
+R8
+32
+R9
+!i10b 1
+R10
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd|
+Z65 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R17
+R3
+R4
+Z66 DEx4 work 11 sumador_bcd 0 22 E9znfhSmB<QY95b7>RBF70
+l17
+L15
+V1Xl]^=V5;BXYHFdZ6k@XR1
+!s100 <BKE2=m8^]<a@bAZVa^?S2
+R8
+32
+R9
+!i10b 1
+R10
+R64
+R65
+!i113 1
+R13
+R14
+Esumadorbcd_6dig
+R0
+R1
+R17
+R3
+R4
+R5
+Z67 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumadorBCD_6dig.vhd
+Z68 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumadorBCD_6dig.vhd
+l0
+L5
+V70EchQ=[cicNF<eXQ6?XJ0
+!s100 gG0P1C3;<H1l<44Xc_=Ef0
+R8
+32
+R9
+!i10b 1
+R10
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumadorBCD_6dig.vhd|
+Z70 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumadorBCD_6dig.vhd|
+!i113 1
+R13
+R14
+Artl
+R66
+R1
+R17
+R3
+R4
+R37
+l18
+L15
+VN06zA?D1Ba`zk8lIA_GLm3
+!s100 KLOlGEhHLi:71d?Zm>m`70
+R8
+32
+R9
+!i10b 1
+R10
+R69
+R70
+!i113 1
+R13
+R14
+Etb_calculadora
+Z71 w1779555803
+R1
+R17
+R61
+R3
+R4
+R5
+Z72 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd
+Z73 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd
 l0
 L7
 V<jPB55Gk4D?B5Kd0RRzc<2
 !s100 AlZSo6I;<_M]<A<z[0QFm3
 R8
 32
-!s110 1779304995
+Z74 !s110 1779555815
 !i10b 1
-!s108 1779304995.000000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd|
-!s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd|
+Z75 !s108 1779555815.000000
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd|
+Z77 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd|
+!i113 1
+R13
+R14
+Atest
+R28
+R1
+R17
+R61
+R3
+R4
+Z78 DEx4 work 14 tb_calculadora 0 22 <jPB55Gk4D?B5Kd0RRzc<2
+l25
+L10
+VBBN`Pc?<_kPN=IcNeQK4<2
+!s100 kTJ685hdZOC5Pg2FGNliV0
+R8
+32
+R74
+!i10b 1
+R75
+R76
+R77
+!i113 1
+R13
+R14
+Etimer
+R0
+R1
+R17
+R3
+R4
+R5
+Z79 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/timer.vhd
+Z80 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/timer.vhd
+l0
+L19
+VMac`_CEib0cnE_4]FUB<T1
+!s100 1oYKVd]HQlg9=i12;`iVI0
+R8
+32
+R9
+!i10b 1
+R10
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/timer.vhd|
+Z82 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/timer.vhd|
+!i113 1
+R13
+R14
+Artl
+R1
+R17
+R3
+R4
+R27
+l36
+L31
+VbM8YdC1d>CmB@ZlG^a<_I1
+!s100 oC]@gS?`S9kgjed@CiLcU1
+R8
+32
+R9
+!i10b 1
+R10
+R81
+R82
 !i113 1
 R13
 R14

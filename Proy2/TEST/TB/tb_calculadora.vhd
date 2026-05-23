@@ -25,7 +25,7 @@ architecture test of tb_calculadora is
 begin
 
   -- Instanciación del DUT (CALCULADORA)
-  dut: entity work.calculadora(estructural)
+  dut: entity work.calculadora(structural)
      port map(clk => clk,
               nRst => nRst,
               columna => columna,
@@ -61,27 +61,27 @@ begin
     -- ==========================================================
     -- 1. INTRODUCCIÓN OPERANDO 1: "003"
     -- ==========================================================
-    procedure introducir_numero (columna, fila, clk, x"003");
+    introducir_numero (columna, fila, clk, x"003");
 
     -- ==========================================================
     -- 2. SELECCIÓN DE OPERACIÓN: SUMA
     -- ==========================================================
-    procedure suma (columna, fila, clk)
+    suma (columna, fila, clk);
 
     -- ==========================================================
-    -- 3. INTRODUCCIÓN OPERANDO 2: "040"
+    -- 3. INTRODUCCIÓN OPERANDO 2: "140"
     -- ==========================================================
-    procedure introducir_numero (columna, fila, clk, x"040");
+    introducir_numero (columna, fila, clk, x"140");
 
     -- ==========================================================
     -- 4. CAMBIAR SIGNO
     -- ==========================================================
-    procedure cambiar_signo(columna, fila, clk);
+    cambiar_signo (columna, fila, clk);
 
     -- ==========================================================
     -- 5. VALIDACIÓN Y RESULTADO
     -- ==========================================================
-    procedure resultado(columna, fila, clk);
+    mostrar_resultado (columna, fila, clk);
 
 
 
@@ -92,28 +92,27 @@ begin
     -- ==========================================================
     -- 1. INTRODUCCIÓN OPERANDO 1: "999"
     -- ==========================================================
-    procedure introducir_numero (columna, fila, clk, x"999");
-    procedure introducir_numero (columna, fila, clk, x"000");
+    introducir_numero (columna, fila, clk, x"999");
 
     -- ==========================================================
     -- 2. SELECCIÓN DE OPERACIÓN: MULTIPLICACION
     -- ==========================================================
-    procedure multiplicacion (columna, fila, clk)
+    multiplicacion (columna, fila, clk);
 
     -- ==========================================================
     -- 3. INTRODUCCIÓN OPERANDO 2: "999"
     -- ==========================================================
-    procedure introducir_numero (columna, fila, clk, x"999");
-    procedure introducir_numero (columna, fila, clk, x"000");
+    introducir_numero (columna, fila, clk, x"999");
 
     -- ==========================================================
     -- 4. VALIDACIÓN Y RESULTADO
     -- ==========================================================
-    procedure resultado(columna, fila, clk);
+    mostrar_resultado (columna, fila, clk);
 
+    for i in 1 to 100 loop
+      wait until clk'event and clk = '1';
+    end loop;
 
-
-    wait until clk'event and clk = '1';
     assert false report "Test manual finalizado" severity failure;
   end process;
 
