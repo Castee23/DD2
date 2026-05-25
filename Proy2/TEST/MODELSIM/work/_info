@@ -23,9 +23,9 @@ VBm3BVV2`lfz=O9ZCl9FdT3
 !s100 `E<=<^jYNNeX1zMT00Z<:2
 Z8 OV;C;10.4d;61
 32
-Z9 !s110 1779552482
+Z9 !s110 1779706200
 !i10b 1
-Z10 !s108 1779552482.000000
+Z10 !s108 1779706200.000000
 Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/alu.vhd|
 Z12 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/alu.vhd|
 !i113 1
@@ -91,8 +91,8 @@ R4
 Z28 DEx4 work 11 calculadora 0 22 Y>kF5GAL0[QLbaol4Yj;S2
 l39
 L16
-VYhJPj;3J9b_ij3:Uh<JFZ3
-!s100 X9kol3g_6I:>Z[=IXSM6?3
+Z29 VYhJPj;3J9b_ij3:Uh<JFZ3
+Z30 !s100 X9kol3g_6I:>Z[=IXSM6?3
 R8
 32
 R9
@@ -110,8 +110,8 @@ R17
 R3
 R4
 R5
-Z29 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convbcd_ca2.vhd
-Z30 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convbcd_ca2.vhd
+Z31 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convbcd_ca2.vhd
+Z32 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convbcd_ca2.vhd
 l0
 L7
 VC=leOY;MZ6lUj<leoFkNC3
@@ -121,8 +121,8 @@ R8
 R9
 !i10b 1
 R10
-Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convbcd_ca2.vhd|
-Z32 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convbcd_ca2.vhd|
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convbcd_ca2.vhd|
+Z34 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convbcd_ca2.vhd|
 !i113 1
 R13
 R14
@@ -141,8 +141,8 @@ R8
 R9
 !i10b 1
 R10
-R31
-R32
+R33
+R34
 !i113 1
 R13
 R14
@@ -153,8 +153,8 @@ R17
 R3
 R4
 R5
-Z33 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convca2_bcd.vhd
-Z34 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convca2_bcd.vhd
+Z35 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convca2_bcd.vhd
+Z36 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convca2_bcd.vhd
 l0
 L5
 V>bgmF1Zm^M;Gk34i:b>:R0
@@ -164,13 +164,13 @@ R8
 R9
 !i10b 1
 R10
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convca2_bcd.vhd|
-Z36 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convca2_bcd.vhd|
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convca2_bcd.vhd|
+Z38 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convca2_bcd.vhd|
 !i113 1
 R13
 R14
 Artl
-Z37 DEx4 work 15 sumadorbcd_6dig 0 22 70EchQ=[cicNF<eXQ6?XJ0
+Z39 DEx4 work 15 sumadorbcd_6dig 0 22 70EchQ=[cicNF<eXQ6?XJ0
 R1
 R17
 R3
@@ -185,20 +185,20 @@ R8
 R9
 !i10b 1
 R10
-R35
-R36
+R37
+R38
 !i113 1
 R13
 R14
 Ectrl_tec
-Z38 w1779299458
+Z40 w1779299458
 R1
 R17
 R3
 R4
 R5
-Z39 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd
-Z40 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd
+Z41 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd
+Z42 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd
 l0
 L5
 VEXUjk45XbjRD3:6D@HJXe1
@@ -207,9 +207,9 @@ R8
 32
 R9
 !i10b 1
-R10
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd|
-Z42 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd|
+Z43 !s108 1779706199.000000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd|
+Z45 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd|
 !i113 1
 R13
 R14
@@ -227,9 +227,9 @@ R8
 32
 R9
 !i10b 1
-R10
-R41
-R42
+R43
+R44
+R45
 !i113 1
 R13
 R14
@@ -240,8 +240,8 @@ R17
 R3
 R4
 R5
-Z43 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/displays.vhd
-Z44 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/displays.vhd
+Z46 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/displays.vhd
+Z47 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/displays.vhd
 l0
 L5
 V:m=OC2^I3=QF<<^gUjoO30
@@ -251,8 +251,8 @@ R8
 R9
 !i10b 1
 R10
-Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/displays.vhd|
-Z46 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/displays.vhd|
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/displays.vhd|
+Z49 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/displays.vhd|
 !i113 1
 R13
 R14
@@ -271,8 +271,8 @@ R8
 R9
 !i10b 1
 R10
-R45
-R46
+R48
+R49
 !i113 1
 R13
 R14
@@ -283,8 +283,8 @@ R17
 R3
 R4
 R5
-Z47 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/fsm_calculadora.vhd
-Z48 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/fsm_calculadora.vhd
+Z50 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/fsm_calculadora.vhd
+Z51 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/fsm_calculadora.vhd
 l0
 L6
 VCQj4AfY<m?SezQ[B[g39H2
@@ -294,8 +294,8 @@ R8
 R9
 !i10b 1
 R10
-Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/fsm_calculadora.vhd|
-Z50 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/fsm_calculadora.vhd|
+Z52 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/fsm_calculadora.vhd|
+Z53 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/fsm_calculadora.vhd|
 !i113 1
 R13
 R14
@@ -314,8 +314,8 @@ R8
 R9
 !i10b 1
 R10
-R49
-R50
+R52
+R53
 !i113 1
 R13
 R14
@@ -324,8 +324,8 @@ R0
 R3
 R4
 R5
-Z51 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/lpm_multiplicacion.vhd
-Z52 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/lpm_multiplicacion.vhd
+Z54 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/lpm_multiplicacion.vhd
+Z55 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/lpm_multiplicacion.vhd
 l0
 L43
 VVlVhgTD`U@O4g2`J;KdQG0
@@ -335,8 +335,8 @@ R8
 R9
 !i10b 1
 R10
-Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/lpm_multiplicacion.vhd|
-Z54 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/lpm_multiplicacion.vhd|
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/lpm_multiplicacion.vhd|
+Z57 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/lpm_multiplicacion.vhd|
 !i113 1
 R13
 R14
@@ -353,8 +353,8 @@ R8
 R9
 !i10b 1
 R10
-R53
-R54
+R56
+R57
 !i113 1
 R13
 R14
@@ -363,10 +363,10 @@ R1
 R17
 R3
 R4
-Z55 w1779552442
+Z58 w1779706190
 R5
-Z56 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd
-Z57 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd
+Z59 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd
+Z60 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd
 l0
 L5
 VJSE`5d0ZU[zZ4SV=e=b0B3
@@ -374,31 +374,31 @@ VJSE`5d0ZU[zZ4SV=e=b0B3
 R8
 32
 b1
-R9
+Z61 !s110 1779706199
 !i10b 1
-Z58 !s108 1779552481.000000
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd|
-Z60 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd|
+R43
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd|
+Z63 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd|
 !i113 1
 R13
 R14
 Bbody
-Z61 DPx4 work 21 pack_test_calculadora 0 22 JSE`5d0ZU[zZ4SV=e=b0B3
+Z64 DPx4 work 21 pack_test_calculadora 0 22 JSE`5d0ZU[zZ4SV=e=b0B3
 R1
 R17
 R3
 R4
 l0
 L59
-V1A0TNKAV?@ON6BzH3k6f_1
-!s100 W[i2a]bZfF;`:V5D<;FQ91
+V8UVm:E@Y:]CjiRChTUoj@2
+!s100 lLD`dji^ned4oOig4]1=V2
 R8
 32
-R9
+R61
 !i10b 1
-R58
-R59
-R60
+R43
+R62
+R63
 !i113 1
 R13
 R14
@@ -409,8 +409,8 @@ R17
 R3
 R4
 R5
-Z62 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd
-Z63 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd
+Z65 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd
+Z66 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd
 l0
 L5
 VE9znfhSmB<QY95b7>RBF70
@@ -420,8 +420,8 @@ R8
 R9
 !i10b 1
 R10
-Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd|
-Z65 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd|
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd|
+Z68 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd|
 !i113 1
 R13
 R14
@@ -430,7 +430,7 @@ R1
 R17
 R3
 R4
-Z66 DEx4 work 11 sumador_bcd 0 22 E9znfhSmB<QY95b7>RBF70
+Z69 DEx4 work 11 sumador_bcd 0 22 E9znfhSmB<QY95b7>RBF70
 l17
 L15
 V1Xl]^=V5;BXYHFdZ6k@XR1
@@ -440,8 +440,8 @@ R8
 R9
 !i10b 1
 R10
-R64
-R65
+R67
+R68
 !i113 1
 R13
 R14
@@ -452,8 +452,8 @@ R17
 R3
 R4
 R5
-Z67 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumadorBCD_6dig.vhd
-Z68 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumadorBCD_6dig.vhd
+Z70 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumadorBCD_6dig.vhd
+Z71 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumadorBCD_6dig.vhd
 l0
 L5
 V70EchQ=[cicNF<eXQ6?XJ0
@@ -463,18 +463,18 @@ R8
 R9
 !i10b 1
 R10
-Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumadorBCD_6dig.vhd|
-Z70 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumadorBCD_6dig.vhd|
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumadorBCD_6dig.vhd|
+Z73 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumadorBCD_6dig.vhd|
 !i113 1
 R13
 R14
 Artl
-R66
+R69
 R1
 R17
 R3
 R4
-R37
+R39
 l18
 L15
 VN06zA?D1Ba`zk8lIA_GLm3
@@ -484,32 +484,32 @@ R8
 R9
 !i10b 1
 R10
-R69
-R70
+R72
+R73
 !i113 1
 R13
 R14
 Etb_calculadora
-Z71 w1779555803
+Z74 w1779706194
 R1
 R17
-R61
+R64
 R3
 R4
 R5
-Z72 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd
-Z73 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd
+Z75 8C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd
+Z76 FC:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd
 l0
 L7
 V<jPB55Gk4D?B5Kd0RRzc<2
 !s100 AlZSo6I;<_M]<A<z[0QFm3
 R8
 32
-Z74 !s110 1779555815
+R9
 !i10b 1
-Z75 !s108 1779555815.000000
-Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd|
-Z77 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd|
+R10
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd|
+Z78 !s107 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd|
 !i113 1
 R13
 R14
@@ -517,21 +517,21 @@ Atest
 R28
 R1
 R17
-R61
+R64
 R3
 R4
-Z78 DEx4 work 14 tb_calculadora 0 22 <jPB55Gk4D?B5Kd0RRzc<2
-l25
+DEx4 work 14 tb_calculadora 0 22 <jPB55Gk4D?B5Kd0RRzc<2
+l22
 L10
-VBBN`Pc?<_kPN=IcNeQK4<2
-!s100 kTJ685hdZOC5Pg2FGNliV0
+VJHSX>O@f@SaNi7nMA]YcI3
+!s100 oSE<I4S646o=UOmLe6IJO1
 R8
 32
-R74
+R9
 !i10b 1
-R75
-R76
+R10
 R77
+R78
 !i113 1
 R13
 R14

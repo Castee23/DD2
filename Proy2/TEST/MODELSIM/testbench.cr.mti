@@ -1,18 +1,18 @@
 C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/lpm_multiplicacion.vhd {1 {vcom -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/lpm_multiplicacion.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-Start time: 18:08:02 on May 23,2026
+Start time: 12:50:00 on May 25,2026
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/lpm_multiplicacion.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity lpm_multiplicacion
 -- Compiling architecture SYN of lpm_multiplicacion
-End time: 18:08:02 on May 23,2026, Elapsed time: 0:00:00
+End time: 12:50:00 on May 25,2026, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
 } {} {}} C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumadorBCD_6dig.vhd {1 {vcom -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumadorBCD_6dig.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-Start time: 18:08:02 on May 23,2026
+Start time: 12:50:00 on May 25,2026
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumadorBCD_6dig.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -22,12 +22,12 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escr
 -- Compiling entity sumadorBCD_6dig
 -- Compiling architecture rtl of sumadorBCD_6dig
 -- Loading entity sumador_bcd
-End time: 18:08:02 on May 23,2026, Elapsed time: 0:00:00
+End time: 12:50:00 on May 25,2026, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
 } {} {}} C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd {1 {vcom -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-Start time: 18:08:02 on May 23,2026
+Start time: 12:49:59 on May 25,2026
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/ctrl_tec.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -36,12 +36,12 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escr
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity ctrl_tec
 -- Compiling architecture rtl of ctrl_tec
-End time: 18:08:02 on May 23,2026, Elapsed time: 0:00:00
+End time: 12:50:00 on May 25,2026, Elapsed time: 0:00:01
 Errors: 0, Warnings: 0
 
 } {} {}} C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/fsm_calculadora.vhd {1 {vcom -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/fsm_calculadora.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-Start time: 18:08:02 on May 23,2026
+Start time: 12:50:00 on May 25,2026
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/fsm_calculadora.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -50,12 +50,12 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escr
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity fsm_calculadora
 -- Compiling architecture rtl of fsm_calculadora
-End time: 18:08:02 on May 23,2026, Elapsed time: 0:00:00
+End time: 12:50:00 on May 25,2026, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
 } {} {}} C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/displays.vhd {1 {vcom -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/displays.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-Start time: 18:08:02 on May 23,2026
+Start time: 12:50:00 on May 25,2026
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/displays.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -64,12 +64,12 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escr
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity displays
 -- Compiling architecture rtl of displays
-End time: 18:08:02 on May 23,2026, Elapsed time: 0:00:00
+End time: 12:50:00 on May 25,2026, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
 } {} {}} C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/timer.vhd {1 {vcom -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/timer.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-Start time: 18:08:02 on May 23,2026
+Start time: 12:50:00 on May 25,2026
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/timer.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -78,12 +78,12 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escr
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity timer
 -- Compiling architecture rtl of timer
-End time: 18:08:02 on May 23,2026, Elapsed time: 0:00:00
+End time: 12:50:00 on May 25,2026, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
 } {} {}} C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/alu.vhd {1 {vcom -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/alu.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-Start time: 18:08:02 on May 23,2026
+Start time: 12:50:00 on May 25,2026
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/alu.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -93,12 +93,28 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escr
 -- Compiling entity alu
 -- Compiling architecture rtl of alu
 -- Loading entity lpm_multiplicacion
-End time: 18:08:02 on May 23,2026, Elapsed time: 0:00:00
+End time: 12:50:00 on May 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd {1 {vcom -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+Start time: 12:50:00 on May 25,2026
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/tb_calculadora.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package pack_test_calculadora
+-- Compiling entity tb_calculadora
+-- Compiling architecture test of tb_calculadora
+-- Loading entity calculadora
+End time: 12:50:00 on May 25,2026, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
 } {} {}} C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd {1 {vcom -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-Start time: 18:08:01 on May 23,2026
+Start time: 12:49:59 on May 25,2026
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/TB/pack_test_calculadora.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -108,12 +124,12 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escr
 -- Compiling package pack_test_calculadora
 -- Compiling package body pack_test_calculadora
 -- Loading package pack_test_calculadora
-End time: 18:08:02 on May 23,2026, Elapsed time: 0:00:01
+End time: 12:49:59 on May 25,2026, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
 } {} {}} C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convbcd_ca2.vhd {1 {vcom -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convbcd_ca2.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-Start time: 18:08:02 on May 23,2026
+Start time: 12:50:00 on May 25,2026
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convbcd_ca2.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -122,12 +138,12 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escr
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity conv_bcd_ca2
 -- Compiling architecture rtl of conv_bcd_ca2
-End time: 18:08:02 on May 23,2026, Elapsed time: 0:00:00
+End time: 12:50:00 on May 25,2026, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
 } {} {}} C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convca2_bcd.vhd {1 {vcom -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convca2_bcd.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-Start time: 18:08:02 on May 23,2026
+Start time: 12:50:00 on May 25,2026
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/convca2_bcd.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -137,26 +153,12 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escr
 -- Compiling entity convca2_bcd
 -- Compiling architecture rtl of convca2_bcd
 -- Loading entity sumadorBCD_6dig
-End time: 18:08:02 on May 23,2026, Elapsed time: 0:00:00
-Errors: 0, Warnings: 0
-
-} {} {}} C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd {1 {vcom -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd
-Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-Start time: 18:08:02 on May 23,2026
-vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd 
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity sumador_bcd
--- Compiling architecture rtl of sumador_bcd
-End time: 18:08:02 on May 23,2026, Elapsed time: 0:00:00
+End time: 12:50:00 on May 25,2026, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
 } {} {}} C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/calculadora.vhd {1 {vcom -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/calculadora.vhd
 Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
-Start time: 18:08:02 on May 23,2026
+Start time: 12:50:00 on May 25,2026
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/calculadora.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -173,7 +175,21 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escr
 -- Loading entity alu
 -- Loading entity convca2_bcd
 -- Loading entity displays
-End time: 18:08:02 on May 23,2026, Elapsed time: 0:00:00
+End time: 12:50:00 on May 25,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd {1 {vcom -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd
+Model Technology ModelSim ALTERA vcom 10.4d Compiler 2015.12 Dec 30 2015
+Start time: 12:50:00 on May 25,2026
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/rubi3/OneDrive/Escritorio/DDII/Proy2/TEST/CALC/sumador_bcd.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity sumador_bcd
+-- Compiling architecture rtl of sumador_bcd
+End time: 12:50:00 on May 25,2026, Elapsed time: 0:00:00
 Errors: 0, Warnings: 0
 
 } {} {}}

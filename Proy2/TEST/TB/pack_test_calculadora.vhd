@@ -100,14 +100,27 @@ package body pack_test_calculadora is
                     signal   fila:	in std_logic_vector(3 downto 0);
                     signal   clk:       in  std_logic;
                     constant tecla:     in  std_logic_vector(3 downto 0)) is
+  variable fila_objetivo : std_logic_vector(3 downto 0);
   begin
+    case tecla is
+      when x"1" | x"2" | x"3" | x"F" => fila_objetivo := "1110"; -- Fila 0
+      when x"4" | x"5" | x"6" | x"E" => fila_objetivo := "1101"; -- Fila 1
+      when x"7" | x"8" | x"9" | x"D" => fila_objetivo := "1011"; -- Fila 2
+      when x"A" | x"0" | x"B" | x"C" => fila_objetivo := "0111"; -- Fila 3
+      when others => fila_objetivo := "1111";
+    end case;
+
+    columna <= "1111";
+    while fila /= fila_objetivo loop
+      wait until clk'event and clk = '1';
+    end loop;
+
     for i in 1 to 750000 loop
       wait until clk'event and clk = '1';
       convertidor_teclado (tecla, fila, columna);
     end loop;
 
     columna <= "1111";
-
     for i in 1 to 750000 loop
       wait until clk'event and clk = '1';
     end loop;

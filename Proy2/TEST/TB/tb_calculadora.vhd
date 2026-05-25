@@ -15,9 +15,6 @@ architecture test of tb_calculadora is
   signal fila		: std_logic_vector(3 downto 0);
   signal mux_disp	: std_logic_vector(7 downto 0);
   signal disp		: std_logic_vector(7 downto 0);
-  
-  -- Salidas
-  signal resultado	: std_logic_vector(15 downto 0);
 
   --Cte
   constant T_CLK : time := 20 ns; -- Reloj de 50 MHz (ESP15)
@@ -49,6 +46,7 @@ begin
     -- ==========================================================
     -- RESET INICIAL
     -- ==========================================================
+    columna <= "1111";
     nRst <= '0';
     wait until clk'event and clk = '1';
     nRst <= '1';
@@ -69,9 +67,9 @@ begin
     suma (columna, fila, clk);
 
     -- ==========================================================
-    -- 3. INTRODUCCIÓN OPERANDO 2: "140"
+    -- 3. INTRODUCCIÓN OPERANDO 2: "040"
     -- ==========================================================
-    introducir_numero (columna, fila, clk, x"140");
+    introducir_numero (columna, fila, clk, x"040");
 
     -- ==========================================================
     -- 4. CAMBIAR SIGNO
@@ -93,6 +91,7 @@ begin
     -- 1. INTRODUCCIÓN OPERANDO 1: "999"
     -- ==========================================================
     introducir_numero (columna, fila, clk, x"999");
+    introducir_numero (columna, fila, clk, x"000");
 
     -- ==========================================================
     -- 2. SELECCIÓN DE OPERACIÓN: MULTIPLICACION
